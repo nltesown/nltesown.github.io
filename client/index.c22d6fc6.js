@@ -1,0 +1,1 @@
+import{S as t,i as s,s as e,q as a,d as c,n as i}from"./client.366c9989.js";function n(t){return{c(){this.h()},l(t){a('[data-svelte="svelte-k7qizq"]',document.head).forEach(c),this.h()},h(){document.title="NLTESOWN"},m:i,p:i,i:i,o:i,d:i}}export default class extends t{constructor(t){super(),s(this,t,null,n,e,{})}}
