@@ -12,3 +12,8 @@ body {
   color: #eee;
   background-color: #444450;
 }
+
+.container {
+  width: 1000px;
+  margin: 24px auto;
+}

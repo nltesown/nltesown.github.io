@@ -1,37 +1,25 @@
 <script>
   let data = [
-
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-
-[0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0],
-[0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0],
-[0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0],
-[0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0],
-[0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0],
-
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-
-
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0],
+    [0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0],
+    [0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0],
+    [0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0],
+    [0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
   ];
-
-  // $: setTimeout(() => {
-  //   data[0][0] = 1;
-  // }, 1500);
 </script>
 
 <style>
   header {
-    /* height: 300px; */
     background-color: #123;
-    padding: 12px 0;
+    padding: 2px;
   }
 
   .container {
-    /* max-width: 1100px; */
-    width: 1000px;
-    margin: 0 auto;
+    margin: 0;
   }
 
   .row {
@@ -40,27 +28,25 @@
     display: block;
     float: none;
     box-sizing: border-box;
-    /* animation: 4s cubic-bezier(0.45, 0, 0.55, 1) 12 alternate rot; */
   }
 
   .row > div {
     display: block;
     float: left;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     margin: 2px;
     background-color: #369;
     box-sizing: border-box;
   }
-  .row > div.hi {
-    animation: 1s cubic-bezier(0.45, 0, 0.55, 1) 12 alternate bub;
+  .row > div.anim1 {
+    animation: 3s cubic-bezier(0.45, 0, 0.55, 1) 8 forwards anim1;
+  }
+  .row > div.anim2 {
+    animation: 5s cubic-bezier(0.45, 0, 0.55, 1) 8 forwards anim2;
   }
 
-  .row > div.hi2 {
-    animation: 3s cubic-bezier(0.45, 0, 0.55, 1) 12 forwards rot;
-  }
-
-  @keyframes rot {
+  @keyframes anim1 {
     0% {
       transform: rotate(0) scale(1);
       background-color: #369;
@@ -69,7 +55,7 @@
     50% {
       transform: rotate(90deg) scale(.35);
       background-color: #fff;
-      border-radius: 20px;
+      border-radius: 18px;
     }
     100% {
       transform: rotate(180deg) scale(1);
@@ -78,21 +64,21 @@
     }
   }
 
-  @keyframes bub {
+  @keyframes anim2 {
     0% {
-      border-radius: 0;
-      transform: scale(1);
+      transform: rotate(0) scale(1);
       background-color: #369;
+      border-radius: 0;
     }
     50% {
-      border-radius: 0;
-      transform: scale(1);
-      background-color: #369;
+      transform: rotate(-90deg) scale(.35);
+      background-color: #036;
+      border-radius: 18px;
     }
     100% {
-      border-radius: 30px;
-      transform: scale(0.5);
-      background-color: #fff;
+      transform: rotate(180deg) scale(1);
+      background-color: #369;
+      border-radius: 0;
     }
   }
 </style>
@@ -103,7 +89,8 @@
       <div class="row">
         {#each r as c, j}
           <div
-            class:hi2={c === 1}
+            class:anim1={c === 1}
+            class:anim2={c === 0}
             style="animation-delay: {j * 15 + i * 5}ms" />
         {/each}
       </div>
