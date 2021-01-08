@@ -7,5 +7,3 @@
 <svelte:head>
 	<title>NLTESOWN</title>
 </svelte:head>
-
-<h1>NLTESOWN</h1>
