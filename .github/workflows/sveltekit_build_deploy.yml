@@ -1,0 +1,30 @@
+name: sveltekit_build_deploy
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: '12.x'
+
+      - name: Build
+        run: |
+          echo "Running \`npm install\`"
+          npm install
+          echo "Build svelte-kit"
+          npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: build
+          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
