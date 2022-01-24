@@ -18,13 +18,15 @@
 		background-color: #fff;
 		color: #000;
 		overflow: hidden;
-		border-bottom: solid 2px #000;
+		/* border-bottom: solid 2px #000; */
 	}
 
 	.main-title {
 		line-height: 4rem;
 		font-size: 4rem;
-		font-family: Monoton;
+		font-family: Neonderthaw;
+		/* font-family: Monoton; */
+
 		overflow: hidden;
 		text-transform: lowercase;
 	}
