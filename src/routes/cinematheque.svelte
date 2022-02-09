@@ -71,8 +71,11 @@
 						</div>
 						<div>
 							<div class="cycle">{seance.cycle[0][0]}</div>
-							{seance.items[0].art || ''}
-							{seance.items[0].titre}
+							{#each seance.items as item}
+								<div>
+									{item.art || ''}
+									{item.titre}
+								</div>{/each}
 						</div>
 					{/each}
 				</div>
@@ -120,7 +123,7 @@
 		display: inline-block;
 		border-bottom: solid 2px #369;
 		padding: 2px 4px;
-		margin: 0 0 0 2px;
+		margin: 6px 0 0 2px;
 		font-weight: 600;
 		font-size: 0.813rem;
 	}
