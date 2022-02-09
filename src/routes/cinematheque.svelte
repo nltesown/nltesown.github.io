@@ -93,7 +93,7 @@
 		column-gap: 4px;
 		row-gap: 4px;
 		grid-template-columns: repeat(7, 1fr);
-		font-size: 0.875rem;
+		/* font-size: 0.875rem; */
 	}
 
 	.day:not(.active) {
@@ -158,10 +158,16 @@
 		}
 		.day.active {
 			display: block;
+			background-color: #ffffff99;
+		}
+
+		.date {
+			font-size: 1rem;
 		}
 
 		.seances {
 			grid-template-columns: 1fr 6fr;
+			font-size: 0.938rem;
 		}
 	}
 </style>

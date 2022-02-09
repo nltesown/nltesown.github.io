@@ -26,8 +26,8 @@
 		background-color: #111;
 		color: #eee;
 		overflow: hidden;
-		line-height: 3rem;
-		font-size: 3rem;
+		line-height: 2rem;
+		font-size: 2rem;
 		font-weight: 200;
 		text-transform: uppercase;
 		letter-spacing: -0.1rem;
@@ -53,5 +53,13 @@
 	a:active {
 		color: #affa3c;
 		/* color: tomato; */
+	}
+
+	@media (max-width: 575px) {
+		nav {
+			height: 60px;
+			font-size: 1.5rem;
+			line-height: 1.5rem;
+		}
 	}
 </style>
