@@ -38,7 +38,8 @@
 
 	main {
 		position: relative;
-		margin: calc(120px + 1vw) 1vw 1vw 1vw;
+		width: 100%;
+		margin: 132px 0 12px 0;
 		z-index: 1;
 	}
 
@@ -50,7 +51,7 @@
 
 	a:hover,
 	a:active {
-		color: #0d0;
+		color: #affa3c;
 		/* color: tomato; */
 	}
 </style>
