@@ -158,7 +158,6 @@
 		}
 		.day.active {
 			display: block;
-			background-color: #ffffff99;
 		}
 
 		.date {
@@ -166,7 +165,7 @@
 		}
 
 		.seances {
-			grid-template-columns: 1fr 6fr;
+			grid-template-columns: 1fr 4fr;
 			font-size: 0.938rem;
 		}
 	}
