@@ -1,6 +1,8 @@
 <!-- <div class="ticker-container">
 	<div class="ticker">Bienvenidos a mi sitio personal. No se preocupe si no entiende nada. OK?</div>
 </div> -->
+<svelte:head><title>NLTESOWN</title></svelte:head>
+
 <ul class="container">
 	<li><a href="."><div class="title">Choses réputées comestibles</div></a></li>
 	<li><a href="."><div class="title">Description tout court</div></a></li>

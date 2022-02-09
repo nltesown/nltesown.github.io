@@ -43,6 +43,8 @@
 		.value();
 </script>
 
+<svelte:head><title>Cinémathèque</title></svelte:head>
+
 <div class="calendar">
 	<div class="day header">Lundi</div>
 	<div class="day header">Mardi</div>
@@ -53,19 +55,26 @@
 	<div class="day header">Dimanche</div>
 
 	{#each cal as day}
-		<div class="day">
-			{day.date.format('D MMMM')}
+		<div class="day" class:active={day.seances}>
+			<div class="date">
+				{@html day.date.format('ddd D MMMM').replace(' 1 ', ' 1<sup>er</sup> ')}
+			</div>
 
 			{#if day.seances}
 				<div class="seances">
-					{#each day.seances as seance}<div>
-							<div class="heureSalle">
-								{seance.dateHeure.substring(11, 16)}
-								{seance.salle}
-								{seance.items[0].art || ''}
-								{seance.items[0].titre}
-							</div>
-						</div>{/each}
+					{#each day.seances as seance}
+						<div class="heureSalle">
+							<span class="heure"
+								>{seance.dateHeure.substring(11, 16).replace(':', 'h')}
+								<!-- {seance.salle} -->
+							</span>
+						</div>
+						<div>
+							<div class="cycle">{seance.cycle[0][0]}</div>
+							{seance.items[0].art || ''}
+							{seance.items[0].titre}
+						</div>
+					{/each}
 				</div>
 			{/if}
 		</div>
@@ -75,8 +84,8 @@
 <style>
 	.calendar {
 		position: relative;
-		max-width: 98%;
-		margin: 0 auto;
+		max-width: 90%;
+		margin: 0 auto 48px auto;
 		display: grid;
 		column-gap: 4px;
 		row-gap: 4px;
@@ -84,28 +93,72 @@
 		font-size: 0.875rem;
 	}
 
+	.day:not(.active) {
+		background-color: #ffffff22;
+	}
+
 	.day.header {
+		margin-top: 48px;
+		padding: 2px;
 		background-color: #ffffff99;
 		text-align: center;
 		color: inherit;
 		font-weight: 600;
 	}
 
-	.day {
-		padding: 4px;
-		background-color: #ffffff44;
+	.day.active {
+		background-color: #ffffff66;
 		cursor: pointer;
 		transition: 0.1s ease;
 	}
 
-	.day:hover {
-		/* transform: scale(1.25); */
+	.day.active:hover {
 		background-color: #ffffffcc;
-		z-index: 10000;
 	}
 
-	.heureSalle {
+	.date {
+		display: inline-block;
+		border-bottom: solid 2px #369;
+		padding: 2px 4px;
+		margin: 0 0 0 2px;
+		font-weight: 600;
+		font-size: 0.813rem;
+	}
+
+	.seances {
+		margin: 24px 8px;
+		display: grid;
+		grid-template-columns: 1fr 3fr;
 		font-size: 0.75rem;
 		font-weight: 300;
+	}
+
+	.seances > div {
+		padding-bottom: 6px;
+	}
+
+	.cycle {
+		font-weight: 500;
+	}
+
+	.heure {
+		font-weight: 500;
+	}
+
+	@media (max-width: 575px) {
+		.calendar {
+			grid-template-columns: 1fr;
+		}
+
+		.day {
+			display: none;
+		}
+		.day.active {
+			display: block;
+		}
+
+		.seances {
+			grid-template-columns: 1fr 6fr;
+		}
 	}
 </style>
