@@ -22,8 +22,8 @@ const config = {
 		lib: 'src/lib'
 	},
 	paths: {
-		assets: '',
-		base: ''
+		assets: '/',
+		base: '/'
 	}
 };
 
