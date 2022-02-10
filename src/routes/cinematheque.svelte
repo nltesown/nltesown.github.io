@@ -1,88 +1,79 @@
-<script context="module">
-	export async function load({ params, fetch, session, stuff }) {
-		const res = await fetch('cinematheque_seances.json');
-		return {
-			status: res.status,
-			props: {
-				seances: res.ok && (await res.json())
-			}
-		};
-	}
-</script>
-
 <script>
 	import '$lib/dayjs_custom_locale_fr';
 	dayjs.locale('fr');
 	import _ from 'lodash';
 	import dayjs from 'dayjs';
-	export let seances;
+	import { get } from '$lib/api.js';
 
-	let days = _(seances)
-		.map((d) => d.dateHeure.substring(0, 10))
-		.uniq()
-		.value();
+	let cal;
+	(async () => {
+		let seances = await get('PROG111%20Mars-mai%202022/PROG111%20Mars-mai%202022_SEANCES_DEF.json');
 
-	seances = _(seances)
-		.groupBy((d) => d.dateHeure.substring(0, 10))
-		.value();
+		let days = _(seances)
+			.map((d) => d.dateHeure.substring(0, 10))
+			.uniq()
+			.value();
 
-	let firstSeanceDay = dayjs(_.min(days));
-	let lastSeanceDay = dayjs(_.max(days));
-	let firstCalDay = firstSeanceDay.startOf('week');
-	let lastCalDay = lastSeanceDay.endOf('week');
-	let calSpanDays = lastCalDay.diff(firstCalDay, 'day') + 1;
+		seances = _(seances)
+			.groupBy((d) => d.dateHeure.substring(0, 10))
+			.value();
 
-	let cal = _(new Array(calSpanDays))
-		.map((d, i) => {
-			let date = firstCalDay.add(i, 'day');
-			return {
-				date,
-				seances: _(seances).pick(date.format('YYYY-MM-DD')).map().value()[0]
-			};
-		})
-		.value();
+		let firstSeanceDay = dayjs(_.min(days));
+		let lastSeanceDay = dayjs(_.max(days));
+		let firstCalDay = firstSeanceDay.startOf('week');
+		let lastCalDay = lastSeanceDay.endOf('week');
+		let calSpanDays = lastCalDay.diff(firstCalDay, 'day') + 1;
+
+		cal = _(new Array(calSpanDays))
+			.map((d, i) => {
+				let date = firstCalDay.add(i, 'day');
+				return {
+					date,
+					seances: _(seances).pick(date.format('YYYY-MM-DD')).map().value()[0]
+				};
+			})
+			.value();
+	})();
 </script>
 
 <svelte:head><title>Cinémathèque</title></svelte:head>
+{#if cal}
+	<div class="calendar">
+		<div class="day header">Lundi</div>
+		<div class="day header">Mardi</div>
+		<div class="day header">Mercredi</div>
+		<div class="day header">Jeudi</div>
+		<div class="day header">Vendredi</div>
+		<div class="day header">Samedi</div>
+		<div class="day header">Dimanche</div>
 
-<div class="calendar">
-	<div class="day header">Lundi</div>
-	<div class="day header">Mardi</div>
-	<div class="day header">Mercredi</div>
-	<div class="day header">Jeudi</div>
-	<div class="day header">Vendredi</div>
-	<div class="day header">Samedi</div>
-	<div class="day header">Dimanche</div>
-
-	{#each cal as day}
-		<div class="day" class:active={day.seances}>
-			<div class="date">
-				{@html day.date.format('ddd D MMMM').replace(' 1 ', ' 1<sup>er</sup> ')}
-			</div>
-
-			{#if day.seances}
-				<div class="seances">
-					{#each day.seances as seance}
-						<div class="heureSalle">
-							<span class="heure"
-								>{seance.dateHeure.substring(11, 16).replace(':', 'h')}
-								<!-- {seance.salle} -->
-							</span>
-						</div>
-						<div>
-							<div class="cycle">{seance.cycle[0][0]}</div>
-							{#each seance.items as item}
-								<div>
-									{item.art || ''}
-									{item.titre}
-								</div>{/each}
-						</div>
-					{/each}
+		{#each cal as day}
+			<div class="day" class:active={day.seances}>
+				<div class="date">
+					{@html day.date.format('ddd D MMMM').replace(' 1 ', ' 1<sup>er</sup> ')}
 				</div>
-			{/if}
-		</div>
-	{/each}
-</div>
+
+				{#if day.seances}
+					<div class="seances">
+						{#each day.seances as seance}
+							<div class="heureSalle" data-seance={seance.idSeance}>
+								<span class="heure">{seance.dateHeure.substring(11, 16).replace(':', 'h')} </span>
+							</div>
+							<div>
+								<div class="cycle">{seance.cycle[0][0]}</div>
+								{#each seance.items as item}
+									<div class="titre">
+										{item.art || ''}
+										{item.titre}
+									</div>{/each}
+							</div>
+						{/each}
+					</div>
+				{/if}
+			</div>
+		{/each}
+	</div>
+{/if}
 
 <style>
 	.calendar {
@@ -142,6 +133,10 @@
 
 	.cycle {
 		font-weight: 500;
+	}
+
+	.titre {
+		font-weight: 300;
 	}
 
 	.heure {
