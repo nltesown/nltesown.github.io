@@ -7,7 +7,15 @@
 
 	let cal;
 	(async () => {
-		let seances = await get('PROG111%20Mars-mai%202022/PROG111%20Mars-mai%202022_SEANCES_DEF.json');
+		let s1 = await get(
+			'PROG99%20D%C3%A9cembre%202021-f%C3%A9vrier%202022/PROG99%20D%C3%A9cembre%202021-f%C3%A9vrier%202022_SEANCES_DEF.json'
+		);
+		let s2 = await get('PROG111%20Mars-mai%202022/PROG111%20Mars-mai%202022_SEANCES_DEF.json');
+
+		let seances = _(_.concat(s1, s2))
+			.orderBy((d) => d.dateHeure)
+			.filter((d) => !dayjs(d.dateHeure).startOf('day').isBefore(dayjs().startOf('week')))
+			.value();
 
 		let days = _(seances)
 			.map((d) => d.dateHeure.substring(0, 10))
@@ -48,25 +56,24 @@
 		<div class="day header">Dimanche</div>
 
 		{#each cal as day}
-			<div class="day" class:active={day.seances}>
+			<div class="day" class:today={day.date.isSame(dayjs(), 'day')} class:active={day.seances}>
 				<div class="date">
 					{@html day.date.format('ddd D MMMM').replace(' 1 ', ' 1<sup>er</sup> ')}
 				</div>
-
 				{#if day.seances}
 					<div class="seances">
 						{#each day.seances as seance}
-							<div class="heureSalle" data-seance={seance.idSeance}>
-								<span class="heure">{seance.dateHeure.substring(11, 16).replace(':', 'h')} </span>
-							</div>
-							<div>
-								<div class="cycle">{seance.cycle[0][0]}</div>
-								{#each seance.items as item}
-									<div class="titre">
-										{item.art || ''}
-										{item.titre}
-									</div>{/each}
-							</div>
+							<a class="seance" href=".">
+								<div class="time">{seance.dateHeure.substring(11, 16).replace(':', 'h')}</div>
+								<div class="details">
+									<div class="cycle">{seance.cycle[0][0]}</div>
+									{#each seance.items as item}
+										<div class="titre">
+											{item.art || ''}
+											{item.titre}
+										</div>{/each}
+								</div></a
+							>
 						{/each}
 					</div>
 				{/if}
@@ -84,7 +91,6 @@
 		column-gap: 4px;
 		row-gap: 4px;
 		grid-template-columns: repeat(7, 1fr);
-		/* font-size: 0.875rem; */
 	}
 
 	.day:not(.active) {
@@ -100,16 +106,6 @@
 		font-weight: 600;
 	}
 
-	.day.active {
-		background-color: #ffffff66;
-		cursor: pointer;
-		transition: 0.1s ease;
-	}
-
-	.day.active:hover {
-		background-color: #ffffffcc;
-	}
-
 	.date {
 		display: inline-block;
 		border-bottom: solid 2px #369;
@@ -120,26 +116,48 @@
 	}
 
 	.seances {
-		margin: 24px 8px;
-		display: grid;
-		grid-template-columns: 1fr 3fr;
+		margin: 18px 0;
 		font-size: 0.75rem;
 		font-weight: 300;
 	}
 
-	.seances > div {
-		padding-bottom: 6px;
+	a.seance {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		padding: 6px 8px 8px 8px;
+		text-decoration: none;
+		color: inherit;
+		transition: 0s;
 	}
 
-	.cycle {
+	a.seance:hover {
+		background-color: #ffffffcc;
+	}
+
+	.time {
+		display: inline-block;
+		flex: 0 0 25%;
 		font-weight: 500;
 	}
 
-	.titre {
-		font-weight: 300;
+	.details {
+		display: inline-block;
+		flex: 0 0 75%;
 	}
 
-	.heure {
+	.day.active {
+		background-color: #ffffff66;
+		cursor: pointer;
+		transition: 0.1s ease;
+	}
+
+	.day.today {
+		background-color: #ffffffaa;
+	}
+
+	.cycle {
 		font-weight: 500;
 	}
 
@@ -151,6 +169,7 @@
 		.day {
 			display: none;
 		}
+
 		.day.active {
 			display: block;
 		}
