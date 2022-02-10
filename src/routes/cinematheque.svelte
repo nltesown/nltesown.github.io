@@ -154,7 +154,8 @@
 	}
 
 	.day.today {
-		background-color: #ffffffaa;
+		background-color: #ffffff99;
+		outline: solid 4px #258;
 	}
 
 	.cycle {
