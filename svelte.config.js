@@ -13,17 +13,10 @@ const config = {
 			pages: 'build',
 			assets: 'build',
 			fallback: null
-		})
+		}),
 		// hydrate the <div id="svelte"> element in src/app.html
 		// target: '#svelte'
-	},
-	files: {
-		assets: 'static',
-		lib: 'src/lib'
-	},
-	paths: {
-		assets: '/',
-		base: '/'
+		trailingSlash: 'always' // https://github.com/sveltejs/kit/issues/3582
 	}
 };
 
