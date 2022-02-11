@@ -56,6 +56,10 @@
 	}
 
 	@media (max-width: 575px) {
+		main {
+			margin-top: 72px;
+		}
+
 		nav {
 			height: 60px;
 			font-size: 1.5rem;

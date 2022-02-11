@@ -106,6 +106,16 @@
 		font-weight: 600;
 	}
 
+	.day.active {
+		background-color: #ffffff66;
+		cursor: pointer;
+		transition: 0.1s ease;
+	}
+
+	.day.today {
+		background-color: #ef6;
+	}
+
 	.date {
 		display: inline-block;
 		border-bottom: solid 2px #369;
@@ -147,17 +157,6 @@
 		flex: 0 0 75%;
 	}
 
-	.day.active {
-		background-color: #ffffff66;
-		cursor: pointer;
-		transition: 0.1s ease;
-	}
-
-	.day.today {
-		background-color: #ffffff99;
-		outline: solid 4px #258;
-	}
-
 	.cycle {
 		font-weight: 500;
 	}
@@ -165,13 +164,20 @@
 	@media (max-width: 575px) {
 		.calendar {
 			grid-template-columns: 1fr;
+			column-gap: 0;
+			row-gap: 12px;
 		}
 
 		.day {
 			display: none;
 		}
 
-		.day.active {
+		.day.today {
+			background-color: #ffffff66;
+		}
+
+		.day.active.today,
+		.day.active.today ~ .day.active {
 			display: block;
 		}
 
