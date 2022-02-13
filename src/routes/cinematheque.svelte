@@ -7,12 +7,12 @@
 
 	let cal;
 	(async () => {
-		let s1 = await get(
-			'PROG99%20D%C3%A9cembre%202021-f%C3%A9vrier%202022/PROG99%20D%C3%A9cembre%202021-f%C3%A9vrier%202022_SEANCES_DEF.json'
-		);
-		let s2 = await get('PROG111%20Mars-mai%202022/PROG111%20Mars-mai%202022_SEANCES_DEF.json');
+		let s1 = await get('PROG99 Décembre 2021-février 2022/PROG99_GLOBAL/PROG99_SEANCES_DEF.json');
+		let s2 = await get('PROG111 Mars-mai 2022/PROG111_GLOBAL/PROG111_SEANCES_DEF.json');
+		let s3 = await get('PROG116 FIFR 2022/PROG116_GLOBAL/PROG116_SEANCES.json');
 
-		let seances = _(_.concat(s1, s2))
+		let seances = _(_.concat(s1, s2, s3))
+			.filter((d) => d.salle !== 'HO')
 			.orderBy((d) => d.dateHeure)
 			.filter((d) => !dayjs(d.dateHeure).startOf('day').isBefore(dayjs().startOf('week')))
 			.value();
