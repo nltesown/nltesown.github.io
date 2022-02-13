@@ -113,7 +113,8 @@
 	}
 
 	.day.today {
-		background-color: #ef6;
+		background-color: #eed;
+		/* background-color: #ef6; */
 	}
 
 	.date {
