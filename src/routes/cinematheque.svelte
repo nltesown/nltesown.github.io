@@ -5,47 +5,60 @@
 	import dayjs from 'dayjs';
 	import { get } from '$lib/api.js';
 
-	let cal;
-	(async () => {
-		let s1 = await get('PROG99 Décembre 2021-février 2022/PROG99_GLOBAL/PROG99_SEANCES_DEF.json');
-		let s2 = await get('PROG111 Mars-mai 2022/PROG111_GLOBAL/PROG111_SEANCES_DEF.json');
-		let s3 = await get('PROG116 FIFR 2022/PROG116_GLOBAL/PROG116_SEANCES.json');
+	let pCal = new Promise((resolve, reject) => {
+		Promise.all([
+			get('PROG99 Décembre 2021-février 2022/PROG99_GLOBAL/PROG99_SEANCES_DEF.json'),
+			get('PROG111 Mars-mai 2022/PROG111_GLOBAL/PROG111_SEANCES_DEF.json'),
+			get('PROG116 FIFR 2022/PROG116_GLOBAL/PROG116_SEANCES.json')
+		])
+			.then((data) => {
+				let seances = _(_.concat(...data))
+					.filter((d) => d.salle !== 'HO')
+					.orderBy((d) => d.dateHeure)
+					.filter((d) => !dayjs(d.dateHeure).startOf('day').isBefore(dayjs().startOf('week')))
+					.value();
 
-		let seances = _(_.concat(s1, s2, s3))
-			.filter((d) => d.salle !== 'HO')
-			.orderBy((d) => d.dateHeure)
-			.filter((d) => !dayjs(d.dateHeure).startOf('day').isBefore(dayjs().startOf('week')))
-			.value();
+				let days = _(seances)
+					.map((d) => d.dateHeure.substring(0, 10))
+					.uniq()
+					.value();
 
-		let days = _(seances)
-			.map((d) => d.dateHeure.substring(0, 10))
-			.uniq()
-			.value();
+				seances = _(seances)
+					.groupBy((d) => d.dateHeure.substring(0, 10))
+					.value();
 
-		seances = _(seances)
-			.groupBy((d) => d.dateHeure.substring(0, 10))
-			.value();
+				let firstSeanceDay = dayjs(_.min(days));
+				let lastSeanceDay = dayjs(_.max(days));
+				let firstCalDay = firstSeanceDay.startOf('week');
+				let lastCalDay = lastSeanceDay.endOf('week');
+				let calSpanDays = lastCalDay.diff(firstCalDay, 'day') + 1;
 
-		let firstSeanceDay = dayjs(_.min(days));
-		let lastSeanceDay = dayjs(_.max(days));
-		let firstCalDay = firstSeanceDay.startOf('week');
-		let lastCalDay = lastSeanceDay.endOf('week');
-		let calSpanDays = lastCalDay.diff(firstCalDay, 'day') + 1;
+				let calendar = _(new Array(calSpanDays))
+					.map((d, i) => {
+						let date = firstCalDay.add(i, 'day');
+						return {
+							date,
+							seances: _(seances).pick(date.format('YYYY-MM-DD')).map().value()[0]
+						};
+					})
+					.value();
 
-		cal = _(new Array(calSpanDays))
-			.map((d, i) => {
-				let date = firstCalDay.add(i, 'day');
-				return {
-					date,
-					seances: _(seances).pick(date.format('YYYY-MM-DD')).map().value()[0]
-				};
+				resolve({ calendar, calSpanDays });
 			})
-			.value();
-	})();
+			.catch(() => reject());
+	});
 </script>
 
 <svelte:head><title>Cinémathèque</title></svelte:head>
-{#if cal}
+{#await pCal}Chargement des données.{:then data}
+	<div class="calendar-nav">
+		{#each new Array(data.calSpanDays / 7) as w, i}
+			<div>
+				{#if i === 0}⏺{:else}○{/if}
+			</div>
+		{/each}
+	</div>
+
 	<div class="calendar">
 		<div class="day header">Lundi</div>
 		<div class="day header">Mardi</div>
@@ -55,7 +68,7 @@
 		<div class="day header">Samedi</div>
 		<div class="day header">Dimanche</div>
 
-		{#each cal as day}
+		{#each data.calendar as day}
 			<div class="day" class:today={day.date.isSame(dayjs(), 'day')} class:active={day.seances}>
 				<div class="date">
 					{@html day.date.format('ddd D MMMM').replace(' 1 ', ' 1<sup>er</sup> ')}
@@ -80,12 +93,34 @@
 			</div>
 		{/each}
 	</div>
-{/if}
+{:catch}Le chargement des données a échoué.
+{/await}
 
 <style>
+	.calendar-nav {
+		width: 90%;
+		margin: 0 auto;
+		padding: 9px 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		user-select: none;
+	}
+
+	.calendar-nav > div {
+		padding: 9px 3px;
+		color: #069;
+		cursor: pointer;
+		transition: 0.1s;
+	}
+
+	.calendar-nav > div:hover {
+		color: #fff;
+	}
+
 	.calendar {
 		position: relative;
-		max-width: 90%;
+		width: 90%;
 		margin: 0 auto 48px auto;
 		display: grid;
 		column-gap: 4px;
@@ -98,7 +133,7 @@
 	}
 
 	.day.header {
-		margin-top: 48px;
+		margin-top: 12px;
 		padding: 2px;
 		background-color: #ffffff99;
 		text-align: center;
