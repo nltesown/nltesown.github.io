@@ -54,7 +54,7 @@
 	<div class="calendar-nav">
 		{#each new Array(data.calSpanDays / 7) as w, i}
 			<div>
-				{#if i === 0}⏺{:else}○{/if}
+				{#if i === 0}⚫︎{:else}○{/if}
 			</div>
 		{/each}
 	</div>
@@ -89,6 +89,8 @@
 							>
 						{/each}
 					</div>
+				{:else}
+					<div class="no-seance">Aucune séance aujourd'hui.</div>
 				{/if}
 			</div>
 		{/each}
@@ -128,6 +130,10 @@
 		grid-template-columns: repeat(7, 1fr);
 	}
 
+	.day {
+		min-width: 100%; /* Egalisation de la largeur des colonnes */
+	}
+
 	.day:not(.active) {
 		background-color: #ffffff22;
 	}
@@ -156,15 +162,19 @@
 		display: inline-block;
 		border-bottom: solid 2px #369;
 		padding: 2px 4px;
-		margin: 6px 0 0 2px;
+		margin: 6px 0 18px 2px;
 		font-weight: 600;
 		font-size: 0.813rem;
 	}
 
 	.seances {
-		margin: 18px 0;
+		margin: 0 0 18px 0;
 		font-size: 0.75rem;
 		font-weight: 300;
+	}
+
+	.no-seance {
+		display: none;
 	}
 
 	a.seance {
@@ -210,10 +220,11 @@
 
 		.day.today {
 			background-color: #ffffff66;
+			display: block;
 		}
 
 		.day.active.today,
-		.day.active.today ~ .day.active {
+		.day.today ~ .day.active {
 			display: block;
 		}
 
@@ -224,6 +235,15 @@
 		.seances {
 			grid-template-columns: 1fr 4fr;
 			font-size: 0.938rem;
+		}
+
+		.no-seance {
+			display: block;
+			margin: 0 0 28px 0;
+			padding: 6px 8px 8px 8px;
+			font-size: 0.938rem;
+			font-weight: 500;
+			text-align: center;
 		}
 	}
 </style>
