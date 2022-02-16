@@ -10,7 +10,7 @@
 	let pCal = new Promise((resolve, reject) => {
 		Promise.all([
 			new Promise((resolve) => {
-				setTimeout(resolve, 1000); // Délai minimal de résolution des promesses.
+				setTimeout(resolve, 500); // Délai minimal de résolution des promesses.
 			}),
 			get('PROG99 Décembre 2021-février 2022/PROG99_GLOBAL/PROG99_SEANCES_DEF.json'),
 			get('PROG111 Mars-mai 2022/PROG111_GLOBAL/PROG111_SEANCES_DEF.json'),
@@ -58,7 +58,7 @@
 <svelte:head><title>Cinémathèque</title></svelte:head>
 
 {#await pCal}<Loader text="Chargement des données" />{:then data}
-	<div in:fade={{ duration: 250 }}>
+	<div in:fade={{ duration: 125 }}>
 		<div class="calendar-nav">
 			{#each new Array(data.calSpanDays / 7) as w, i}
 				<div>
