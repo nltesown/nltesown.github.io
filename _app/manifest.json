@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-df691e68.js",
+    "file": "start-c9baf4c4.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -49,26 +49,26 @@
     ]
   },
   "src/routes/cinematheque.svelte": {
-    "file": "pages/cinematheque.svelte-e46b470f.js",
+    "file": "pages/cinematheque.svelte-d7756c61.js",
     "src": "src/routes/cinematheque.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-bb7ea294.js",
-      "_Loader-aa3096a4.js"
+      "_Loader-79646dd6.js"
     ],
     "css": [
       "assets/pages/cinematheque.svelte-53a6525a.css"
     ]
   },
   "src/routes/test/loader.svelte": {
-    "file": "pages/test/loader.svelte-e012f441.js",
+    "file": "pages/test/loader.svelte-c7c4d89c.js",
     "src": "src/routes/test/loader.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-bb7ea294.js",
-      "_Loader-aa3096a4.js"
+      "_Loader-79646dd6.js"
     ]
   },
   "src/routes/map.svelte": {
@@ -86,8 +86,8 @@
   "_vendor-bb7ea294.js": {
     "file": "chunks/vendor-bb7ea294.js"
   },
-  "_Loader-aa3096a4.js": {
-    "file": "chunks/Loader-aa3096a4.js",
+  "_Loader-79646dd6.js": {
+    "file": "chunks/Loader-79646dd6.js",
     "imports": [
       "_vendor-bb7ea294.js"
     ],
