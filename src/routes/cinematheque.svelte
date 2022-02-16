@@ -4,14 +4,21 @@
 	import _ from 'lodash';
 	import dayjs from 'dayjs';
 	import { get } from '$lib/api.js';
+	import Loader from '../components/Loader.svelte';
+	import { fade } from 'svelte/transition';
 
 	let pCal = new Promise((resolve, reject) => {
 		Promise.all([
+			new Promise((resolve) => {
+				setTimeout(resolve, 750); // Délai minimal de résolution des promesses.
+			}),
 			get('PROG99 Décembre 2021-février 2022/PROG99_GLOBAL/PROG99_SEANCES_DEF.json'),
 			get('PROG111 Mars-mai 2022/PROG111_GLOBAL/PROG111_SEANCES_DEF.json'),
 			get('PROG116 FIFR 2022/PROG116_GLOBAL/PROG116_SEANCES.json')
 		])
 			.then((data) => {
+				data = _(data).filter().value(); // Supprime l'item `undefined` renvoyé par la promesse de délai.
+				console.log(data);
 				let seances = _(_.concat(...data))
 					.filter((d) => d.salle !== 'HO')
 					.orderBy((d) => d.dateHeure)
@@ -50,50 +57,54 @@
 </script>
 
 <svelte:head><title>Cinémathèque</title></svelte:head>
-{#await pCal}Chargement des données.{:then data}
-	<div class="calendar-nav">
-		{#each new Array(data.calSpanDays / 7) as w, i}
-			<div>
-				{#if i === 0}⚫︎{:else}○{/if}
-			</div>
-		{/each}
-	</div>
+{#await pCal}<Loader />{:then data}
+	<!-- {#await pCal}Chargement des données.{:then data} -->
 
-	<div class="calendar">
-		<div class="day header">Lundi</div>
-		<div class="day header">Mardi</div>
-		<div class="day header">Mercredi</div>
-		<div class="day header">Jeudi</div>
-		<div class="day header">Vendredi</div>
-		<div class="day header">Samedi</div>
-		<div class="day header">Dimanche</div>
-
-		{#each data.calendar as day}
-			<div class="day" class:today={day.date.isSame(dayjs(), 'day')} class:active={day.seances}>
-				<div class="date">
-					{@html day.date.format('ddd D MMMM').replace(' 1 ', ' 1<sup>er</sup> ')}
+	<div in:fade={{ duration: 250 }}>
+		<div class="calendar-nav">
+			{#each new Array(data.calSpanDays / 7) as w, i}
+				<div>
+					{#if i === 0}⚫︎{:else}○{/if}
 				</div>
-				{#if day.seances}
-					<div class="seances">
-						{#each day.seances as seance}
-							<a class="seance" href=".">
-								<div class="time">{seance.dateHeure.substring(11, 16).replace(':', 'h')}</div>
-								<div class="details">
-									<div class="cycle">{seance.cycle[0][0]}</div>
-									{#each seance.items as item}
-										<div class="titre">
-											{item.art || ''}
-											{item.titre}
-										</div>{/each}
-								</div></a
-							>
-						{/each}
+			{/each}
+		</div>
+
+		<div class="calendar">
+			<div class="day header">Lundi</div>
+			<div class="day header">Mardi</div>
+			<div class="day header">Mercredi</div>
+			<div class="day header">Jeudi</div>
+			<div class="day header">Vendredi</div>
+			<div class="day header">Samedi</div>
+			<div class="day header">Dimanche</div>
+
+			{#each data.calendar as day}
+				<div class="day" class:today={day.date.isSame(dayjs(), 'day')} class:active={day.seances}>
+					<div class="date">
+						{@html day.date.format('ddd D MMMM').replace(' 1 ', ' 1<sup>er</sup> ')}
 					</div>
-				{:else}
-					<div class="no-seance">Aucune séance aujourd'hui.</div>
-				{/if}
-			</div>
-		{/each}
+					{#if day.seances}
+						<div class="seances">
+							{#each day.seances as seance}
+								<a class="seance" href=".">
+									<div class="time">{seance.dateHeure.substring(11, 16).replace(':', 'h')}</div>
+									<div class="details">
+										<div class="cycle">{seance.cycle[0][0]}</div>
+										{#each seance.items as item}
+											<div class="titre">
+												{item.art || ''}
+												{item.titre}
+											</div>{/each}
+									</div></a
+								>
+							{/each}
+						</div>
+					{:else}
+						<div class="no-seance">Aucune séance aujourd'hui.</div>
+					{/if}
+				</div>
+			{/each}
+		</div>
 	</div>
 {:catch}Le chargement des données a échoué.
 {/await}

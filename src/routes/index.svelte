@@ -4,11 +4,12 @@
 <svelte:head><title>NLTESOWN</title></svelte:head>
 
 <ul class="container">
-	<li><a href="."><div class="title">Choses réputées comestibles</div></a></li>
+	<!-- <li><a href="."><div class="title">Choses réputées comestibles</div></a></li>
 	<li><a href="."><div class="title">Description tout court</div></a></li>
-	<li><a href="."><div class="title">¡Adiós, guateque!</div></a></li>
-	<li><a href="cinematheque">Cinémathèque</a></li>
-	<li><a href="."><div class="title">À la recherche du tapis à damier</div></a></li>
+	<li><a href="."><div class="title">¡Adiós, guateque!</div></a></li> -->
+	<li><a href="cinematheque">En ce moment à la Cinémathèque</a></li>
+	<!-- <li><a href="."><div class="title">Choses oulipiques diverses</div></a></li>
+	<li><a href="."><div class="title">À la recherche du tapis à damier</div></a></li> -->
 </ul>
 
 <style>
@@ -89,6 +90,7 @@
 		color: inherit;
 		font-weight: 400;
 		font-size: 1rem;
+		text-align: center;
 		/* color: #036; */
 	}
 

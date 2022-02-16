@@ -51,7 +51,8 @@
 
 	a:hover,
 	a:active {
-		color: #affa3c;
+		color: #adbd64;
+		/* color: #affa3c; */
 		/* color: tomato; */
 	}
 
