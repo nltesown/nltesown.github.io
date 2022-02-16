@@ -3,8 +3,7 @@
 	import SplashCanvas from '../components/SplashCanvas.svelte';
 </script>
 
-<SplashCanvas />
-
+<!-- <SplashCanvas /> -->
 <nav>
 	<div class="main-title"><a href="/">nltesown</a></div>
 </nav>
@@ -15,7 +14,7 @@
 <style>
 	nav {
 		display: flex;
-		position: fixed;
+		position: sticky;
 		font-family: Inter;
 		left: 0;
 		top: 0;
@@ -31,7 +30,7 @@
 		font-weight: 200;
 		text-transform: uppercase;
 		letter-spacing: -0.1rem;
-		z-index: 1000;
+		z-index: 500;
 
 		/* border-bottom: solid 2px #000; */
 	}
@@ -39,7 +38,7 @@
 	main {
 		position: relative;
 		width: 100%;
-		margin: 132px 0 12px 0;
+		margin: 12px 0 12px 0;
 		z-index: 1;
 	}
 

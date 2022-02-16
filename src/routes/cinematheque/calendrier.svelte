@@ -4,8 +4,12 @@
 	import _ from 'lodash';
 	import dayjs from 'dayjs';
 	import { get } from '$lib/api.js';
-	import Loader from '../components/Loader.svelte';
+	import Loader from '../../components/Loader.svelte';
 	import { fade } from 'svelte/transition';
+	// import SeanceInfo from '../../components/SeanceInfo.svelte';
+
+	let seances = [];
+	let info;
 
 	let pCal = new Promise((resolve, reject) => {
 		Promise.all([
@@ -18,7 +22,7 @@
 		])
 			.then((data) => {
 				data = _(data).filter().value(); // Supprime l'item `undefined` renvoyé par la promesse de délai.
-				let seances = _(_.concat(...data))
+				seances = _(_.concat(...data))
 					.filter((d) => d.salle !== 'HO')
 					.orderBy((d) => d.dateHeure)
 					.filter((d) => !dayjs(d.dateHeure).startOf('day').isBefore(dayjs().startOf('week')))
@@ -49,10 +53,20 @@
 					})
 					.value();
 
+				seances = _(seances).map().flatten().value(); // On transforme `seances` en un tableau plat pour chercher plus facilement le détail d'une séance.
+
 				resolve({ calendar, calSpanDays });
 			})
 			.catch(() => reject());
 	});
+
+	function showInfo(e) {
+		// console.log(seances);
+		// console.log(e.currentTarget.dataset.id);
+
+		info = _(seances).find({ idSeance: Number(e.currentTarget.dataset.id) });
+		console.log(info);
+	}
 </script>
 
 <svelte:head><title>Cinémathèque</title></svelte:head>
@@ -84,7 +98,7 @@
 					{#if day.seances}
 						<div class="seances">
 							{#each day.seances as seance}
-								<a class="seance" href=".">
+								<a class="seance" data-id={seance.idSeance} href="." on:click={showInfo}>
 									<div class="time">{seance.dateHeure.substring(11, 16).replace(':', 'h')}</div>
 									<div class="details">
 										<div class="cycle">{seance.cycle[0][0]}</div>
@@ -107,6 +121,7 @@
 {:catch}Le chargement des données a échoué.
 {/await}
 
+<!-- <SeanceInfo {info} /> -->
 <style>
 	.calendar-nav {
 		width: 90%;
