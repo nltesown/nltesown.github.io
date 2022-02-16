@@ -8,7 +8,7 @@
 		dot: { color: '#258', opacity: 1 },
 		text: { color: '#258', fontSize: '1rem' }
 	};
-	export let duration = '2s';
+	export let duration = '1s';
 </script>
 
 <div class="wrapper">
