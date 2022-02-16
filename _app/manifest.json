@@ -1,77 +1,98 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-1a150edb.js",
+    "file": "start-df691e68.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-34e00da9.js"
+      "_vendor-bb7ea294.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
       ".svelte-kit/runtime/components/error.svelte",
       "src/routes/index.svelte",
       "src/routes/cinematheque.svelte",
+      "src/routes/test/loader.svelte",
       "src/routes/map.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-a9d43a7a.js",
+    "file": "pages/__layout.svelte-ee13ad4f.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-34e00da9.js"
+      "_vendor-bb7ea294.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-ba55eb6d.css"
+      "assets/pages/__layout.svelte-1be639dd.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-6bbeac93.js",
+    "file": "error.svelte-443d5e87.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-34e00da9.js"
+      "_vendor-bb7ea294.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-e9684aa4.js",
+    "file": "pages/index.svelte-e07e4868.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-34e00da9.js"
+      "_vendor-bb7ea294.js"
     ],
     "css": [
-      "assets/pages/index.svelte-06e9848c.css"
+      "assets/pages/index.svelte-832c5dee.css"
     ]
   },
   "src/routes/cinematheque.svelte": {
-    "file": "pages/cinematheque.svelte-0244a3da.js",
+    "file": "pages/cinematheque.svelte-e46b470f.js",
     "src": "src/routes/cinematheque.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-34e00da9.js"
+      "_vendor-bb7ea294.js",
+      "_Loader-aa3096a4.js"
     ],
     "css": [
       "assets/pages/cinematheque.svelte-53a6525a.css"
     ]
   },
+  "src/routes/test/loader.svelte": {
+    "file": "pages/test/loader.svelte-e012f441.js",
+    "src": "src/routes/test/loader.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-bb7ea294.js",
+      "_Loader-aa3096a4.js"
+    ]
+  },
   "src/routes/map.svelte": {
-    "file": "pages/map.svelte-5261d212.js",
+    "file": "pages/map.svelte-91e1b310.js",
     "src": "src/routes/map.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-34e00da9.js"
+      "_vendor-bb7ea294.js"
     ],
     "css": [
       "assets/pages/map.svelte-ed45ef46.css"
     ]
   },
-  "_vendor-34e00da9.js": {
-    "file": "chunks/vendor-34e00da9.js"
+  "_vendor-bb7ea294.js": {
+    "file": "chunks/vendor-bb7ea294.js"
+  },
+  "_Loader-aa3096a4.js": {
+    "file": "chunks/Loader-aa3096a4.js",
+    "imports": [
+      "_vendor-bb7ea294.js"
+    ],
+    "css": [
+      "assets/Loader-c7ee310a.css"
+    ]
   }
 }
