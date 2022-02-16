@@ -56,6 +56,7 @@
 </script>
 
 <svelte:head><title>Cinémathèque</title></svelte:head>
+
 {#await pCal}<Loader text="Chargement des données" />{:then data}
 	<div in:fade={{ duration: 250 }}>
 		<div class="calendar-nav">
