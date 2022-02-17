@@ -4,6 +4,7 @@
 </script>
 
 <!-- <SplashCanvas /> -->
+<div class="body-bg" />
 <nav>
 	<div class="main-title"><a href="/">nltesown</a></div>
 </nav>
