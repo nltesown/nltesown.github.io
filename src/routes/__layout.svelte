@@ -50,16 +50,12 @@
 
 	a:hover,
 	a:active {
-		color: #adbd64;
+		color: tomato;
+		/* color: #adbd64; */
 		/* color: #affa3c; */
-		/* color: tomato; */
 	}
 
 	@media (max-width: 575px) {
-		main {
-			margin-top: 72px;
-		}
-
 		nav {
 			height: 60px;
 			font-size: 1.5rem;

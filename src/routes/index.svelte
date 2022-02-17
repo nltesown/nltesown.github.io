@@ -10,14 +10,18 @@
 <!-- <Body style="background-color: pink;" /> -->
 
 <ul class="container">
-	<!-- <li><a href="."><div class="title">Choses réputées comestibles</div></a></li>
-	<li><a href="."><div class="title">¡Adiós, guateque!</div></a></li>-->
+	<!--
+	<li><a href=".">Choses réputées comestibles</a></li>
+	<li><a href=".">¡Adiós, guateque!</a></li>
+	-->
 	<li>
 		<a href=".">Description tout court</a>
 	</li>
 	<li><a href="cinematheque/calendrier">En ce moment à la Cinémathèque</a></li>
-	<!-- <li><a href="."><div class="title">Choses oulipiques diverses</div></a></li>
-	<li><a href="."><div class="title">À la recherche du tapis à damier</div></a></li> -->
+	<!--
+	<li><a href=".">Choses oulipiques diverses</a></li>
+	<li><a href=".">À la recherche du tapis à damier</a></li>
+	-->
 </ul>
 
 <style>
@@ -41,7 +45,7 @@
 		max-width: 100%;
 		width: 250px;
 		height: 100px;
-		margin: 0 6px;
+		margin: 6px;
 		padding: 0;
 		transition: 0.2s;
 	}
