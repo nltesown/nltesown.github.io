@@ -103,7 +103,9 @@
 									<div class="details">
 										<div class="cycle">{seance.cycle[0][0]}</div>
 										{#each seance.items as item}
-											<div class="titre">
+											<div class="titre" class:conf={item.idConf}>
+												{#if item.typeConference && item.typeConference === 'Conférence'}Conférence{/if}
+
 												{item.art || ''}
 												{item.titre}
 											</div>{/each}
@@ -229,6 +231,10 @@
 
 	.cycle {
 		font-weight: 500;
+	}
+
+	.conf {
+		color: #840;
 	}
 
 	@media (max-width: 575px) {
