@@ -1,39 +1,52 @@
 <script>
-	// import { Body } from 'svelte-body';
 </script>
 
-<!-- <div class="ticker-container">
-	<div class="ticker">Bienvenidos a mi sitio personal. No se preocupe si no entiende nada. OK?</div>
-</div> -->
 <svelte:head><title>NLTESOWN</title></svelte:head>
 
-<!-- <Body style="background-color: pink;" /> -->
-
 <ul class="container">
-	<!--
-	<li><a href=".">Choses réputées comestibles</a></li>
-	<li><a href=".">¡Adiós, guateque!</a></li>
-	-->
 	<li>
 		<a href=".">Description tout court</a>
 	</li>
-	<li><a href="cinematheque/calendrier">En ce moment à la Cinémathèque</a></li>
-	<!--
+	<li><a href="cinematheque/calendrier">Le calendrier de la Cinémathèque</a></li>
+	<li><a href=".">Choses réputées comestibles</a></li>
+	<li><a href=".">¡Adiós, guateque!</a></li>
 	<li><a href=".">Choses oulipiques diverses</a></li>
 	<li><a href=".">À la recherche du tapis à damier</a></li>
-	-->
 </ul>
 
 <style>
 	ul.container {
 		display: flex;
 		flex-direction: row;
-		margin: 0;
+		margin: 0 auto;
 		padding: 0;
 		justify-content: flex-start;
-		/* justify-content: space-between; */
+		align-content: flex-start;
 		flex-wrap: wrap;
-		width: 100%;
+		width: 1310px; /* (6 + 250 + 6) * 5 */
+	}
+
+	@media (max-width: 1309px) {
+		ul.container {
+			width: 1048px; /* (6 + 250 + 6) * 4 */
+		}
+	}
+	@media (max-width: 1047px) {
+		ul.container {
+			width: 786px; /* (6 + 250 + 6) * 3 */
+		}
+	}
+
+	@media (max-width: 785px) {
+		ul.container {
+			width: 524px; /* (6 + 250 + 6) * 2 */
+		}
+	}
+
+	@media (max-width: 523px) {
+		ul.container {
+			width: 262px; /* (6 + 250 + 6) * 1 */
+		}
 	}
 
 	li {
@@ -41,12 +54,9 @@
 		flex-direction: row;
 		flex-wrap: nowrap;
 		align-items: stretch;
-		background-color: #ffffff99;
-		max-width: 100%;
-		width: 250px;
-		height: 100px;
 		margin: 6px;
 		padding: 0;
+		background-color: #ffffff99;
 		transition: 0.2s;
 	}
 
@@ -61,7 +71,9 @@
 		flex-wrap: nowrap;
 		justify-content: center;
 		align-items: center;
-		width: 100%;
+		max-width: 100%;
+		width: 250px;
+		height: 100px;
 		padding: 12px;
 		text-decoration: none;
 		color: inherit;

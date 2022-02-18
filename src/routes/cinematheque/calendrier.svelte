@@ -69,7 +69,7 @@
 	}
 </script>
 
-<svelte:head><title>Cinémathèque</title></svelte:head>
+<svelte:head><title>Le calendrier de la Cinémathèque - NLTESOWN</title></svelte:head>
 
 {#await pCal}<Loader text="Chargement des données" />{:then data}
 	<div in:fade={{ duration: 125 }}>
