@@ -6,6 +6,7 @@
 	import { get } from '$lib/api.js';
 	import Loader from '../../components/Loader.svelte';
 	import { fade } from 'svelte/transition';
+	import IconCircle from '../../components/lib/icons/IconCircle.svelte';
 	// import SeanceInfo from '../../components/SeanceInfo.svelte';
 
 	let seances = [];
@@ -75,8 +76,8 @@
 	<div in:fade={{ duration: 125 }}>
 		<div class="calendar-nav">
 			{#each new Array(data.calSpanDays / 7) as w, i}
-				<div>
-					{#if i === 0}⚫︎{:else}○{/if}
+				<div class="circle-container">
+					<IconCircle fill={i === 0} />
 				</div>
 			{/each}
 		</div>
@@ -105,7 +106,6 @@
 										{#each seance.items as item}
 											<div class="titre" class:conf={item.idConf}>
 												{#if item.typeConference && item.typeConference === 'Conférence'}Conférence{/if}
-
 												{item.art || ''}
 												{item.titre}
 											</div>{/each}
@@ -135,15 +135,18 @@
 		user-select: none;
 	}
 
-	.calendar-nav > div {
+	.circle-container {
 		padding: 9px 3px;
-		color: #069;
 		cursor: pointer;
-		transition: 0.1s;
+		transition: 0.15s;
 	}
 
-	.calendar-nav > div:hover {
-		color: #fff;
+	.circle-container:hover :global(svg) {
+		transform: scale(1.25);
+	}
+
+	.circle-container:hover :global(svg) {
+		transform: scale(1.25);
 	}
 
 	.calendar {
@@ -229,12 +232,24 @@
 		flex: 0 0 75%;
 	}
 
+	/* .titre {
+		vertical-align: top;
+	}
+ */
 	.cycle {
 		font-weight: 500;
 	}
 
 	.conf {
-		color: #840;
+		font-weight: 500;
+	}
+
+	.conf:before {
+		content: '👥';
+		/* display: inline-block;
+		width: 1.5rem;
+		text-align: right;
+		margin-left: -1.5rem; */
 	}
 
 	@media (max-width: 575px) {
