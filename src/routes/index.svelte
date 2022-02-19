@@ -3,48 +3,59 @@
 
 <svelte:head><title>NLTESOWN</title></svelte:head>
 
-<ul class="container">
-	<li>
-		<a href=".">Description tout court</a>
-	</li>
-	<li><a href="cinematheque/calendrier">Le calendrier de la Cinémathèque</a></li>
-	<li><a href=".">Choses réputées comestibles</a></li>
-	<li><a href=".">¡Adiós, guateque!</a></li>
-	<li><a href=".">Choses oulipiques diverses</a></li>
-	<li><a href=".">À la recherche du tapis à damier</a></li>
-</ul>
+<div class="wrapper">
+	<div class="container">
+		<ul>
+			<li>
+				<a href=".">Description tout court</a>
+			</li>
+			<li><a href="cinematheque/calendrier">Le calendrier de la Cinémathèque</a></li>
+			<li><a href="system-reset">System reset</a></li>
+			<li><a href=".">SNDV<br />Générateur d'exotisme durassien</a></li>
+			<li><a href=".">Choses réputées comestibles</a></li>
+			<li><a href=".">¡Adiós, guateque!</a></li>
+			<li><a href=".">Choses oulipiques diverses</a></li>
+			<li><a href=".">À la recherche du tapis à damier</a></li>
+			<li><a href="." /></li>
+		</ul>
+	</div>
+</div>
 
 <style>
-	ul.container {
+	.container {
+		width: 1310px; /* (6 + 250 + 6) * 5 */
+		margin: 0 auto;
+	}
+
+	ul {
 		display: flex;
 		flex-direction: row;
-		margin: 0 auto;
 		padding: 0;
+		width: 100%;
 		justify-content: flex-start;
 		align-content: flex-start;
 		flex-wrap: wrap;
-		width: 1310px; /* (6 + 250 + 6) * 5 */
 	}
 
 	@media (max-width: 1309px) {
-		ul.container {
+		.container {
 			width: 1048px; /* (6 + 250 + 6) * 4 */
 		}
 	}
 	@media (max-width: 1047px) {
-		ul.container {
+		.container {
 			width: 786px; /* (6 + 250 + 6) * 3 */
 		}
 	}
 
 	@media (max-width: 785px) {
-		ul.container {
+		.container {
 			width: 524px; /* (6 + 250 + 6) * 2 */
 		}
 	}
 
 	@media (max-width: 523px) {
-		ul.container {
+		.container {
 			width: 262px; /* (6 + 250 + 6) * 1 */
 		}
 	}
