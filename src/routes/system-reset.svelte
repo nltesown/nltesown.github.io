@@ -1,23 +1,22 @@
-<div class="container img">
-	<img src="../img/2-1.jpg" alt="System reset" />
-</div>
+<script>
+	import Image from '../components/lib/Image.svelte';
+</script>
 
 <div class="container">
+	<div class="image-container"><Image src="../img/2-1.jpg" alt="System reset" /></div>
 	<article>
 		<p>
-			<strong>Are you certain?</strong> Well, think twice before pressing that key. Blue keys have that
-			unassuming &mdash; unominous &mdash; thing about them, but... bad consequences can never be ruled
-			out.
+			<strong>System reset. Are you certain?</strong> Think twice before answering this question and
+			pressing that key.
+		</p>
+		<p>
+			Blue keys, yes, seem friendly and innocuous. Blue keys, to put it another way, are not red
+			keys. But what is the color blue exactly supposed to mean here?
 		</p>
 	</article>
 </div>
 
 <style>
-	img {
-		width: 100%;
-		margin-bottom: 12px;
-	}
-
 	article {
 		background-color: #fff;
 		padding: 24px;
@@ -30,7 +29,7 @@
 		margin: 0 auto;
 	}
 
-	.img.container {
-		max-width: calc(100vw - 24px);
+	.image-container {
+		margin-bottom: 12px;
 	}
 </style>
