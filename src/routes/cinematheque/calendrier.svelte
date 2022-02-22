@@ -6,6 +6,7 @@
 	import { get } from '$lib/api.js';
 	import Loader from '../../components/Loader.svelte';
 	import { fade } from 'svelte/transition';
+	import artTitre from '../../lib/format/artTitre';
 	import IconCircle from '../../components/lib/icons/IconCircle.svelte';
 	import IconPersons from '../../components/lib/icons/IconPersons.svelte';
 	// import SeanceInfo from '../../components/SeanceInfo.svelte';
@@ -108,8 +109,7 @@
 											<div class="titre" class:conf={item.idConf}>
 												{#if item.typeConference}<IconPersons />{/if}
 												{#if item.typeConference && item.typeConference === 'Conférence'}Conférence{/if}
-												{item.art || ''}
-												{item.titre}
+												{artTitre(item.art, item.titre)}
 											</div>{/each}
 									</div></a
 								>
