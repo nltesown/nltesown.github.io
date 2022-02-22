@@ -7,6 +7,7 @@
 	import Loader from '../../components/Loader.svelte';
 	import { fade } from 'svelte/transition';
 	import IconCircle from '../../components/lib/icons/IconCircle.svelte';
+	import IconPersons from '../../components/lib/icons/IconPersons.svelte';
 	// import SeanceInfo from '../../components/SeanceInfo.svelte';
 
 	let seances = [];
@@ -105,6 +106,7 @@
 										<div class="cycle">{seance.cycle[0][0]}</div>
 										{#each seance.items as item}
 											<div class="titre" class:conf={item.idConf}>
+												{#if item.typeConference}<IconPersons />{/if}
 												{#if item.typeConference && item.typeConference === 'Conférence'}Conférence{/if}
 												{item.art || ''}
 												{item.titre}
@@ -232,25 +234,18 @@
 		flex: 0 0 75%;
 	}
 
-	/* .titre {
-		vertical-align: top;
-	}
- */
 	.cycle {
 		font-weight: 500;
 	}
 
 	.conf {
+		/* color: #909; */
 		font-weight: 500;
 	}
 
-	.conf:before {
+	/* .conf:before {
 		content: '👥';
-		/* display: inline-block;
-		width: 1.5rem;
-		text-align: right;
-		margin-left: -1.5rem; */
-	}
+	} */
 
 	@media (max-width: 575px) {
 		.calendar {

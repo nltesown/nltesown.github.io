@@ -16,7 +16,7 @@
 			<li><a href=".">¡Adiós, guateque!</a></li>
 			<li><a href=".">Choses oulipiques diverses</a></li>
 			<li><a href=".">À la recherche du tapis à damier</a></li>
-			<li><a href="." /></li>
+			<!-- <li><a href="." /></li> -->
 		</ul>
 	</div>
 </div>
