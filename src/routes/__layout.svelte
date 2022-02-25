@@ -1,16 +1,19 @@
 <script>
+	import { page } from '$app/stores';
 	import Eager from '../components/lib/Eager.svelte';
 	import SplashCanvas from '../components/SplashCanvas.svelte';
 </script>
 
-<!-- <SplashCanvas /> -->
-<div class="body-bg" />
-<nav>
-	<div class="main-title"><a href="/">nltesown</a></div>
-</nav>
-<main>
+{#if $page.url.pathname === '/sndv/'}
 	<slot />
-</main>
+{:else}<div class="body-bg" />
+	<nav>
+		<div class="main-title"><a href="/">nltesown</a></div>
+	</nav>
+	<main>
+		<slot />
+	</main>
+{/if}
 
 <style>
 	nav {
@@ -32,8 +35,6 @@
 		text-transform: uppercase;
 		letter-spacing: -0.1rem;
 		z-index: 500;
-
-		/* border-bottom: solid 2px #000; */
 	}
 
 	main {

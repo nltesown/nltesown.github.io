@@ -11,11 +11,12 @@
 			</li>
 			<li><a href="cinematheque/calendrier">Le calendrier de la Cinémathèque</a></li>
 			<li><a href="system-reset">System reset</a></li>
-			<li><a href=".">SNDV<br />Générateur d'exotisme durassien</a></li>
+			<li><a href="sndv">SNDV<br />Générateur d'exotisme durassien</a></li>
 			<li><a href=".">Choses réputées comestibles</a></li>
 			<li><a href=".">¡Adiós, guateque!</a></li>
 			<li><a href=".">Choses oulipiques diverses</a></li>
 			<li><a href=".">À la recherche du tapis à damier</a></li>
+			<li><a href="map">Tourisme en tripoints</a></li>
 			<!-- <li><a href="." /></li> -->
 		</ul>
 	</div>
