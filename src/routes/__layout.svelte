@@ -2,9 +2,11 @@
 	import { page } from '$app/stores';
 	import Eager from '../components/lib/Eager.svelte';
 	import SplashCanvas from '../components/SplashCanvas.svelte';
+	import IconHome from '../components/lib/icons/IconHome.svelte';
 </script>
 
 {#if $page.url.pathname === '/sndv/'}
+	<a href="/" class="mini"><IconHome color="#eee" size={20} /></a>
 	<slot />
 {:else}<div class="body-bg" />
 	<nav>
@@ -16,6 +18,31 @@
 {/if}
 
 <style>
+	a.mini {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 48px;
+		height: 48px;
+		background-color: #4b668a;
+		text-align: center;
+		color: #eee;
+		text-transform: uppercase;
+		font-weight: 300;
+		font-size: 1.5rem;
+		line-height: 1.5rem;
+		transition: 0.25s;
+		z-index: 500;
+	}
+
+	a.mini:hover,
+	a.mini:active {
+		background-color: #697f7f;
+	}
+
 	nav {
 		display: flex;
 		position: sticky;

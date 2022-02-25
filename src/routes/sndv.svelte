@@ -1,6 +1,7 @@
 <script>
 	import { onMount, onDestroy } from 'svelte';
 	import _ from 'lodash';
+	import { fly } from 'svelte/transition';
 
 	let cities = [
 		[
@@ -22,16 +23,16 @@
 			'Coblence',
 			'Corfou',
 			'Corinthe',
-			'Cythere',
+			'Cythère',
 			'Drancy',
 			'Dunkerque',
 			'Sochaux',
-			'Etretat',
-			'Fecamp',
-			'Geneve',
-			'Gueret',
+			'Étretat',
+			'Fécamp',
+			'Genève',
+			'Guéret',
 			'Hanovre',
-			'Hanoi',
+			'Hanoï',
 			'Honfleur',
 			'Houlgate',
 			'Ispahan',
@@ -55,7 +56,7 @@
 			'Nemours',
 			'Nevers',
 			'Odessa',
-			'Oleron',
+			'Oléron',
 			'Oyonnax',
 			'Phnom Penh',
 			'Paris',
@@ -68,13 +69,13 @@
 			'Roissy',
 			'Royan',
 			'Sanaa',
-			'Saigon',
+			'Saïgon',
 			'Saint-Maur',
 			'Chiraz',
 			'Tachkent',
 			'Tanger',
 			'Toulon',
-			'Trevise',
+			'Trévise',
 			'Trouville',
 			'Trieste',
 			'Valence',
@@ -86,7 +87,7 @@
 		],
 		[
 			'Astrakhan',
-			'Angouleme',
+			'Angoulême',
 			'Andernos',
 			'Ankara',
 			'Annonay',
@@ -94,13 +95,13 @@
 			'Aubusson',
 			'Bangalore',
 			'Bassora',
-			'Benares',
+			'Bénarès',
 			'Beyrouth',
-			'Carthagene',
+			'Carthagène',
 			'Carpentras',
 			'Charenton',
-			'Chatellerault',
-			'Chateauroux',
+			'Châtellerault',
+			'Châteauroux',
 			'Charleroi',
 			'Charleville',
 			'Colombo',
@@ -114,7 +115,7 @@
 			'Tripoli',
 			'La Rochelle',
 			'Le Crotoy',
-			'Le Treport',
+			'Le Tréport',
 			"L'Isle-Adam",
 			'Libreville',
 			'Luxembourg',
@@ -136,15 +137,15 @@
 			'Nuremberg',
 			'Odessa',
 			'Omaha',
-			'Orleans',
+			'Orléans',
 			'Panama',
-			'Port-Said',
+			'Port-Saïd',
 			'Pristina',
 			'Salonique',
 			'Saint-Amand',
 			'Saint-Dizier',
 			'Saint-Germain',
-			'Saint-Mande',
+			'Saint-Mandé',
 			'Saint-Malo',
 			'Saint-Nazaire',
 			'Calcutta',
@@ -154,7 +155,7 @@
 			'Singapour',
 			'Syracuse',
 			'Tbilissi',
-			'Teheran',
+			'Téhéran',
 			'Tirana',
 			'Varsovie',
 			"Ville-d'Avray",
@@ -180,10 +181,14 @@
 	let visa = '';
 	let interval;
 
+	let init = false;
+	let canPlay = false;
+
 	onMount(async () => {
 		titre = calcTitre(city);
 		visa = calcVisa(city);
 		interval = setInterval(change, 5000);
+		init = true;
 	});
 
 	onDestroy(async () => {
@@ -205,32 +210,48 @@
 	}
 
 	function calcTitre(c) {
-		return `Son nom ${'AEIOU'.indexOf(c[0].n.substring(0, 1).toUpperCase()) !== -1 ? "d'" : 'de '}${
-			c[0].n
-		}<br>dans ${c[1].n}<br>desert`;
+		return `Son nom ${
+			'AEIOU'.indexOf(c[0].n.substring(0, 1).toUpperCase()) !== -1 ? "d'" : 'de '
+		}${_.deburr(c[0].n)}<br>dans ${_.deburr(c[1].n)}<br>desert`;
 	}
 
 	function calcVisa(c) {
 		let num = `4${_.pad(c[0].i, 2, '0')}${_.pad(c[1].i, 2, '0')}`;
-		return `${num.substring(0, 2)}&thinsp;${num.substring(2)}`;
+		return `Visa n°&thinsp;${num.substring(0, 2)}&thinsp;${num.substring(2)}`;
 	}
 </script>
 
 <div class="video-wrapper">
-	<div class="video-container" on:click={change}>
-		<video autoplay loop preload="auto" src="../video/sndv.mp4"><track kind="captions" /></video>
-		<div class="text-container">
-			<div class="title-container">
-				<h1 class="shake">
-					{@html titre}
-				</h1>
-			</div>
-			<h2 class="shake">Visa n°&thinsp;{@html visa}</h2>
+	{#if init}
+		<div in:fly={{ y: 200, duration: 2000 }} class="video-container" on:click={change}>
+			<video
+				on:canplay={() => {
+					canPlay = true;
+				}}
+				autoplay
+				loop
+				preload="auto"
+				src="../video/sndv.mp4"><track kind="captions" /></video
+			>
+			{#if canPlay}
+				<div class="text-container">
+					<div class="title-container">
+						<h1 class="shake">
+							{@html titre}
+						</h1>
+					</div>
+					<h2 class="shake">{@html visa}</h2>
+				</div>
+			{/if}
 		</div>
-	</div>
+	{/if}
 </div>
 
-<div style="height:100vh;">Un générateur, pour quoi faire en effet ?</div>
+<div class="container">
+	<article style="height:100vh; color:#fff;">
+		<p>Nous comprenons qu'Anne-Marie Stretter est née à {city[0].n}.</p>
+	</article>
+</div>
 
 <style>
 	.video-wrapper {
@@ -300,6 +321,23 @@
 		letter-spacing: -0.05rem;
 		z-index: 3;
 		flex: 0 0 10%;
+	}
+
+	article {
+		/* background-color: #fff; */
+		padding: 24px;
+		min-height: 200vh;
+	}
+
+	p {
+		margin: 1rem 0;
+		line-height: 1.5;
+	}
+
+	.container {
+		width: 800px;
+		max-width: calc(100vw - 12px);
+		margin: 0 auto;
 	}
 
 	video {
