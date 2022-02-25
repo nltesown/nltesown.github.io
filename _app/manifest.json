@@ -1,10 +1,10 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-b4a06693.js",
+    "file": "start-c14257ed.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-a8cf052c.js"
+      "_vendor-7240305d.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
@@ -12,79 +12,92 @@
       "src/routes/index.svelte",
       "src/routes/cinematheque/calendrier.svelte",
       "src/routes/system-reset.svelte",
+      "src/routes/sndv.svelte",
       "src/routes/map.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-e20a867c.js",
+    "file": "pages/__layout.svelte-8e11e48f.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-a8cf052c.js"
+      "_vendor-7240305d.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-bde583c8.css"
+      "assets/pages/__layout.svelte-843ea9e3.css"
     ]
   },
   "src/routes/__error.svelte": {
-    "file": "pages/__error.svelte-e2672a7a.js",
+    "file": "pages/__error.svelte-d5e88b1c.js",
     "src": "src/routes/__error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-a8cf052c.js"
+      "_vendor-7240305d.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-6688516a.js",
+    "file": "pages/index.svelte-e5a53d80.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-a8cf052c.js"
+      "_vendor-7240305d.js"
     ],
     "css": [
       "assets/pages/index.svelte-ec8df95d.css"
     ]
   },
   "src/routes/cinematheque/calendrier.svelte": {
-    "file": "pages/cinematheque/calendrier.svelte-602d24c3.js",
+    "file": "pages/cinematheque/calendrier.svelte-2b7d9f10.js",
     "src": "src/routes/cinematheque/calendrier.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-a8cf052c.js"
+      "_vendor-7240305d.js"
     ],
     "css": [
       "assets/pages/cinematheque/calendrier.svelte-071bcadd.css"
     ]
   },
   "src/routes/system-reset.svelte": {
-    "file": "pages/system-reset.svelte-e7ab286d.js",
+    "file": "pages/system-reset.svelte-75ec97ca.js",
     "src": "src/routes/system-reset.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-a8cf052c.js"
+      "_vendor-7240305d.js"
     ],
     "css": [
       "assets/pages/system-reset.svelte-9d4b329f.css"
     ]
   },
+  "src/routes/sndv.svelte": {
+    "file": "pages/sndv.svelte-19ee257a.js",
+    "src": "src/routes/sndv.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-7240305d.js"
+    ],
+    "css": [
+      "assets/pages/sndv.svelte-82f91952.css"
+    ]
+  },
   "src/routes/map.svelte": {
-    "file": "pages/map.svelte-14d011fe.js",
+    "file": "pages/map.svelte-37027e6a.js",
     "src": "src/routes/map.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-a8cf052c.js"
+      "_vendor-7240305d.js"
     ],
     "css": [
-      "assets/pages/map.svelte-ed45ef46.css"
+      "assets/pages/map.svelte-2d291988.css"
     ]
   },
-  "_vendor-a8cf052c.js": {
-    "file": "chunks/vendor-a8cf052c.js"
+  "_vendor-7240305d.js": {
+    "file": "chunks/vendor-7240305d.js"
   }
 }
