@@ -116,7 +116,7 @@
 			'La Rochelle',
 			'Le Crotoy',
 			'Le Tréport',
-			"L'Isle-Adam",
+			'L’Isle-Adam',
 			'Libreville',
 			'Luxembourg',
 			'Macao',
@@ -158,7 +158,7 @@
 			'Téhéran',
 			'Tirana',
 			'Varsovie',
-			"Ville-d'Avray",
+			'Ville-d’Avray',
 			'Zanzibar'
 		]
 	];
@@ -213,16 +213,34 @@
 	}
 
 	function calcTitre(c) {
-		let venise = _.deburr(c[0].n);
-		let calcutta = _.deburr(c[1].n);
-		return `Son nom ${
-			'AEIOU'.indexOf(venise.substring(0, 1).toUpperCase()) !== -1 ? "d'" : 'de '
-		}${venise}<br>dans ${calcutta}<br>desert`;
+		let venise = deaccent(c[0].n);
+		let calcutta = deaccent(c[1].n);
+		return narrow(
+			`Son nom ${
+				'AEIOU'.indexOf(venise.substring(0, 1).toUpperCase()) !== -1 ? 'd’' : 'de '
+			}${venise}<br>dans ${calcutta}<br>desert`
+		);
 	}
 
 	function calcVisa(c) {
 		let num = `4${_.pad(c[0].i, 2, '0')}${_.pad(c[1].i, 2, '0')}`;
 		return `Visa n°&thinsp;${num.substring(0, 2)}&thinsp;${num.substring(2)}`;
+	}
+
+	function narrow(s) {
+		return s.replace(/(.)([-’])/gi, '<span style="letter-spacing: 0rem;">$1$2</span>');
+	}
+
+	function deaccent(s) {
+		// Custom deburr (skips "ç").
+		return _(s)
+			.map((c) => {
+				let p = _.indexOf('Ééèêïâ', c);
+				return p === -1 ? c : 'Eeeeia'[p];
+			})
+			.value()
+			.join('')
+			.trim();
 	}
 </script>
 
@@ -235,6 +253,7 @@
 			on:click={change}
 		>
 			<video
+				class="shake"
 				on:canplay={() => {
 					canPlay = true;
 				}}
@@ -258,9 +277,9 @@
 </div>
 
 <div class="container">
-	<!-- <article style="height:100vh; color:#fff;">
-		<p>Nous comprenons qu'Anne-Marie Stretter est née à {city[0].n}.</p>
-	</article> -->
+	<article style="height:100vh; color:#fff;">
+		<!-- <p>{city[0].n}.</p> -->
+	</article>
 </div>
 
 <style>
@@ -283,6 +302,7 @@
 		align-items: center;
 		justify-content: center;
 		cursor: pointer;
+		overflow: hidden;
 	}
 
 	.text-container {
@@ -306,35 +326,35 @@
 		align-items: center;
 	}
 
-	h1,
-	h2 {
+	.text-container h1,
+	.text-container h2 {
 		display: block;
 		font-weight: 700;
 		text-transform: uppercase;
 		text-align: center;
 		color: #f0eeee;
 		margin-left: -5000px;
-		text-shadow: 2500px 0 2.5px #f0eeee;
+		text-shadow: 2500px 0 2.25px #f0eeee;
 		white-space: nowrap;
 		line-height: 1.2;
 	}
 
-	h1 {
+	.text-container h1 {
 		margin-top: 4%;
 		font-size: 3rem;
-		letter-spacing: 0.25rem;
+		letter-spacing: 0.2rem;
 		z-index: 2;
 	}
 
-	h2 {
+	.text-container h2 {
 		font-size: 1.5rem;
 		letter-spacing: -0.05rem;
 		z-index: 3;
 		flex: 0 0 10%;
 	}
 
+	/* 
 	article {
-		/* background-color: #fff; */
 		padding: 24px;
 		min-height: 200vh;
 	}
@@ -343,7 +363,7 @@
 		margin: 1rem 0;
 		line-height: 1.5;
 	}
-
+ */
 	.container {
 		width: 800px;
 		max-width: calc(100vw - 12px);
@@ -352,10 +372,11 @@
 
 	video {
 		position: absolute;
-		top: 0;
-		left: 0;
+		top: -4px;
+		left: 0px;
+		bottom: 0px;
 		width: 100%;
-		height: 100%;
+		height: 105%;
 		object-fit: cover;
 		z-index: 1;
 	}
@@ -421,5 +442,12 @@
 		animation-iteration-count: infinite;
 		-webkit-animation-timing-function: linear;
 		animation-timing-function: linear;
+	}
+
+	@media (max-width: 785px) {
+		.text-container h1,
+		.text-container h2 {
+			text-shadow: 2500px 0 1px #f0eeee;
+		}
 	}
 </style>
