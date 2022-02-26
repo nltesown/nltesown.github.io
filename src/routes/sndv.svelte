@@ -180,9 +180,12 @@
 	let titre = '';
 	let visa = '';
 	let interval;
+	let screenHeight;
 
 	let init = false;
 	let canPlay = false;
+
+	// $: console.log(screenHeight);
 
 	onMount(async () => {
 		titre = calcTitre(city);
@@ -210,9 +213,11 @@
 	}
 
 	function calcTitre(c) {
+		let venise = _.deburr(c[0].n);
+		let calcutta = _.deburr(c[1].n);
 		return `Son nom ${
-			'AEIOU'.indexOf(c[0].n.substring(0, 1).toUpperCase()) !== -1 ? "d'" : 'de '
-		}${_.deburr(c[0].n)}<br>dans ${_.deburr(c[1].n)}<br>desert`;
+			'AEIOU'.indexOf(venise.substring(0, 1).toUpperCase()) !== -1 ? "d'" : 'de '
+		}${venise}<br>dans ${calcutta}<br>desert`;
 	}
 
 	function calcVisa(c) {
@@ -223,7 +228,12 @@
 
 <div class="video-wrapper">
 	{#if init}
-		<div in:fly={{ y: 200, duration: 2000 }} class="video-container" on:click={change}>
+		<div
+			in:fly={{ y: 200, duration: 2000 }}
+			bind:clientHeight={screenHeight}
+			class="video-container"
+			on:click={change}
+		>
 			<video
 				on:canplay={() => {
 					canPlay = true;
@@ -236,11 +246,11 @@
 			{#if canPlay}
 				<div class="text-container">
 					<div class="title-container">
-						<h1 class="shake">
+						<h1 class="shake" style="font-size: {screenHeight * 0.074}px;">
 							{@html titre}
 						</h1>
 					</div>
-					<h2 class="shake">{@html visa}</h2>
+					<h2 class="shake" style="font-size: {screenHeight * 0.037}px;">{@html visa}</h2>
 				</div>
 			{/if}
 		</div>
@@ -248,9 +258,9 @@
 </div>
 
 <div class="container">
-	<article style="height:100vh; color:#fff;">
+	<!-- <article style="height:100vh; color:#fff;">
 		<p>Nous comprenons qu'Anne-Marie Stretter est née à {city[0].n}.</p>
-	</article>
+	</article> -->
 </div>
 
 <style>
