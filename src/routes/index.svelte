@@ -17,6 +17,7 @@
 			<li><a href=".">Choses oulipiques diverses</a></li>
 			<li><a href=".">À la recherche du tapis à damier</a></li>
 			<li><a href="map">Tourisme en tripoints</a></li>
+			<li><a href=".">Éthique du carnaval</a></li>
 			<!-- <li><a href="." /></li> -->
 		</ul>
 	</div>

@@ -83,7 +83,10 @@
 			'Vichy',
 			'Vincennes',
 			'Vientiane',
-			'Vitrolles'
+			'Vitrolles',
+			'Beyrouth',
+			'Cachan',
+			'Morlaix'
 		],
 		[
 			'Astrakhan',
@@ -96,7 +99,6 @@
 			'Bangalore',
 			'Bassora',
 			'Bénarès',
-			'Beyrouth',
 			'Carthagène',
 			'Carpentras',
 			'Charenton',
@@ -116,7 +118,7 @@
 			'La Rochelle',
 			'Le Crotoy',
 			'Le Tréport',
-			'L’Isle-Adam',
+			"L'Isle-Adam",
 			'Libreville',
 			'Luxembourg',
 			'Macao',
@@ -148,8 +150,8 @@
 			'Saint-Mandé',
 			'Saint-Malo',
 			'Saint-Nazaire',
-			'Calcutta',
 			'Samara',
+			'Calcutta', // Position
 			'Savannah',
 			'Sils Maria',
 			'Singapour',
@@ -158,8 +160,9 @@
 			'Téhéran',
 			'Tirana',
 			'Varsovie',
-			'Ville-d’Avray',
-			'Zanzibar'
+			"Ville-d'Avray",
+			'Zanzibar',
+			'Saint-Étienne'
 		]
 	];
 
@@ -177,15 +180,13 @@
 		_(cities[0]).find((d) => d.n === 'Venise'),
 		_(cities[1]).find((d) => d.n === 'Calcutta')
 	];
+	let finalCity = city;
 	let titre = '';
 	let visa = '';
 	let interval;
 	let screenHeight;
-
 	let init = false;
 	let canPlay = false;
-
-	// $: console.log(screenHeight);
 
 	onMount(async () => {
 		titre = calcTitre(city);
@@ -199,17 +200,19 @@
 	});
 
 	async function change() {
-		for (let i = 0; i < 14; i++) {
+		let q = _.random(15, 50);
+		for (let i = 0; i < q; i++) {
 			await new Promise((resolve) => {
 				setTimeout(() => {
-					let which = _.sample([0, 1]);
+					let which = _.random(0, 1);
 					city[which] = _.sample(cities[which]);
 					titre = calcTitre(city);
 					visa = calcVisa(city);
 					resolve();
-				}, 35);
+				}, 25);
 			});
 		}
+		finalCity = city;
 	}
 
 	function calcTitre(c) {
@@ -217,7 +220,7 @@
 		let calcutta = deaccent(c[1].n);
 		return narrow(
 			`Son nom ${
-				'AEIOU'.indexOf(venise.substring(0, 1).toUpperCase()) !== -1 ? 'd’' : 'de '
+				'AEIOU'.indexOf(venise.substring(0, 1).toUpperCase()) !== -1 ? "d'" : 'de '
 			}${venise}<br>dans ${calcutta}<br>desert`
 		);
 	}
@@ -228,7 +231,7 @@
 	}
 
 	function narrow(s) {
-		return s.replace(/(.)([-’])/gi, '<span style="letter-spacing: 0rem;">$1$2</span>');
+		return s.replace(/(.)([-'])/gi, '<span style="letter-spacing: 0rem;">$1$2</span>');
 	}
 
 	function deaccent(s) {
@@ -243,6 +246,10 @@
 			.trim();
 	}
 </script>
+
+<svelte:head>
+	<title>SNDV, Générateur d'exotisme durassien</title>
+</svelte:head>
 
 <div class="video-wrapper">
 	{#if init}
@@ -278,7 +285,29 @@
 
 <div class="container">
 	<article style="height:100vh; color:#fff;">
-		<!-- <p>{city[0].n}.</p> -->
+		<p>
+			<!--
+			<em
+				>Son nom de
+				{'AEIOU'.indexOf(finalCity[0].n.substring(0, 1).toUpperCase()) !== -1
+					? "d'"
+					: 'de '}{finalCity[0].n} dans {finalCity[1].n}
+				désert</em
+			>
+-->
+			<em>Son nom de Venise dans Calcutta désert</em>
+			est un film réalisé par Marguerite Duras en 1976. C'est une «reprise» de son film
+			<em>India Song</em>
+			(1975), qui est adapté de sa pièce <em>Le Vice-consul</em> (1973), qui est adapté de son roman
+			<em>Le Vice-consul</em> (1966).
+		</p>
+		<p>
+			<em>SNDV</em>, créé initialement en 2014 à l'occasion de la rétrospective
+			<a href="https://www.centrepompidou.fr/fr/programme/agenda/evenement/cpb7MRK"
+				>«Marguerite Duras, cinéaste»</a
+			> au Centre Pompidou, est un générateur servant à tester une intuition de ce qui, au-delà de ce
+			film particulier, provoque l'exotisme durassien.
+		</p>
 	</article>
 </div>
 
@@ -315,6 +344,7 @@
 		flex-direction: column;
 		flex-wrap: nowrap;
 		justify-content: space-between;
+		font-family: sans-serif;
 	}
 
 	.title-container {
@@ -353,17 +383,17 @@
 		flex: 0 0 10%;
 	}
 
-	/* 
 	article {
 		padding: 24px;
-		min-height: 200vh;
+		/* min-height: 200vh; */
 	}
 
 	p {
 		margin: 1rem 0;
 		line-height: 1.5;
+		font-size: 1.25rem;
 	}
- */
+
 	.container {
 		width: 800px;
 		max-width: calc(100vw - 12px);
