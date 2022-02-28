@@ -222,7 +222,7 @@
 			`Son nom ${
 				'AEIOU'.indexOf(venise.substring(0, 1).toUpperCase()) !== -1 ? "d'" : 'de '
 			}${venise}<br>dans ${calcutta}<br>desert`
-		);
+		).replace(/'/g, '’');
 	}
 
 	function calcVisa(c) {
@@ -231,7 +231,7 @@
 	}
 
 	function narrow(s) {
-		return s.replace(/(.)([-'])/gi, '<span style="letter-spacing: 0rem;">$1$2</span>');
+		return s.replace(/(.)([-'])/gi, '<span style="letter-spacing: 0.05rem;">$1$2</span>');
 	}
 
 	function deaccent(s) {
@@ -296,17 +296,19 @@
 			>
 -->
 			<em>Son nom de Venise dans Calcutta désert</em>
-			est un film réalisé par Marguerite Duras en 1976. C'est une «reprise» de son film
+			est un film réalisé par Marguerite Duras en 1976. C'est une reprise de son film
 			<em>India Song</em>
-			(1975), qui est adapté de sa pièce <em>Le Vice-consul</em> (1973), qui est adapté de son roman
-			<em>Le Vice-consul</em> (1966).
+			(1975), qui est adapté de sa pièce <em>Le Vice-consul</em> (1973), qui est adaptée de son
+			roman
+			<em>Le Vice-consul</em> (1966). Au bout de la chaîne, son titre spectral est à lui seul un aboutissement.
 		</p>
 		<p>
-			<em>SNDV</em>, créé initialement en 2014 à l'occasion de la rétrospective
+			<em>SNDV</em>, créé en 2014 à l'occasion de la rétrospective
 			<a href="https://www.centrepompidou.fr/fr/programme/agenda/evenement/cpb7MRK"
 				>«Marguerite Duras, cinéaste»</a
-			> au Centre Pompidou, est un générateur servant à tester une intuition de ce qui, au-delà de ce
-			film particulier, provoque l'exotisme durassien.
+			> au Centre Pompidou, est un générateur de titres, donc de films possibles, servant peut-être à
+			tester une intuition de ce qui, au-delà du film particulier qui lui sert de matrice, produit l'exotisme
+			durassien.
 		</p>
 	</article>
 </div>
@@ -391,7 +393,7 @@
 	p {
 		margin: 1rem 0;
 		line-height: 1.5;
-		font-size: 1.25rem;
+		font-size: 1.125rem;
 	}
 
 	.container {
