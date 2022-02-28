@@ -64,8 +64,8 @@
 			'Roubaix',
 			'Rangoun',
 			'Ravenne',
-			'Venise', // Position 60 (important)
 			'Roissy',
+			'Venise', // Position 60 (important)
 			'Royan',
 			'Sanaa',
 			'Saïgon',
