@@ -59,7 +59,6 @@
 			'Oléron',
 			'Oyonnax',
 			'Phnom Penh',
-			'Paris',
 			'Poitiers',
 			'Quimper',
 			'Roubaix',
@@ -86,7 +85,9 @@
 			'Vitrolles',
 			'Beyrouth',
 			'Cachan',
-			'Morlaix'
+			'Morlaix',
+			'Cochin',
+			'Bombay'
 		],
 		[
 			'Astrakhan',
@@ -162,7 +163,8 @@
 			'Varsovie',
 			"Ville-d'Avray",
 			'Zanzibar',
-			'Saint-Étienne'
+			'Saint-Étienne',
+			'Trivandrum'
 		]
 	];
 
@@ -300,7 +302,8 @@
 			<em>India Song</em>
 			(1975), qui est adapté de sa pièce <em>Le Vice-consul</em> (1973), qui est adaptée de son
 			roman
-			<em>Le Vice-consul</em> (1966). Au bout de la chaîne, son titre spectral est à lui seul un aboutissement.
+			<em>Le Vice-consul</em> (1966). Au bout de cette chaîne, le titre spectral de
+			<em>Son nom de Venise...</em> est à lui seul un aboutissement.
 		</p>
 		<p>
 			<em>SNDV</em>, créé en 2014 à l'occasion de la rétrospective
@@ -394,6 +397,10 @@
 		margin: 1rem 0;
 		line-height: 1.5;
 		font-size: 1.125rem;
+	}
+
+	.small {
+		font-size: 1rem;
 	}
 
 	.container {

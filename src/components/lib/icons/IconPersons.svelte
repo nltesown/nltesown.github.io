@@ -1,6 +1,5 @@
 <script>
 	export let size = 16;
-	// export let color = '#909';
 	export let color = '#158';
 </script>
 
@@ -17,7 +16,7 @@
 
 <style>
 	svg {
-		display: inline;
+		display: inline-block;
 		/* white-space: nowrap; */
 	}
 </style>

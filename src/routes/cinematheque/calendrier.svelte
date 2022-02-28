@@ -107,9 +107,8 @@
 										<div class="cycle">{seance.cycle[0][0]}</div>
 										{#each seance.items as item}
 											<div class="titre" class:conf={item.idConf}>
-												{#if item.typeConference}<IconPersons />{/if}
-												{#if item.typeConference && item.typeConference === 'Conférence'}Conférence{/if}
-												{artTitre(item.art, item.titre)}
+												{#if item.typeConference}<IconPersons color="#930" size={14} />{/if}
+												{artTitre(item.art, item.titre)}{#if item.sousTitre}. {item.sousTitre}{/if}
 											</div>{/each}
 									</div></a
 								>
@@ -239,13 +238,9 @@
 	}
 
 	.conf {
-		/* color: #909; */
-		font-weight: 500;
+		color: #930;
+		/* font-weight: 500; */
 	}
-
-	/* .conf:before {
-		content: '👥';
-	} */
 
 	@media (max-width: 575px) {
 		.calendar {
