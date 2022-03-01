@@ -15,7 +15,6 @@
 			'Bayeux',
 			'Bergame',
 			'Cabourg',
-			'Carlsbad',
 			'Carthage',
 			'Catane',
 			'Chaville',
@@ -65,8 +64,8 @@
 			'Rangoun',
 			'Ravenne',
 			'Roissy',
-			'Venise', // Position 60 (important)
 			'Royan',
+			'Venise', // Position 60 (important)
 			'Sanaa',
 			'Saïgon',
 			'Saint-Maur',
@@ -87,7 +86,11 @@
 			'Cachan',
 			'Morlaix',
 			'Cochin',
-			'Bombay'
+			'Bombay',
+			'Mostar',
+			'Riga',
+			'Vilnius',
+			'Épinal'
 		],
 		[
 			'Astrakhan',
@@ -152,7 +155,7 @@
 			'Saint-Malo',
 			'Saint-Nazaire',
 			'Samara',
-			'Calcutta', // Position
+			'Calcutta', // Position 62 (important)
 			'Savannah',
 			'Sils Maria',
 			'Singapour',
@@ -164,7 +167,9 @@
 			"Ville-d'Avray",
 			'Zanzibar',
 			'Saint-Étienne',
-			'Trivandrum'
+			'Trivandrum',
+			'Monaco',
+			'Épinal'
 		]
 	];
 
@@ -193,7 +198,7 @@
 	onMount(async () => {
 		titre = calcTitre(city);
 		visa = calcVisa(city);
-		interval = setInterval(change, 5000);
+		interval = setInterval(change, 8000);
 		init = true;
 	});
 
@@ -266,6 +271,7 @@
 				on:canplay={() => {
 					canPlay = true;
 				}}
+				on:seeked={change}
 				autoplay
 				loop
 				preload="auto"
@@ -302,21 +308,25 @@
 			<em>India Song</em>
 			(1975), qui est adapté de sa pièce <em>Le Vice-consul</em> (1973), qui est adaptée de son
 			roman
-			<em>Le Vice-consul</em> (1966). Au bout de cette chaîne, le titre spectral de
-			<em>Son nom de Venise...</em> est à lui seul un aboutissement.
+			<em>Le Vice-consul</em> (1966). À l'extrémité de cette chaîne,
+			<em>Son nom de Venise dans Calcutta désert</em> est (au minimum) l'aboutissement d'un art du titre&nbsp;:
+			évocateur, spectral, déboussolant.
 		</p>
 		<p>
 			<em>SNDV</em>, créé en 2014 à l'occasion de la rétrospective
 			<a href="https://www.centrepompidou.fr/fr/programme/agenda/evenement/cpb7MRK"
 				>«Marguerite Duras, cinéaste»</a
-			> au Centre Pompidou, est un générateur de titres, donc de films possibles, servant peut-être à
-			tester une intuition de ce qui, au-delà du film particulier qui lui sert de matrice, produit l'exotisme
-			durassien.
+			> au Centre Pompidou, est un générateur de titres, donc de films possibles. Il permet de tester
+			une intuition de ce qui produit l'exotisme durassien (au-delà du film particulier qui lui sert
+			de matrice), et de la délirer sans fin.
 		</p>
+		<p>Anne-Marie Stretter</p>
 	</article>
 </div>
 
 <style>
+	/* TODO : body bg rgb(44, 121, 117); */
+
 	.video-wrapper {
 		display: flex;
 		flex-direction: row;
@@ -389,7 +399,11 @@
 	}
 
 	article {
-		padding: 24px;
+		padding: 72px 24px 24px 24px;
+		background-color: #2c7975;
+		color: #fffff0;
+		font-weight: 300;
+
 		/* min-height: 200vh; */
 	}
 
@@ -397,10 +411,6 @@
 		margin: 1rem 0;
 		line-height: 1.5;
 		font-size: 1.125rem;
-	}
-
-	.small {
-		font-size: 1rem;
 	}
 
 	.container {

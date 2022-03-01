@@ -6,18 +6,16 @@
 <div class="wrapper">
 	<div class="container">
 		<ul>
-			<li>
-				<a href=".">Description tout court</a>
-			</li>
-			<li><a href="cinematheque/calendrier">Le calendrier de la Cinémathèque</a></li>
+			<li><a href=".">Description tout court</a></li>
 			<li><a href="system-reset">System reset</a></li>
 			<li><a href="sndv">SNDV<br />Générateur d'exotisme durassien</a></li>
 			<li><a href=".">Choses réputées comestibles</a></li>
 			<li><a href=".">¡Adiós, guateque!</a></li>
-			<li><a href=".">Choses oulipiques diverses</a></li>
+			<li><a href=".">Choses oulipiques<br />(Paris 2028)</a></li>
 			<li><a href=".">À la recherche du tapis à damier</a></li>
-			<li><a href="map">Tourisme en tripoints</a></li>
+			<li><a href=".">Tourisme en tripoints</a></li>
 			<li><a href=".">Éthique du carnaval</a></li>
+			<li><a href="cinematheque/calendrier">Calendrier automatisé de la Cinémathèque</a></li>
 			<!-- <li><a href="." /></li> -->
 		</ul>
 	</div>
