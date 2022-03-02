@@ -110,6 +110,7 @@
 												{#if item.typeConference}<IconPersons color="#930" size={14} />{/if}
 												{artTitre(item.art, item.titre)}{#if item.sousTitre}. {item.sousTitre}{/if}
 											</div>{/each}
+										{#if seance.mention}<div class="mention">{seance.mention}</div>{/if}
 									</div></a
 								>
 							{/each}
@@ -239,7 +240,11 @@
 
 	.conf {
 		color: #930;
-		/* font-weight: 500; */
+		font-weight: 500;
+	}
+
+	.mention {
+		color: #930;
 	}
 
 	@media (max-width: 575px) {
