@@ -198,7 +198,7 @@
 	onMount(async () => {
 		titre = calcTitre(city);
 		visa = calcVisa(city);
-		interval = setInterval(change, 8000);
+		interval = setInterval(change, 12000);
 		init = true;
 	});
 
@@ -292,33 +292,24 @@
 </div>
 
 <div class="container">
-	<article style="height:100vh; color:#fff;">
+	<article>
 		<p>
-			<!--
-			<em
-				>Son nom de
-				{'AEIOU'.indexOf(finalCity[0].n.substring(0, 1).toUpperCase()) !== -1
-					? "d'"
-					: 'de '}{finalCity[0].n} dans {finalCity[1].n}
-				désert</em
-			>
--->
 			<em>Son nom de Venise dans Calcutta désert</em>
 			est un film réalisé par Marguerite Duras en 1976. C'est une reprise de son film
 			<em>India Song</em>
 			(1975), qui est adapté de sa pièce <em>Le Vice-consul</em> (1973), qui est adaptée de son
 			roman
 			<em>Le Vice-consul</em> (1966). À l'extrémité de cette chaîne,
-			<em>Son nom de Venise dans Calcutta désert</em> est (au minimum) l'aboutissement d'un art du titre&nbsp;:
+			<em>Son nom de Venise dans Calcutta désert</em> est, au minimum, l'aboutissement d'un art du titre&nbsp;:
 			évocateur, spectral, déboussolant.
 		</p>
 		<p>
 			<em>SNDV</em>, créé en 2014 à l'occasion de la rétrospective
 			<a href="https://www.centrepompidou.fr/fr/programme/agenda/evenement/cpb7MRK"
 				>«Marguerite Duras, cinéaste»</a
-			> au Centre Pompidou, est un générateur de titres, donc de films possibles. Il permet de tester
-			une intuition de ce qui produit l'exotisme durassien (au-delà du film particulier qui lui sert
-			de matrice), et de la délirer sans fin.
+			> au Centre Pompidou, est un générateur de titres, donc de films possibles. Au-delà du film particulier
+			qui lui sert de matrice, il permet de tester une intuition de ce qui produit l'exotisme durassien,
+			et de la délirer sans fin.
 		</p>
 		<p>Anne-Marie Stretter</p>
 	</article>

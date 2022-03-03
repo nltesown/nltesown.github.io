@@ -8,7 +8,8 @@
 {#if $page.url.pathname === '/sndv/'}
 	<a href="/" class="mini"><IconHome color="#eee" size={20} /></a>
 	<slot />
-{:else}<div class="body-bg" />
+{:else}
+	<!-- <div class="body-bg" /> -->
 	<nav>
 		<div class="main-title"><a href="/">nltesown</a></div>
 	</nav>

@@ -13,9 +13,7 @@ body {
 	margin: 0;
 	min-height: 100vh;
 	color: #158;
-
-	background: rgb(51, 91, 153);
-	/* background-attachment: fixed; */
+	/* background: rgb(51, 91, 153); */
 	font-family: Inter, Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	font-size: 16px;
