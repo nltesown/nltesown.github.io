@@ -3,6 +3,8 @@
 	import Eager from '../components/lib/Eager.svelte';
 	import SplashCanvas from '../components/SplashCanvas.svelte';
 	import IconHome from '../components/lib/icons/IconHome.svelte';
+	import Modal from 'svelte-simple-modal';
+	import { modal } from '../stores.js';
 </script>
 
 {#if $page.url.pathname === '/sndv/'}
@@ -14,7 +16,7 @@
 		<div class="main-title"><a href="/">nltesown</a></div>
 	</nav>
 	<main>
-		<slot />
+		<Modal show={$modal}><slot /></Modal>
 	</main>
 {/if}
 
