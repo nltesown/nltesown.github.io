@@ -19,9 +19,8 @@
 			new Promise((resolve) => {
 				setTimeout(resolve, 500); // Délai minimal de résolution des promesses.
 			}),
-			get('PROG99 Décembre 2021-février 2022/PROG99_GLOBAL/PROG99_SEANCES_DEF.json'),
-			get('PROG111 Mars-mai 2022/PROG111_GLOBAL/PROG111_SEANCES_DEF.json'),
-			get('PROG116 FIFR 2022/PROG116_GLOBAL/PROG116_SEANCES.json')
+			get('PROG116 FIFR 2022/PROG116_GLOBAL/PROG116_SEANCES.json'),
+			get('PROG119 Juin-juillet 2022/PROG119_GLOBAL/PROG119_SEANCES.json')
 		])
 			.then((data) => {
 				data = _(data).filter().value(); // Supprime l'item `undefined` renvoyé par la promesse de délai.
