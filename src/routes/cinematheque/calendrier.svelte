@@ -19,7 +19,7 @@
 			new Promise((resolve) => {
 				setTimeout(resolve, 500); // Délai minimal de résolution des promesses.
 			}),
-			get('PROG111 Mars-mai 2022/PROG111_GLOBAL/PROG111_SEANCES.json'),
+			get('PROG111 Mars-mai 2022/PROG111_GLOBAL/PROG111_SEANCES_DEF.json'),
 			get('PROG119 Juin-juillet 2022/PROG119_GLOBAL/PROG119_SEANCES.json')
 		])
 			.then((data) => {
