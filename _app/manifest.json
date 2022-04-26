@@ -1,10 +1,10 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-ee91ae84.js",
+    "file": "start-1763c7c3.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-355f4b2c.js"
+      "_vendor-f48ed131.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
@@ -14,103 +14,116 @@
       "src/routes/cinematheque/calendrier.svelte",
       "src/routes/system-reset.svelte",
       "src/routes/sndv.svelte",
+      "src/routes/test/modal.svelte",
       "src/routes/map.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-696863cd.js",
+    "file": "pages/__layout.svelte-69f87ebb.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-355f4b2c.js"
+      "_vendor-f48ed131.js"
     ],
     "css": [
       "assets/pages/__layout.svelte-776116ea.css"
     ]
   },
   "src/routes/__error.svelte": {
-    "file": "pages/__error.svelte-7e14d9ff.js",
+    "file": "pages/__error.svelte-f962b55b.js",
     "src": "src/routes/__error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-355f4b2c.js"
+      "_vendor-f48ed131.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-7ece8f96.js",
+    "file": "pages/index.svelte-d05e2a4c.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-355f4b2c.js"
+      "_vendor-f48ed131.js"
     ],
     "css": [
       "assets/pages/index.svelte-ec8df95d.css"
     ]
   },
   "src/routes/choses-reputees-comestibles.svelte": {
-    "file": "pages/choses-reputees-comestibles.svelte-e9c55890.js",
+    "file": "pages/choses-reputees-comestibles.svelte-eefa6ac4.js",
     "src": "src/routes/choses-reputees-comestibles.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-355f4b2c.js"
+      "_vendor-f48ed131.js"
     ],
     "css": [
       "assets/pages/choses-reputees-comestibles.svelte-e8123f95.css"
     ]
   },
   "src/routes/cinematheque/calendrier.svelte": {
-    "file": "pages/cinematheque/calendrier.svelte-a8e30cd3.js",
+    "file": "pages/cinematheque/calendrier.svelte-dddedc18.js",
     "src": "src/routes/cinematheque/calendrier.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-355f4b2c.js"
+      "_vendor-f48ed131.js"
     ],
     "css": [
       "assets/pages/cinematheque/calendrier.svelte-b0571474.css"
     ]
   },
   "src/routes/system-reset.svelte": {
-    "file": "pages/system-reset.svelte-0e7e7228.js",
+    "file": "pages/system-reset.svelte-fe63394e.js",
     "src": "src/routes/system-reset.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-355f4b2c.js"
+      "_vendor-f48ed131.js"
     ],
     "css": [
       "assets/pages/system-reset.svelte-9d4b329f.css"
     ]
   },
   "src/routes/sndv.svelte": {
-    "file": "pages/sndv.svelte-cb967fee.js",
+    "file": "pages/sndv.svelte-8d7d6b0a.js",
     "src": "src/routes/sndv.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-355f4b2c.js"
+      "_vendor-f48ed131.js"
     ],
     "css": [
       "assets/pages/sndv.svelte-79659013.css"
     ]
   },
+  "src/routes/test/modal.svelte": {
+    "file": "pages/test/modal.svelte-18abea7d.js",
+    "src": "src/routes/test/modal.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-f48ed131.js"
+    ]
+  },
   "src/routes/map.svelte": {
-    "file": "pages/map.svelte-12a69f60.js",
+    "file": "pages/map.svelte-4da0f90b.js",
     "src": "src/routes/map.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-355f4b2c.js"
+      "_vendor-f48ed131.js"
     ],
     "css": [
       "assets/pages/map.svelte-2d291988.css"
     ]
   },
-  "_vendor-355f4b2c.js": {
-    "file": "chunks/vendor-355f4b2c.js"
+  "_vendor-f48ed131.js": {
+    "file": "chunks/vendor-f48ed131.js",
+    "css": [
+      "assets/vendor-6a335aaf.css"
+    ]
   }
 }
