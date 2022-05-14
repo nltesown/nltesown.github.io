@@ -109,8 +109,9 @@
 		overflow-x: hidden !important;  */
 		width: 100% !important;
 		max-width: 500px !important;
-		height: 70vh !important;
-		transform: translateY(-12vh) !important;
+		height: 60vh !important;
+		max-height: 60vh !important;
+		transform: translateY(-14vh) !important;
 		border-radius: 0 !important;
 		padding: 0 !important;
 		overflow: hidden !important;
