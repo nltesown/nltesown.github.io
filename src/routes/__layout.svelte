@@ -107,6 +107,10 @@
 		height: 58vh !important;
 		max-height: 58vh !important;
 		overflow-x: hidden !important;  */
+		width: 100% !important;
+		max-width: 500px !important;
+		height: 70vh !important;
+		transform: translateY(-12vh) !important;
 		border-radius: 0 !important;
 		padding: 0 !important;
 		overflow: hidden !important;
