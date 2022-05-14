@@ -1,23 +1,37 @@
 <script>
-	export let info;
-	let isVisible = true;
+	import _ from 'lodash';
+	export let data;
+
+	function formatCycles(cycles) {
+		return _(cycles)
+			.groupBy((c) => c[0])
+			.mapValues((c) =>
+				_(c)
+					.map((d) => d[1])
+					.filter((d) => _.indexOf(['Rencontres et conférences', 'Les films'], d) < 0)
+					.value()
+					.join(' / ')
+			)
+			.toPairs()
+			.map((c) =>
+				_(c)
+					.filter((d) => d !== '')
+					.value()
+					.join(' : ')
+			)
+			.value();
+	}
 </script>
 
-<div class:visible={isVisible}>{JSON.stringify(info, null, 2)}</div>
+{#each formatCycles(data.cycle) as cycle}
+	<div>
+		{cycle}
+	</div>
+{/each}
 
-<style>
-	div {
-		display: none;
-		position: fixed;
-		left: calc(50vw - 150px);
-		top: 200px;
-		width: 300px;
-		padding: 12px;
-		background-color: #fff;
-		z-index: 10000;
-	}
-
-	.visible {
-		display: block;
-	}
-</style>
+<ul>
+	{#each data.items as item}
+		<li>{item.titre}</li>
+	{/each}
+</ul>
+<pre><code>{JSON.stringify(data, null, 2)}</code></pre>

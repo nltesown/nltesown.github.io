@@ -9,8 +9,9 @@
 	import artTitre from '../../lib/format/artTitre';
 	import IconCircle from '../../components/lib/icons/IconCircle.svelte';
 	import IconPersons from '../../components/lib/icons/IconPersons.svelte';
-	// import SeanceInfo from '../../components/SeanceInfo.svelte';
-
+	import { modal } from '../../stores.js';
+	import SeanceInfo from '../../components/SeanceInfo.svelte';
+	import { bind } from 'svelte-simple-modal';
 	let seances = [];
 	let info;
 
@@ -63,11 +64,8 @@
 	});
 
 	function showInfo(e) {
-		// console.log(seances);
-		// console.log(e.currentTarget.dataset.id);
-
 		info = _(seances).find({ idSeance: Number(e.currentTarget.dataset.id) });
-		console.log(info);
+		modal.set(bind(SeanceInfo, { data: info })); // NB: fonctionne malgré l'avertissement.
 	}
 </script>
 

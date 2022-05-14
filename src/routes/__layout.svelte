@@ -1,9 +1,11 @@
 <script>
+	import { setContext } from 'svelte';
 	import { page } from '$app/stores';
 	import Eager from '../components/lib/Eager.svelte';
 	import SplashCanvas from '../components/SplashCanvas.svelte';
 	import IconHome from '../components/lib/icons/IconHome.svelte';
-	import Modal from 'svelte-simple-modal';
+
+	import Modal, { bind } from 'svelte-simple-modal';
 	import { modal } from '../stores.js';
 </script>
 
@@ -15,9 +17,8 @@
 	<nav>
 		<div class="main-title"><a href="/">nltesown</a></div>
 	</nav>
-	<main>
-		<Modal show={$modal}><slot /></Modal>
-	</main>
+	<main><slot /></main>
+	<Modal show={$modal} classWindow="modal-window" />
 {/if}
 
 <style>
@@ -93,5 +94,11 @@
 			font-size: 1.5rem;
 			line-height: 1.5rem;
 		}
+	}
+
+	:global(.modal-window) {
+		width: 600px !important;
+		max-width: 100% !important;
+		border-radius: 0 !important;
 	}
 </style>
