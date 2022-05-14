@@ -18,7 +18,7 @@
 		<div class="main-title"><a href="/">nltesown</a></div>
 	</nav>
 	<main><slot /></main>
-	<Modal show={$modal} classWindow="modal-window" />
+	<Modal show={$modal} classWindow="modal-window" closeButton={false} />
 {/if}
 
 <style>
@@ -98,7 +98,9 @@
 
 	:global(.modal-window) {
 		width: 600px !important;
-		max-width: 100% !important;
+		max-width: 70vw !important;
+		/* max-height: 60vw !important; */
 		border-radius: 0 !important;
+		overflow-x: hidden;
 	}
 </style>
