@@ -20,8 +20,12 @@
 			new Promise((resolve) => {
 				setTimeout(resolve, 500); // Délai minimal de résolution des promesses.
 			}),
-			get('PROG111 Mars-mai 2022/PROG111_GLOBAL/PROG111_SEANCES_DEF.json'),
-			get('PROG119 Juin-juillet 2022/PROG119_GLOBAL/PROG119_SEANCES_DEF.json')
+			get(
+				'https://raw.githubusercontent.com/cinemathequefr/Publications_cycles/main/data/PROG111 Mars-mai 2022/PROG111_GLOBAL/PROG111_SEANCES_DEF.json'
+			),
+			get(
+				'https://raw.githubusercontent.com/cinemathequefr/Publications_cycles/main/data/PROG119 Juin-juillet 2022/PROG119_GLOBAL/PROG119_SEANCES_DEF.json'
+			)
 		])
 			.then((data) => {
 				data = _(data).filter().value(); // Supprime l'item `undefined` renvoyé par la promesse de délai.

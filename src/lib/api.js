@@ -1,4 +1,4 @@
-const base = 'https://raw.githubusercontent.com/cinemathequefr/Publications_cycles/main/data/';
+// const base = 'https://raw.githubusercontent.com/cinemathequefr/Publications_cycles/main/data/';
 
 // PROG111%20Mars-mai%202022/PROG111%20Mars-mai%202022_SEANCES_DEF.json
 
@@ -14,15 +14,18 @@ async function send({ method, path, data, token }) {
 		opts.headers['Authorization'] = `Token ${token}`;
 	}
 
-	return fetch(`${base}${path}`, opts)
-		.then((r) => r.text())
-		.then((json) => {
-			try {
-				return JSON.parse(json);
-			} catch (err) {
-				return json;
-			}
-		});
+	return (
+		fetch(`${path}`, opts)
+			// return fetch(`${base}${path}`, opts)
+			.then((r) => r.text())
+			.then((json) => {
+				try {
+					return JSON.parse(json);
+				} catch (err) {
+					return json;
+				}
+			})
+	);
 }
 
 export function get(path, token) {
