@@ -18,7 +18,12 @@
 		<div class="main-title"><a href="/">nltesown</a></div>
 	</nav>
 	<main><slot /></main>
-	<Modal show={$modal} classWindow="modal-window" closeButton={false} />
+	<Modal
+		show={$modal}
+		classWindow="modal-window"
+		classContent="modal-content"
+		closeButton={false}
+	/>
 {/if}
 
 <style>
@@ -97,10 +102,17 @@
 	}
 
 	:global(.modal-window) {
-		width: 600px !important;
-		max-width: 70vw !important;
-		/* max-height: 60vw !important; */
+		/* width: 600px !important;
+		max-width: 96vw !important;
+		height: 58vh !important;
+		max-height: 58vh !important;
+		overflow-x: hidden !important;  */
 		border-radius: 0 !important;
-		overflow-x: hidden;
+		padding: 0 !important;
+		overflow: hidden !important;
+	}
+
+	:global(.modal-content) {
+		padding: 0 !important;
 	}
 </style>
