@@ -1,4 +1,4 @@
-import{S as V,i as G,s as H,e as i,t as o,k as j,c as r,a as l,h as m,d as s,m as q,b as d,g as K,I as e,J as B}from"../chunks/vendor-50b3e4aa.js";function Q(A){let n,t,c,C,E,p,z,P,u,J,g,L,D,M,v,y,S,b,k,I,h,T;return{c(){n=i("div"),t=i("article"),c=i("p"),C=o(`\xC7a a commenc\xE9 avec la bombe qui roule lourdement sur le sol du restaurant. Noire comme un
+import{S as V,i as G,s as H,e as i,t as o,k as j,c as r,a as l,h as m,d as s,m as q,b as d,g as K,I as e,J as B}from"../chunks/vendor-89da4a20.js";function Q(A){let n,t,c,C,E,p,z,P,u,J,g,L,D,M,v,y,S,b,k,I,h,T;return{c(){n=i("div"),t=i("article"),c=i("p"),C=o(`\xC7a a commenc\xE9 avec la bombe qui roule lourdement sur le sol du restaurant. Noire comme un
 			boulet de canon, elle a fait son entr\xE9e comme sur une piste de bowling, dans un roulement
 			sourd, tandis que la lueur cr\xE9pitante de sa m\xE8che allum\xE9e tournoie festivement. D'un m\xEAme
 			\xE9lan, d'un m\xEAme cri, tous les d\xEEneurs du rez-de-chauss\xE9e se jettent au sol. Sur la mezzanine
