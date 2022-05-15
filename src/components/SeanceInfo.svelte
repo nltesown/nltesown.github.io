@@ -150,7 +150,7 @@
 
 	.item-titre {
 		font-size: 1.125rem;
-		font-weight: 300;
+		font-weight: 400;
 	}
 
 	.item-titre.medium {
