@@ -142,7 +142,7 @@
 
 	:global(.modal-content) {
 		position: relative;
-		height: 65vh;
+		/* height: 65vh; */
 		max-height: 65vh;
 		overflow-y: auto;
 		overflow-x: hidden;

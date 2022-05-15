@@ -20,14 +20,11 @@
 					.join(' / ')
 			)
 			.toPairs()
-			.map((c) =>
-				_(c)
-					.filter((d) => d !== '')
-					.value()
-					.join(' : ')
-			)
+			.map((c) => `${c[0]}${ba(' (', ')', c[1])}`)
 			.value();
 	}
+
+	const fromMd = (str) => (str ? str.replace(/(_)([^_]+)(_)/gi, '<em>$2</em>') : str);
 </script>
 
 <article>
@@ -37,26 +34,30 @@
 		<div class="right">Salle {data.salle}</div>
 	</header>
 	<section>
-		<!-- <ul class="cycles">
+		<ul class="cycles">
 			{#each formatCycles(data.cycle) as cycle}
 				<li>
 					{cycle}
 				</li>
 			{/each}
-		</ul> -->
+		</ul>
 		<ul class="items">
 			{#each data.items as item, i}
 				<li>
 					<div class="item-titre" class:conf={item.idConf}>
-						{#if item.idConf}<IconPersons /> {/if}{artTitre(item.art, item.titre)}
+						{#if item.idConf}<IconPersons /> {/if}{artTitre(
+							item.art,
+							item.titre
+						)}{#if item.sousTitre}. {item.sousTitre}{/if}
 					</div>
 					{#if item.idFilm}
 						{#await get(`https://api.cnmtq.fr/film/${item.idFilm}`) then film}
-							{@html ba(
-								`<div class="item-titre">(`,
-								')</div>',
-								film.titrenx || artTitre(film.artvo, film.titrevo)
-							)}
+							{#if film.titrevo || film.titrenx}
+								<div class="item-titre">
+									({film.titrenx || artTitre(film.artvo, film.titrevo)})
+								</div>
+							{/if}
+
 							{@html ba(
 								`<div class="realisateurs">`,
 								'</div>',
@@ -65,19 +66,20 @@
 							<div>
 								{ba('', ' / ', film.pays)}
 								{ba('', ' / ', film.annee)}
-								{ba('', ' / ', item.duree)}
+								{ba('', ' min / ', item.duree)}
 								{ba('', ' / ', item.format)}
 								{ba('', '', item.version)}
 							</div>
-							{@html ba('<div>', '</div>', film.adaptation)}
+							{@html ba('<div>', '</div>', fromMd(film.adaptation))}
 							{@html ba('<div>Avec ', '.</div>', film.generique)}
-							{@html ba(`<p style="margin: 0.5rem 0;">`, '</p>', film.synopsis)}
+							{@html ba(`<p style="margin: 0.5rem 0;">`, '</p>', fromMd(film.synopsis))}
 							<!-- <pre><code>{JSON.stringify(film, null, 2)}</code></pre> -->
 							{#if i < data.items.length - 1}<hr class="short" />{/if}
 						{/await}
 					{/if}
 				</li>
 			{/each}
+			{#if data.mention}<div class="mention">{data.mention}</div>{/if}
 		</ul>
 
 		<!-- <pre><code>{JSON.stringify(data, null, 2)}</code></pre> -->
@@ -93,6 +95,10 @@
 </ul>
  -->
 <style>
+	article {
+		color: #047;
+	}
+
 	header {
 		position: sticky;
 		top: 0;
@@ -100,10 +106,9 @@
 		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: center;
-		background-color: #ccc;
-		padding: 6px 4px;
-		font-size: 1rem;
-		font-weight: 400;
+		background-color: #eee;
+		padding: 8px;
+		font-weight: 600;
 	}
 
 	.left,
@@ -127,9 +132,14 @@
 	}
 
 	section {
-		font-size: 1rem;
+		font-size: 0.938rem;
 		padding: 12px 24px 12px 12px;
-		line-height: 1.2;
+		line-height: 1.3;
+	}
+
+	ul.cycles li {
+		font-weight: 600;
+		font-size: 1rem;
 	}
 
 	ul.items {
@@ -137,12 +147,16 @@
 	}
 
 	.item-titre {
-		font-weight: 600;
-		font-size: 1.125rem;
+		font-size: 1rem;
+	}
+
+	.conf,
+	.mention {
+		color: #820;
 	}
 
 	.conf {
-		color: #930;
+		font-weight: 600;
 	}
 
 	hr.short {
