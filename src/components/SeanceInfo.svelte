@@ -65,7 +65,9 @@
 							)}
 							<div>
 								{ba('', ' / ', film.pays)}
-								{ba('', ' / ', film.annee)}
+								{ba('', '', film.annee)}
+							</div>
+							<div>
 								{ba('', ' min / ', item.duree)}
 								{ba('', ' / ', item.format)}
 								{ba('', '', item.version)}
