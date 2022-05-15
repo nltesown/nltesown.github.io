@@ -44,7 +44,7 @@
 		<ul class="items">
 			{#each data.items as item, i}
 				<li>
-					<div class="item-titre" class:conf={item.idConf}>
+					<div class="item-titre medium" class:conf={item.idConf}>
 						{#if item.idConf}<IconPersons /> {/if}{artTitre(
 							item.art,
 							item.titre
@@ -54,7 +54,7 @@
 						{#await get(`https://api.cnmtq.fr/film/${item.idFilm}`) then film}
 							{#if film.titrevo || film.titrenx}
 								<div class="item-titre">
-									({film.titrenx || artTitre(film.artvo, film.titrevo)})
+									{film.titrenx || artTitre(film.artvo, film.titrevo)}
 								</div>
 							{/if}
 
@@ -65,15 +65,15 @@
 							)}
 							<div>
 								{ba('', ' / ', film.pays)}
-								{ba('', '', film.annee)}
-							</div>
-							<div>
+								{ba('', ' / ', film.annee)}
 								{ba('', ' min / ', item.duree)}
 								{ba('', ' / ', item.format)}
 								{ba('', '', item.version)}
 							</div>
-							{@html ba('<div>', '</div>', fromMd(film.adaptation))}
 							{@html ba('<div>Avec ', '.</div>', film.generique)}
+
+							{@html ba('<p style="margin: 0.5rem 0;">', '</p>', fromMd(film.adaptation))}
+
 							{@html ba(`<p style="margin: 0.5rem 0;">`, '</p>', fromMd(film.synopsis))}
 							<!-- <pre><code>{JSON.stringify(film, null, 2)}</code></pre> -->
 							{#if i < data.items.length - 1}<hr class="short" />{/if}
@@ -145,11 +145,16 @@
 	}
 
 	ul.items {
-		margin: 12px 0;
+		margin: 12px 0 0 0;
 	}
 
 	.item-titre {
-		font-size: 1rem;
+		font-size: 1.125rem;
+		font-weight: 300;
+	}
+
+	.item-titre.medium {
+		font-weight: 500;
 	}
 
 	.conf,
