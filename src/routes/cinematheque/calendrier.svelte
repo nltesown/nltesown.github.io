@@ -7,7 +7,7 @@
 	import Loader from '../../components/Loader.svelte';
 	import { fade } from 'svelte/transition';
 	import artTitre from '../../lib/format/artTitre';
-	import IconCircle from '../../components/lib/icons/IconCircle.svelte';
+	// import IconCircle from '../../components/lib/icons/IconCircle.svelte';
 	import IconPersons from '../../components/lib/icons/IconPersons.svelte';
 	import { modal } from '../../stores.js';
 	import SeanceInfo from '../../components/SeanceInfo.svelte';
@@ -77,13 +77,13 @@
 
 {#await pCal}<Loader text="Chargement des données" />{:then data}
 	<div in:fade={{ duration: 125 }}>
-		<div class="calendar-nav">
+		<!-- <div class="calendar-nav">
 			{#each new Array(data.calSpanDays / 7) as w, i}
 				<div class="circle-container">
 					<IconCircle fill={i === 0} />
 				</div>
 			{/each}
-		</div>
+		</div> -->
 
 		<div class="calendar">
 			<div class="day header">Lundi</div>
