@@ -101,8 +101,8 @@
 		flex-wrap: nowrap;
 		justify-content: center;
 		background-color: #ccc;
-		padding: 12px 4px;
-		font-size: 1.25rem;
+		padding: 6px 4px;
+		font-size: 1rem;
 		font-weight: 400;
 	}
 
