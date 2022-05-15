@@ -4,6 +4,7 @@
 	import artTitre from '$lib/format/artTitre';
 	import { get } from '$lib/api.js';
 	import ba from '$lib/format/beforeAfterStr';
+	import de from '$lib/format/de';
 	import IconPersons from '../components/lib/icons/IconPersons.svelte';
 	export let data;
 
@@ -44,7 +45,7 @@
 			{/each}
 		</ul> -->
 		<ul class="items">
-			{#each data.items as item}
+			{#each data.items as item, i}
 				<li>
 					<div class="item-titre" class:conf={item.idConf}>
 						{#if item.idConf}<IconPersons /> {/if}{artTitre(item.art, item.titre)}
@@ -56,15 +57,23 @@
 								')</div>',
 								film.titrenx || artTitre(film.artvo, film.titrevo)
 							)}
-							{@html ba(`<div class="realisateurs">`, '</div>', film.realisateurs)}
+							{@html ba(
+								`<div class="realisateurs">`,
+								'</div>',
+								`${de(film.realisateurs)}${film.realisateurs}`
+							)}
 							<div>
-								{film.pays} / {film.annee} / {item.duree} min / {item.format} / {item.version || ''}
+								{ba('', ' / ', film.pays)}
+								{ba('', ' / ', film.annee)}
+								{ba('', ' / ', item.duree)}
+								{ba('', ' / ', item.format)}
+								{ba('', ' / ', item.version)}
 							</div>
 							{@html ba('<div>', '</div>', film.adaptation)}
-							{@html ba('<div>Avec ', '</div>', film.generique)}
-							{@html ba(`<div style="margin-top: 12px;">`, '</div>', film.synopsis)}
-							{@html ba(`<div style="margin-top: 12px;">`, '</div>', film.commentaire)}
+							{@html ba('<div>Avec ', '.</div>', film.generique)}
+							{@html ba(`<p style="margin: 0.5rem 0;">`, '</p>', film.synopsis)}
 							<!-- <pre><code>{JSON.stringify(film, null, 2)}</code></pre> -->
+							{#if i < data.items.length - 1}<hr class="short" />{/if}
 						{/await}
 					{/if}
 				</li>
@@ -84,20 +93,12 @@
 </ul>
  -->
 <style>
-	article {
-		font-size: 0.875rem;
-		color: #036;
-		line-height: 1.6;
-	}
-
 	header {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: center;
-		background-color: #036;
-		/* background-color: #668; */
-		color: #fff;
+		background-color: #ccc;
 		padding: 8px 4px;
 		font-size: 1rem;
 		font-weight: 400;
@@ -107,7 +108,7 @@
 	.center,
 	.right {
 		display: block;
-		padding: 0 0.25rem;
+		padding: 0 0.2rem;
 	}
 
 	.left {
@@ -124,19 +125,29 @@
 	}
 
 	section {
-		padding: 2rem;
+		font-size: 0.875rem;
+		padding: 12px 24px 12px 12px;
+		line-height: 1.2;
 	}
 
-	li {
-		padding-bottom: 16px;
+	ul.items {
+		margin: 12px 0;
 	}
 
 	.item-titre {
 		font-weight: 600;
-		font-size: 0.938rem;
+		font-size: 1rem;
 	}
 
 	.conf {
 		color: #930;
+	}
+
+	hr.short {
+		width: 60px;
+		border: none;
+		border-bottom: solid 1px #11558880;
+		margin: 18px 0;
+		padding: 0;
 	}
 </style>

@@ -126,7 +126,6 @@
 {:catch}Le chargement des données a échoué.
 {/await}
 
-<!-- <SeanceInfo {info} /> -->
 <style>
 	.calendar-nav {
 		width: 90%;

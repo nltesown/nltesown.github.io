@@ -20,10 +20,20 @@
 	<main><slot /></main>
 	<Modal
 		show={$modal}
+		classBg="modal-bg"
+		classWindowWrap="modal-window-wrap"
 		classWindow="modal-window"
 		classContent="modal-content"
 		closeButton={false}
+		unstyled={true}
 	/>
+	<!-- <Modal
+		show={$modal}
+		classWindow="modal-window"
+		classContent="modal-content"
+		closeButton={false}
+		unstyled={true}
+	/> -->
 {/if}
 
 <style>
@@ -101,23 +111,38 @@
 		}
 	}
 
+	:global(.modal-bg) {
+		position: fixed;
+		z-index: 1000;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(0, 0, 0, 0.66);
+	}
+
+	:global(.modal-window-wrap) {
+		position: relative;
+		margin: 12px;
+		max-height: 100%;
+	}
+
 	:global(.modal-window) {
-		/* width: 600px !important;
-		max-width: 96vw !important;
-		height: 58vh !important;
-		max-height: 58vh !important;
-		overflow-x: hidden !important;  */
-		width: 100% !important;
-		max-width: 500px !important;
-		height: 60vh !important;
-		max-height: 60vh !important;
-		transform: translateY(-14vh) !important;
-		border-radius: 0 !important;
-		padding: 0 !important;
-		overflow: hidden !important;
+		position: relative;
+		width: 40rem;
+		max-width: 100%;
+		max-height: 100%;
+		margin: 0 auto;
+		border-radius: 0rem;
+		background: #fff;
 	}
 
 	:global(.modal-content) {
-		padding: 0 !important;
+		position: relative;
+		max-height: 60vh;
+		overflow: auto;
 	}
 </style>
