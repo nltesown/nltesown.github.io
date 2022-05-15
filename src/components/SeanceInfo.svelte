@@ -67,7 +67,7 @@
 								{ba('', ' / ', film.annee)}
 								{ba('', ' / ', item.duree)}
 								{ba('', ' / ', item.format)}
-								{ba('', ' / ', item.version)}
+								{ba('', '', item.version)}
 							</div>
 							{@html ba('<div>', '</div>', film.adaptation)}
 							{@html ba('<div>Avec ', '.</div>', film.generique)}
@@ -94,13 +94,15 @@
  -->
 <style>
 	header {
+		position: sticky;
+		top: 0;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: center;
 		background-color: #ccc;
-		padding: 8px 4px;
-		font-size: 1rem;
+		padding: 12px 4px;
+		font-size: 1.25rem;
 		font-weight: 400;
 	}
 
@@ -125,7 +127,7 @@
 	}
 
 	section {
-		font-size: 0.875rem;
+		font-size: 1rem;
 		padding: 12px 24px 12px 12px;
 		line-height: 1.2;
 	}
@@ -136,7 +138,7 @@
 
 	.item-titre {
 		font-weight: 600;
-		font-size: 1rem;
+		font-size: 1.125rem;
 	}
 
 	.conf {
@@ -144,9 +146,9 @@
 	}
 
 	hr.short {
-		width: 60px;
+		width: 80px;
 		border: none;
-		border-bottom: solid 1px #11558880;
+		border-bottom: solid 1px #11558840;
 		margin: 18px 0;
 		padding: 0;
 	}
