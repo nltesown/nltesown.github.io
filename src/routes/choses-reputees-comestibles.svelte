@@ -85,10 +85,20 @@
 			et j'ai l'impression que Cruz se laisse faire assez poliment. Il laisse néanmoins paraître une
 			pointe d'agacement lorsque Blanka lui rend sa liberté et se replie vers sa chaise avec la
 			suave et brune souplesse d'une liane subcarpathique. De concert, comme pour clore l'épisode,
-			tous deux me lancent un regard, mais qui ne veut clairement pas dire la même chose. Est-ce
-			qu'on ne reprendrait pas une bouteille de Modrý Portugal&nbsp;? dit Blanka. Le baiser semble
-			avoir éclairci sa voix, soudain terriblement cristalline.
+			tous deux me lancent un regard, mais qui ne veut clairement pas dire la même
+			chose&nbsp;–&nbsp;et qu'importe ce qu'il veut dire, comment le saurais-je&nbsp;? Est-ce qu'on
+			ne reprendrait pas une bouteille de modrý portugal&nbsp;? crie Blanka. Le baiser semble avoir
+			éclairci sa voix, soudain terriblement cristalline.
 		</p>
+		<p>
+			Dès que Cruz s'est absenté, Blanka s'empresse de me parler. Elle a peut-être dix, quinze
+			secondes pour le faire. On dirait même bien que Cruz, au loin, s'est retourné furtivement pour
+			nous voir comploter. Un souffle de paranoïa traverse la salle du restaurant. Il faut que tu
+			saches, souffle-t-elle, ça ne se passe pas bien. Pas bien. Alors si je le quitte, et c'est une
+			affaire de jours, ça va mal se passer, et je ne veux pas que tu prennes son parti contre moi.
+			C'est tout.
+		</p>
+
 		<p>Donc, si je comprends bien, on n'a jamais eu le mot de la fin&nbsp;?</p>
 	</article>
 </div>

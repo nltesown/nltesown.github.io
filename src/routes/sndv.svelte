@@ -292,7 +292,8 @@
 </div>
 
 <div class="container">
-	<article>
+	<p><em>SNDV, générateur d'exotisme durassien</em>, 2014</p>
+	<!--<article>
 		<p>
 			<em>Son nom de Venise dans Calcutta désert</em>
 			est un film réalisé par Marguerite Duras en 1976. C'est une reprise de son film
@@ -312,7 +313,7 @@
 			et de la délirer sans fin.
 		</p>
 		<p>Anne-Marie Stretter</p>
-	</article>
+	</article>-->
 </div>
 
 <style>
