@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-4d998998.js",
+    "file": "start-10b37994.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -52,7 +52,7 @@
     ]
   },
   "src/routes/choses-reputees-comestibles.svelte": {
-    "file": "pages/choses-reputees-comestibles.svelte-ba1811d7.js",
+    "file": "pages/choses-reputees-comestibles.svelte-ada821f3.js",
     "src": "src/routes/choses-reputees-comestibles.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -103,7 +103,7 @@
     ]
   },
   "src/routes/sndv.svelte": {
-    "file": "pages/sndv.svelte-c31f30fa.js",
+    "file": "pages/sndv.svelte-26af476c.js",
     "src": "src/routes/sndv.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -111,7 +111,7 @@
       "_vendor-ff1b9e40.js"
     ],
     "css": [
-      "assets/pages/sndv.svelte-79659013.css"
+      "assets/pages/sndv.svelte-fedda43b.css"
     ]
   },
   "_vendor-ff1b9e40.js": {
