@@ -1,4 +1,4 @@
-import{S as ke,i as Be,s as Pe,e as n,t as u,k as c,c as r,a as i,h as l,d as s,m as d,b as o,g as ye,I as e,J as oe}from"../chunks/vendor-ff1b9e40.js";function Je(_e){let m,t,v,I,D,b,L,T,p,S,P,U,A,V,f,O,Q,q,w,N,h,R,F,j,G,H,g,K,W,z,X,Y,C,Z,$,E,ee,te,x,ae,se,_,ne,re,k,ie,ue,B,le;return{c(){m=n("div"),t=n("article"),v=n("p"),I=u(`\xC7a commence avec la bombe roulant lourdement sur le sol du restaurant. Noire comme un boulet
+import{S as ke,i as Be,s as Pe,e as n,t as u,k as c,c as r,a as i,h as l,d as s,m as d,b as o,g as ye,I as e,J as oe}from"../chunks/vendor-ff1b9e40.js";function Me(_e){let m,t,v,I,D,b,L,T,p,S,P,U,A,V,f,O,Q,q,w,N,h,R,F,j,G,H,g,K,W,z,X,Y,C,Z,$,E,ee,te,x,ae,se,_,ne,re,k,ie,ue,B,le;return{c(){m=n("div"),t=n("article"),v=n("p"),I=u(`\xC7a commence avec la bombe roulant lourdement sur le sol du restaurant. Noire comme un boulet
 			de canon, elle fait son entr\xE9e comme sur une piste de bowling, dans un roulement sourd, tandis
 			que la lueur cr\xE9pitante de sa m\xE8che allum\xE9e tournoie festivement. D'un m\xEAme \xE9lan, d'un m\xEAme
 			cri, tous les d\xEEneurs du rez-de-chauss\xE9e se jettent au sol. Sur la mezzanine au contraire,
@@ -49,17 +49,17 @@ import{S as ke,i as Be,s as Pe,e as n,t as u,k as c,c as r,a as i,h as l,d as s,
 			nous voir comploter. Un souffle de parano\xEFa traverse la salle du restaurant. Il faut que tu
 			saches, souffle-t-elle, \xE7a ne se passe pas bien. Pas bien. Alors si je le quitte, et c'est une
 			affaire de jours, \xE7a va mal se passer, et je ne veux pas que tu prennes son parti contre moi.
-			C'est tout.`),re=c(),k=n("p"),ie=u(`C'\xE9tait \xE9trange. \xC9trange, mais peut-\xEAtre pas inattendu et, naturellement, je pourrai toujours
-			me demander plus tard ce qui se serait pass\xE9 si Blanka avait alors eu l'intuition, juste apr\xE8s
-			de m'embrasser comme elle venait de la faire avec Cruz. Il lui reste cinq secondes avant le
+			C'est tout.`),re=c(),k=n("p"),ie=u(`C'\xE9tait \xE9trange. Mais peut-\xEAtre pas impossible et, naturellement, je pourrai toujours me
+			demander plus tard ce qui se serait pass\xE9 si Blanka avait alors eu l'intuition, juste apr\xE8s,
+			de m'embrasser comme elle venait de le faire avec Cruz. Il lui reste cinq secondes avant le
 			retour de Cruz, elle peut le faire, elle sait qu'elle peut le faire et que ce serait une
 			mani\xE8re intelligente d'appuyer son propos, et voil\xE0 que je suffoque \u2013\xA0 je m'imagine
 			suffoquer\xA0\u2013 sous son souffle un peu court et son haleine pleine. Qu'elle prolonge son
 			baiser au-del\xE0 des cinq secondes qui lui restent et Cruz sera de retour, Cruz nous surprendra,
 			et Blanka, qui sait, sera sauv\xE9e. J'avoue que j'y ai pens\xE9. Mais Blanka se tient bien droite
 			et, ayant dit ce qu'elle avait \xE0 dire, elle attend simplement le retour de Cruz pour continuer
-			\xE0 faire comme si de rien n'\xE9tait. Je ne suis pas s\xFBr qu'une autre bouteille de modr\xFD portugal
-			soit une tr\xE8s bonne id\xE9e.`),ue=c(),B=n("p"),le=u("Donc, si je comprends bien, on n'a jamais eu le mot de la fin\xA0?"),this.h()},l(y){m=r(y,"DIV",{class:!0});var J=i(m);t=r(J,"ARTICLE",{class:!0});var a=i(t);v=r(a,"P",{class:!0});var ce=i(v);I=l(ce,`\xC7a commence avec la bombe roulant lourdement sur le sol du restaurant. Noire comme un boulet
+			\xE0 faire comme si de rien n'\xE9tait. Je ne suis pas certain qu'une autre bouteille de modr\xFD
+			portugal soit une tr\xE8s bonne id\xE9e.`),ue=c(),B=n("p"),le=u("Donc, si je comprends bien, on n'a jamais eu le mot de la fin\xA0?"),this.h()},l(y){m=r(y,"DIV",{class:!0});var M=i(m);t=r(M,"ARTICLE",{class:!0});var a=i(t);v=r(a,"P",{class:!0});var ce=i(v);I=l(ce,`\xC7a commence avec la bombe roulant lourdement sur le sol du restaurant. Noire comme un boulet
 			de canon, elle fait son entr\xE9e comme sur une piste de bowling, dans un roulement sourd, tandis
 			que la lueur cr\xE9pitante de sa m\xE8che allum\xE9e tournoie festivement. D'un m\xEAme \xE9lan, d'un m\xEAme
 			cri, tous les d\xEEneurs du rez-de-chauss\xE9e se jettent au sol. Sur la mezzanine au contraire,
@@ -70,7 +70,7 @@ import{S as ke,i as Be,s as Pe,e as n,t as u,k as c,c as r,a as i,h as l,d as s,
 			que la m\xE8che s'est \xE9teinte. Tout ce que je sais, je l'ai appris par le journal, qui parlait
 			d'un r\xE8glement de compte mafieux, ou d'un acte d'intimidation.`),ce.forEach(s),D=d(a),b=r(a,"P",{class:!0});var de=i(b);L=l(de,`Le fait divers m'est rappel\xE9 quelques mois plus tard par mes commensaux, alors que nous d\xEEnons
 			dans un restaurant italien. Mais oui, je m'en souviens\xA0! C'\xE9tait ici, pas vrai\xA0? Ici
-			m\xEAme\xA0!`),de.forEach(s),T=d(a),p=r(a,"P",{class:!0});var M=i(p);S=l(M,`Je regarde autour de moi, et le rappel de cette affaire de la bombe qui roule \xE0 travers le
+			m\xEAme\xA0!`),de.forEach(s),T=d(a),p=r(a,"P",{class:!0});var J=i(p);S=l(J,`Je regarde autour de moi, et le rappel de cette affaire de la bombe qui roule \xE0 travers le
 			restaurant me permet enfin de mettre des mots sur une impression qui semble m'aiguillonner
 			depuis que je suis entr\xE9 dans l'\xE9tablissement\xA0: je n'ai jamais d\xE9jeun\xE9 ou d\xEEn\xE9 dans ce
 			restaurant italien, mais je connais l'endroit, j'en suis certain, la disposition des
@@ -80,7 +80,7 @@ import{S as ke,i as Be,s as Pe,e as n,t as u,k as c,c as r,a as i,h as l,d as s,
 			l'exp\xE9rieur par une main furtive aussit\xF4t disparue, sa trajectoire h\xE9sitante, comme si elle
 			cherchait sa cible parmi les clients. Elle cogne un pied de chaise, s'immobilise, mais tout le
 			monde a d\xE9j\xE0 cri\xE9 et tout le monde est d\xE9j\xE0 \xE0 terre. Exactement comme je l'avais imagin\xE9 en
-			lisant l'article de `),P=r(M,"EM",{});var me=i(P);U=l(me,"Mlad\xE1 fronta"),me.forEach(s),A=l(M," six mois plus t\xF4t."),M.forEach(s),V=d(a),f=r(a,"P",{class:!0});var pe=i(f);O=l(pe,`Je ne savais pas la suite de l'histoire. Peu apr\xE8s la bombe, me dit Cruz, le restaurant a d\xFB
+			lisant l'article de `),P=r(J,"EM",{});var me=i(P);U=l(me,"Mlad\xE1 fronta"),me.forEach(s),A=l(J," six mois plus t\xF4t."),J.forEach(s),V=d(a),f=r(a,"P",{class:!0});var pe=i(f);O=l(pe,`Je ne savais pas la suite de l'histoire. Peu apr\xE8s la bombe, me dit Cruz, le restaurant a d\xFB
 			fermer, et tr\xE8s peu de temps apr\xE8s un autre a rouvert \xE0 sa place. Un autre ou le m\xEAme\xA0?
 			J'interroge Cruz et Blanka en plissant les yeux contre la fum\xE9e conjointe de leur cigarette.
 			J'avais oubli\xE9, leur dis-je, j'ai d\xE9j\xE0 d\xEEn\xE9 ici. \xC7a m'est revenu quand vous avez parl\xE9 de la
@@ -110,14 +110,14 @@ import{S as ke,i as Be,s as Pe,e as n,t as u,k as c,c as r,a as i,h as l,d as s,
 			nous voir comploter. Un souffle de parano\xEFa traverse la salle du restaurant. Il faut que tu
 			saches, souffle-t-elle, \xE7a ne se passe pas bien. Pas bien. Alors si je le quitte, et c'est une
 			affaire de jours, \xE7a va mal se passer, et je ne veux pas que tu prennes son parti contre moi.
-			C'est tout.`),Ce.forEach(s),re=d(a),k=r(a,"P",{class:!0});var Ee=i(k);ie=l(Ee,`C'\xE9tait \xE9trange. \xC9trange, mais peut-\xEAtre pas inattendu et, naturellement, je pourrai toujours
-			me demander plus tard ce qui se serait pass\xE9 si Blanka avait alors eu l'intuition, juste apr\xE8s
-			de m'embrasser comme elle venait de la faire avec Cruz. Il lui reste cinq secondes avant le
+			C'est tout.`),Ce.forEach(s),re=d(a),k=r(a,"P",{class:!0});var Ee=i(k);ie=l(Ee,`C'\xE9tait \xE9trange. Mais peut-\xEAtre pas impossible et, naturellement, je pourrai toujours me
+			demander plus tard ce qui se serait pass\xE9 si Blanka avait alors eu l'intuition, juste apr\xE8s,
+			de m'embrasser comme elle venait de le faire avec Cruz. Il lui reste cinq secondes avant le
 			retour de Cruz, elle peut le faire, elle sait qu'elle peut le faire et que ce serait une
 			mani\xE8re intelligente d'appuyer son propos, et voil\xE0 que je suffoque \u2013\xA0 je m'imagine
 			suffoquer\xA0\u2013 sous son souffle un peu court et son haleine pleine. Qu'elle prolonge son
 			baiser au-del\xE0 des cinq secondes qui lui restent et Cruz sera de retour, Cruz nous surprendra,
 			et Blanka, qui sait, sera sauv\xE9e. J'avoue que j'y ai pens\xE9. Mais Blanka se tient bien droite
 			et, ayant dit ce qu'elle avait \xE0 dire, elle attend simplement le retour de Cruz pour continuer
-			\xE0 faire comme si de rien n'\xE9tait. Je ne suis pas s\xFBr qu'une autre bouteille de modr\xFD portugal
-			soit une tr\xE8s bonne id\xE9e.`),Ee.forEach(s),ue=d(a),B=r(a,"P",{class:!0});var xe=i(B);le=l(xe,"Donc, si je comprends bien, on n'a jamais eu le mot de la fin\xA0?"),xe.forEach(s),a.forEach(s),J.forEach(s),this.h()},h(){o(v,"class","svelte-1r0cbot"),o(b,"class","svelte-1r0cbot"),o(p,"class","svelte-1r0cbot"),o(f,"class","svelte-1r0cbot"),o(q,"class","svelte-1r0cbot"),o(h,"class","svelte-1r0cbot"),o(j,"class","svelte-1r0cbot"),o(g,"class","svelte-1r0cbot"),o(z,"class","svelte-1r0cbot"),o(C,"class","svelte-1r0cbot"),o(E,"class","svelte-1r0cbot"),o(x,"class","svelte-1r0cbot"),o(_,"class","svelte-1r0cbot"),o(k,"class","svelte-1r0cbot"),o(B,"class","svelte-1r0cbot"),o(t,"class","svelte-1r0cbot"),o(m,"class","container svelte-1r0cbot")},m(y,J){ye(y,m,J),e(m,t),e(t,v),e(v,I),e(t,D),e(t,b),e(b,L),e(t,T),e(t,p),e(p,S),e(p,P),e(P,U),e(p,A),e(t,V),e(t,f),e(f,O),e(t,Q),e(t,q),e(q,w),e(t,N),e(t,h),e(h,R),e(t,F),e(t,j),e(j,G),e(t,H),e(t,g),e(g,K),e(t,W),e(t,z),e(z,X),e(t,Y),e(t,C),e(C,Z),e(t,$),e(t,E),e(E,ee),e(t,te),e(t,x),e(x,ae),e(t,se),e(t,_),e(_,ne),e(t,re),e(t,k),e(k,ie),e(t,ue),e(t,B),e(B,le)},p:oe,i:oe,o:oe,d(y){y&&s(m)}}}class Ie extends ke{constructor(m){super();Be(this,m,null,Je,Pe,{})}}export{Ie as default};
+			\xE0 faire comme si de rien n'\xE9tait. Je ne suis pas certain qu'une autre bouteille de modr\xFD
+			portugal soit une tr\xE8s bonne id\xE9e.`),Ee.forEach(s),ue=d(a),B=r(a,"P",{class:!0});var xe=i(B);le=l(xe,"Donc, si je comprends bien, on n'a jamais eu le mot de la fin\xA0?"),xe.forEach(s),a.forEach(s),M.forEach(s),this.h()},h(){o(v,"class","svelte-1r0cbot"),o(b,"class","svelte-1r0cbot"),o(p,"class","svelte-1r0cbot"),o(f,"class","svelte-1r0cbot"),o(q,"class","svelte-1r0cbot"),o(h,"class","svelte-1r0cbot"),o(j,"class","svelte-1r0cbot"),o(g,"class","svelte-1r0cbot"),o(z,"class","svelte-1r0cbot"),o(C,"class","svelte-1r0cbot"),o(E,"class","svelte-1r0cbot"),o(x,"class","svelte-1r0cbot"),o(_,"class","svelte-1r0cbot"),o(k,"class","svelte-1r0cbot"),o(B,"class","svelte-1r0cbot"),o(t,"class","svelte-1r0cbot"),o(m,"class","container svelte-1r0cbot")},m(y,M){ye(y,m,M),e(m,t),e(t,v),e(v,I),e(t,D),e(t,b),e(b,L),e(t,T),e(t,p),e(p,S),e(p,P),e(P,U),e(p,A),e(t,V),e(t,f),e(f,O),e(t,Q),e(t,q),e(q,w),e(t,N),e(t,h),e(h,R),e(t,F),e(t,j),e(j,G),e(t,H),e(t,g),e(g,K),e(t,W),e(t,z),e(z,X),e(t,Y),e(t,C),e(C,Z),e(t,$),e(t,E),e(E,ee),e(t,te),e(t,x),e(x,ae),e(t,se),e(t,_),e(_,ne),e(t,re),e(t,k),e(k,ie),e(t,ue),e(t,B),e(B,le)},p:oe,i:oe,o:oe,d(y){y&&s(m)}}}class Ie extends ke{constructor(m){super();Be(this,m,null,Me,Pe,{})}}export{Ie as default};
