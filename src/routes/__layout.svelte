@@ -14,9 +14,9 @@
 	<slot />
 {:else}
 	<!-- <div class="body-bg" /> -->
-	<nav>
+	<header>
 		<div class="main-title"><a href="/">nltesown</a></div>
-	</nav>
+	</header>
 	<main><slot /></main>
 	<Modal
 		show={$modal}
@@ -62,7 +62,7 @@
 		background-color: #697f7f;
 	}
 
-	nav {
+	header {
 		display: flex;
 		position: sticky;
 		font-family: Inter;
@@ -86,7 +86,8 @@
 	main {
 		position: relative;
 		width: 100%;
-		margin: 12px 0 12px 0;
+		margin: 0;
+		padding: 0;
 		z-index: 1;
 	}
 
