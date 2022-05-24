@@ -18,9 +18,9 @@
 			comme à contretemps, on se lève comme un seul homme pour regarder par-dessus la balustrade. Et
 			puis, inexplicablement, la bombe n'explose pas&nbsp;–&nbsp;pas encore, du moins&nbsp;–&nbsp;et
 			c'est le sauve-qui-peut général, bousculade, dispersion. Peu après&nbsp;: la police arrive,
-			les pompiers, l'équipe de déminage, la brigade scientifique. On constate que la mèche s'est
-			éteinte. Tout ce que je sais, je l'ai appris par le journal, qui parlait d'un règlement de
-			compte mafieux, ou d'un acte d'intimidation.
+			les pompiers, l'équipe de déminage, la brigade cynophile, la brigade scientifique. On constate
+			que la mèche s'est éteinte. Tout ce que je sais, je l'ai appris par le journal, qui parlait
+			d'un règlement de compte mafieux, ou d'un acte d'intimidation.
 		</p>
 		<p>
 			Le fait divers m'est rappelé quelques mois plus tard par mes commensaux, alors que nous dînons
@@ -74,11 +74,11 @@
 			pour faire la cuisine.
 		</p>
 		<p>
-			Attendez, à propos de restaurant, j'ai un truc marrant à vous raconter, coupe Cruz. Tu vois
+			Attendez, à propos de restaurant, je dois vous raconter quelque chose, coupe Cruz. Tu vois
 			cette rue en pente, très raide, qui rejoint par le côté celle qui monte à Vyšehrad&nbsp;? Et
 			Blanka montre ses dents très blanches en se penchant affectueusement vers Cruz. Elle pouffe.
 			Qu'est-ce que tu racontes&nbsp;? Bon, près de la maison cubiste. Pas loin. Pas loin mais pas
-			là, ricane Blanka, pas là du tout. Et là tu vas parler du restaurant syldave, c'est ça&nbsp;?
+			là, ricane Blanka, pas là du tout. Et là, tu vas parler du restaurant syldave, c'est ça&nbsp;?
 		</p>
 		<p>
 			Maintenant Blanka se penche vraiment par-dessus la table pour embrasser Cruz à pleine bouche,
@@ -86,9 +86,9 @@
 			pointe d'agacement lorsque Blanka lui rend sa liberté et se replie vers sa chaise avec la
 			suave et brune souplesse d'une liane subcarpathique. De concert, comme pour clore l'épisode,
 			tous deux me lancent un regard, mais qui ne veut clairement pas dire la même
-			chose&nbsp;–&nbsp;et qu'importe ce qu'il veut dire, comment le saurais-je&nbsp;? Est-ce qu'on
-			ne reprendrait pas une bouteille de modrý portugal&nbsp;? crie Blanka. Le baiser semble avoir
-			éclairci sa voix, soudain terriblement cristalline.
+			chose&nbsp;–&nbsp;et qu'importe ce qu'il veut dire, comment le saurais-je&nbsp;? Blanka
+			crie&nbsp;: Est-ce qu'on ne reprendrait pas une bouteille de modrý portugal&nbsp;? Le baiser
+			semble avoir éclairci sa voix, soudain terriblement cristalline.
 		</p>
 		<p>
 			Dès que Cruz s'est absenté, Blanka s'empresse de me parler. Elle a peut-être dix, quinze
@@ -97,6 +97,19 @@
 			saches, souffle-t-elle, ça ne se passe pas bien. Pas bien. Alors si je le quitte, et c'est une
 			affaire de jours, ça va mal se passer, et je ne veux pas que tu prennes son parti contre moi.
 			C'est tout.
+		</p>
+		<p>
+			C'était étrange. Étrange, mais peut-être pas inattendu et, naturellement, je pourrai toujours
+			me demander plus tard ce qui se serait passé si Blanka avait alors eu l'intuition, juste après
+			de m'embrasser comme elle venait de la faire avec Cruz. Il lui reste cinq secondes avant le
+			retour de Cruz, elle peut le faire, elle sait qu'elle peut le faire et que ce serait une
+			manière intelligente d'appuyer son propos, et voilà que je suffoque –&nbsp; je m'imagine
+			suffoquer&nbsp;– sous son souffle un peu court et son haleine pleine. Qu'elle prolonge son
+			baiser au-delà des cinq secondes qui lui restent et Cruz sera de retour, Cruz nous surprendra,
+			et Blanka, qui sait, sera sauvée. J'avoue que j'y ai pensé. Mais Blanka se tient bien droite
+			et, ayant dit ce qu'elle avait à dire, elle attend simplement le retour de Cruz pour continuer
+			à faire comme si de rien n'était. Je ne suis pas sûr qu'une autre bouteille de modrý portugal
+			soit une très bonne idée.
 		</p>
 
 		<p>Donc, si je comprends bien, on n'a jamais eu le mot de la fin&nbsp;?</p>
