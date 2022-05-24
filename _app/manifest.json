@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-87d37b09.js",
+    "file": "start-1369201b.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -12,12 +12,13 @@
       "src/routes/index.svelte",
       "src/routes/choses-reputees-comestibles.svelte",
       "src/routes/cinematheque/calendrier.svelte",
+      "src/routes/cinematheque/cal2.svelte",
       "src/routes/system-reset.svelte",
       "src/routes/sndv.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-0f6832c6.js",
+    "file": "pages/__layout.svelte-1efb5003.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -26,7 +27,7 @@
       "_stores-00c48681.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-1712b96f.css"
+      "assets/pages/__layout.svelte-ac810154.css"
     ]
   },
   "src/routes/__error.svelte": {
@@ -51,7 +52,7 @@
     ]
   },
   "src/routes/choses-reputees-comestibles.svelte": {
-    "file": "pages/choses-reputees-comestibles.svelte-0fb1d12e.js",
+    "file": "pages/choses-reputees-comestibles.svelte-ec520b2c.js",
     "src": "src/routes/choses-reputees-comestibles.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -59,20 +60,34 @@
       "_vendor-ff1b9e40.js"
     ],
     "css": [
-      "assets/pages/choses-reputees-comestibles.svelte-e8123f95.css"
+      "assets/pages/choses-reputees-comestibles.svelte-a5b0b9a6.css"
     ]
   },
   "src/routes/cinematheque/calendrier.svelte": {
-    "file": "pages/cinematheque/calendrier.svelte-f3baf6e1.js",
+    "file": "pages/cinematheque/calendrier.svelte-66dfd0bd.js",
     "src": "src/routes/cinematheque/calendrier.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-ff1b9e40.js",
+      "_IconCircle-2d886de0.js",
       "_stores-00c48681.js"
     ],
     "css": [
-      "assets/pages/cinematheque/calendrier.svelte-44126b46.css"
+      "assets/pages/cinematheque/calendrier.svelte-361efbf2.css"
+    ]
+  },
+  "src/routes/cinematheque/cal2.svelte": {
+    "file": "pages/cinematheque/cal2.svelte-8b992564.js",
+    "src": "src/routes/cinematheque/cal2.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-ff1b9e40.js",
+      "_IconCircle-2d886de0.js"
+    ],
+    "css": [
+      "assets/pages/cinematheque/cal2.svelte-c2b2a16e.css"
     ]
   },
   "src/routes/system-reset.svelte": {
@@ -109,6 +124,15 @@
     "file": "chunks/stores-00c48681.js",
     "imports": [
       "_vendor-ff1b9e40.js"
+    ]
+  },
+  "_IconCircle-2d886de0.js": {
+    "file": "chunks/IconCircle-2d886de0.js",
+    "imports": [
+      "_vendor-ff1b9e40.js"
+    ],
+    "css": [
+      "assets/IconCircle-614852a9.css"
     ]
   }
 }
