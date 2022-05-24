@@ -99,17 +99,17 @@
 			C'est tout.
 		</p>
 		<p>
-			C'était étrange. Étrange, mais peut-être pas inattendu et, naturellement, je pourrai toujours
-			me demander plus tard ce qui se serait passé si Blanka avait alors eu l'intuition, juste après
-			de m'embrasser comme elle venait de la faire avec Cruz. Il lui reste cinq secondes avant le
+			C'était étrange. Mais peut-être pas impossible et, naturellement, je pourrai toujours me
+			demander plus tard ce qui se serait passé si Blanka avait alors eu l'intuition, juste après,
+			de m'embrasser comme elle venait de le faire avec Cruz. Il lui reste cinq secondes avant le
 			retour de Cruz, elle peut le faire, elle sait qu'elle peut le faire et que ce serait une
 			manière intelligente d'appuyer son propos, et voilà que je suffoque –&nbsp; je m'imagine
 			suffoquer&nbsp;– sous son souffle un peu court et son haleine pleine. Qu'elle prolonge son
 			baiser au-delà des cinq secondes qui lui restent et Cruz sera de retour, Cruz nous surprendra,
 			et Blanka, qui sait, sera sauvée. J'avoue que j'y ai pensé. Mais Blanka se tient bien droite
 			et, ayant dit ce qu'elle avait à dire, elle attend simplement le retour de Cruz pour continuer
-			à faire comme si de rien n'était. Je ne suis pas sûr qu'une autre bouteille de modrý portugal
-			soit une très bonne idée.
+			à faire comme si de rien n'était. Je ne suis pas certain qu'une autre bouteille de modrý
+			portugal soit une très bonne idée.
 		</p>
 
 		<p>Donc, si je comprends bien, on n'a jamais eu le mot de la fin&nbsp;?</p>
