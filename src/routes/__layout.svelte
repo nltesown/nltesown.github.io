@@ -71,7 +71,7 @@
 		width: 100%;
 		justify-content: center;
 		align-items: center;
-		height: 120px;
+		height: 90px;
 		background-color: #111;
 		color: #eee;
 		overflow: hidden;
