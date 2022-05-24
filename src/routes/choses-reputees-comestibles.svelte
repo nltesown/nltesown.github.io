@@ -74,9 +74,9 @@
 	p {
 		margin: 1rem auto;
 		max-width: 40rem;
-		line-height: 1.75;
+		line-height: 1.5;
 		letter-spacing: 0;
-		font-size: 1.25rem;
+		font-size: 1.125rem;
 	}
 
 	.container {
