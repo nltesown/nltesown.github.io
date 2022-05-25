@@ -292,24 +292,25 @@
 </div>
 
 <div class="container">
-	<p><em>SNDV, générateur d'exotisme durassien</em>, 2014-2022. Talk Gallery</p>
+	<p><em>SNDV, générateur d'exotisme durassien</em>, 2014-2022. Talk Gallery.</p>
 
 	<ul>
 		<li>
 			<strong>Is this for sale?</strong> Each instance of <em>SNDV</em>, uniquely identified by its
-			"visa number", is.
+			visa number, is.
 		</li>
 		<li><strong>How many such instances are there?</strong> 6&nbsp;621.</li>
 		<li>
-			<strong>Is this what people call a NFT?</strong> Not in the strict sense. (You'll be thankful for
-			it.)
-		</li>
-		<li><strong>Would Marcel Duchamp choke on this?</strong> No.</li>
-		<li>
-			<strong>What do I buy if I buy one?</strong> Full ownership of one <em>SNDV</em> instance and a
-			representation of it in various forms and formats, and more.
+			<strong>Is this NFT?</strong> Technically, no. If you are interested in collecting NFT, you might
+			nonetheless consider this too.
 		</li>
 
+		<!-- <li><strong>Would Marcel Duchamp choke on this?</strong> No.</li> -->
+		<li>
+			<strong>What do I buy if I buy one?</strong> Full ownership of one <em>SNDV</em> instance and a
+			representation of it in forms both digital and physical, and more.
+		</li>
+		<li><strong>How can I choose mine?</strong> More on this soon.</li>
 		<li><strong>What is the price?</strong> Please get in touch.</li>
 		<li>
 			<strong>Is there a rebate on bulk purchase?</strong> This is not a Frequently Asked Question.
@@ -317,8 +318,8 @@
 		<!--<li>
 			<strong>Is there a lot a legalese and small print attached to the transaction?</strong> Likely
 			a minimal amount thereof.
+      <li><strong>Nudge nudge?</strong> :|</li>
 		</li>-->
-		<li><strong>Nudge nudge?</strong> :|</li>
 	</ul>
 
 	<!--<article>
@@ -443,7 +444,8 @@
 	ul {
 		margin: 18px 0;
 		padding: 36px;
-		background-color: #158;
+		background-color: #3e7976;
+		/* background-color: #158; */
 		font-size: 0.875rem;
 	}
 
