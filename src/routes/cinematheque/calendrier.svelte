@@ -165,26 +165,26 @@
 	}
 
 	.day:not(.active) {
-		background-color: #ffffff22;
+		background-color: #fff2;
 	}
 
 	.day.header {
 		margin-top: 12px;
 		padding: 2px;
-		background-color: #ffffff99;
+		background-color: #fff9;
 		text-align: center;
 		color: inherit;
 		font-weight: 600;
 	}
 
 	.day.active {
-		background-color: #ffffff66;
+		background-color: #fff9;
 		cursor: pointer;
 		transition: 0.1s ease;
 	}
 
 	.day.today {
-		background-color: #eed;
+		background-color: #eee;
 		/* background-color: #ef6; */
 	}
 

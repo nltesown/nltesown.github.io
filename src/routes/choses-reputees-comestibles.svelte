@@ -64,6 +64,7 @@
 			C'est bien simple&nbsp;: dans cette ville, la mafia tient tout. (Blanka, écrasant finalement
 			sa cigarette.)
 		</p>
+		<!--
 		<p>
 			Les restaurants, les boîtes de nuit, les salles de jeux comme ce grand truc braillard et
 			vulgaire à gauche en descendant Václavák, c'est bien pratique. Mais ne fais pas ces grands
@@ -73,12 +74,13 @@
 			Mais quand un restaurant est une couverture à... ce qu'on veut... il faut quand même quelqu'un
 			pour faire la cuisine.
 		</p>
+    -->
 		<p>
-			Attendez, à propos de restaurant, je dois vous raconter quelque chose, coupe Cruz. Tu vois
-			cette rue en pente, très raide, qui rejoint par le côté celle qui monte à Vyšehrad&nbsp;? Et
-			Blanka montre ses dents très blanches en se penchant affectueusement vers Cruz. Elle pouffe.
-			Qu'est-ce que tu racontes&nbsp;? Bon, près de la maison cubiste. Pas loin. Pas loin mais pas
-			là, ricane Blanka, pas là du tout. Et là, tu vas parler du restaurant syldave, c'est ça&nbsp;?
+			Attendez, je dois vous raconter quelque chose, coupe Cruz. Tu vois cette rue en pente, très
+			raide, qui rejoint par le côté celle qui monte à Vyšehrad&nbsp;? Et Blanka montre ses dents
+			très blanches en se penchant affectueusement vers Cruz. Elle pouffe. Qu'est-ce que tu
+			racontes&nbsp;? Bon, près de la maison cubiste. Pas loin. Pas loin mais pas là, ricane Blanka,
+			pas là du tout. Et là, tu vas encore nous parler du restaurant syldave, c'est ça&nbsp;?
 		</p>
 		<p>
 			Maintenant Blanka se penche vraiment par-dessus la table pour embrasser Cruz à pleine bouche,
@@ -95,7 +97,7 @@
 			secondes pour le faire. On dirait même bien que Cruz, au loin, s'est retourné furtivement pour
 			nous voir comploter. Un souffle de paranoïa traverse la salle du restaurant. Il faut que tu
 			saches, souffle-t-elle, ça ne se passe pas bien. Pas bien. Alors si je le quitte, et c'est une
-			affaire de jours, ça va mal se passer, et je ne veux pas que tu prennes son parti contre moi.
+			question de jours, ça va mal se passer, et je ne veux pas que tu prennes son parti contre moi.
 			C'est tout.
 		</p>
 		<p>

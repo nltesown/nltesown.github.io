@@ -88,6 +88,7 @@
 		width: 100%;
 		margin: 0;
 		padding: 0;
+		background-color: 696;
 		z-index: 1;
 	}
 
@@ -105,11 +106,11 @@
 	}
 
 	@media (max-width: 575px) {
-		nav {
+		/* nav {
 			height: 60px;
 			font-size: 1.5rem;
 			line-height: 1.5rem;
-		}
+		} */
 	}
 
 	:global(.modal-bg) {
