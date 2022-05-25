@@ -292,7 +292,35 @@
 </div>
 
 <div class="container">
-	<p><em>SNDV, générateur d'exotisme durassien</em>, 2014</p>
+	<p><em>SNDV, générateur d'exotisme durassien</em>, 2014-2022. Talk Gallery</p>
+
+	<ul>
+		<li>
+			<strong>Is this for sale?</strong> Each instance of <em>SNDV</em>, uniquely identified by its
+			"visa number", is.
+		</li>
+		<li><strong>How many such instances are there?</strong> 6&nbsp;621.</li>
+		<li>
+			<strong>Is this what people call a NFT?</strong> Not in the strict sense. (You'll be thankful for
+			it.)
+		</li>
+		<li><strong>Would Marcel Duchamp choke on this?</strong> No.</li>
+		<li>
+			<strong>What do I buy if I buy one?</strong> Full ownership of one <em>SNDV</em> instance and a
+			representation of it in various forms and formats, and more.
+		</li>
+
+		<li><strong>What is the price?</strong> Please get in touch.</li>
+		<li>
+			<strong>Is there a rebate on bulk purchase?</strong> This is not a Frequently Asked Question.
+		</li>
+		<!--<li>
+			<strong>Is there a lot a legalese and small print attached to the transaction?</strong> Likely
+			a minimal amount thereof.
+		</li>-->
+		<li><strong>Nudge nudge?</strong> :|</li>
+	</ul>
+
 	<!--<article>
 		<p>
 			<em>Son nom de Venise dans Calcutta désert</em>
@@ -390,25 +418,15 @@
 		flex: 0 0 10%;
 	}
 
-	article {
-		padding: 72px 24px 24px 24px;
-		background-color: #2c7975;
-		color: #fffff0;
-		font-weight: 300;
-
-		/* min-height: 200vh; */
-	}
-
 	p {
 		margin: 1rem 0;
-		line-height: 1.5;
-		font-size: 1.125rem;
 	}
 
 	.container {
 		width: 800px;
 		max-width: calc(100vw - 12px);
-		margin: 0 auto;
+		margin: 18px auto;
+		color: #fff;
 	}
 
 	video {
@@ -420,6 +438,17 @@
 		height: 105%;
 		object-fit: cover;
 		z-index: 1;
+	}
+
+	ul {
+		margin: 18px 0;
+		padding: 36px;
+		background-color: #158;
+		font-size: 0.875rem;
+	}
+
+	li {
+		padding-bottom: 12px;
 	}
 
 	@media (orientation: landscape) {
