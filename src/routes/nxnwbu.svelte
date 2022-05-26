@@ -37,10 +37,11 @@
 			<em>North by Northwest</em>, il faudrait suspendre ce bref instant où ce nom,
 			«&nbsp;Thornhill&nbsp;», est prononcé. Celui qui nous est ainsi désigné, Cary Grant impeccable
 			dans son costume gris, n'hésiterait sans doute pas à dire, comme Don Quichotte&nbsp;:
-			«&nbsp;Je sais qui je suis&nbsp;», mais quel inconvénient y aurait-il à ce qu'un autre vous le
-			rappelle&nbsp;? On l'ignore encore, mais cet instant, en faisant nommer son protagoniste,
-			amorce véritablement le récit (ne serait-ce pas même son véritable MacGuffin&nbsp;?), un récit
-			qui va s'entêter à vouloir le dépouiller de son nom et de son identité.
+			«&nbsp;Je sais qui je suis&nbsp;» (un publicitaire de Madison Ave., une double divorcé, un
+			fils à maman...), mais quel inconvénient y aurait-il à ce qu'un autre vous le rappelle&nbsp;?
+			On l'ignore encore, mais cet instant, en faisant nommer son protagoniste, amorce véritablement
+			le récit (ne serait-ce pas même son véritable MacGuffin&nbsp;?), un récit qui justement va
+			s'entêter à vouloir le dépouiller de son nom et, partant, de son identité.
 		</p>
 		<p>
 			Peu après, Thornhill, ayant rejoint des relations d'affaires au bar de l'hôtel Plaza, fait
