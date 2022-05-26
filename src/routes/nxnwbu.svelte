@@ -19,25 +19,24 @@
 			ininterrompue de la fin d'après-midi se faire avaler par une bouche de métro, se laisser
 			porter comme un banc de poissons dans l'escalier monumental de Grand Central. Et maintenant,
 			dans l'immeuble, un ascenseur délivre à son tour son chargement d'employés. Parmi ceux-ci,
-			pris dans le mouvement général, un homme en costume gris moyen continue, imperturbable, de
-			dicter à sa secrétaire quand un portier le voit passer à sa hauteur et l'interpelle, lui parmi
+			pris dans le mouvement général, un homme continue, imperturbable, de dicter à sa secrétaire
+			quand un portier le voit passer à sa hauteur et l'interpelle, lui parmi
 			tous&nbsp;:&nbsp;«&nbsp;Mr. Thornhill&nbsp;!&nbsp;»
 		</p>
 		<p>
-			L'<em>executive</em> réplique à la salutation par un vague bon mot mais ne s'arrête pas, ne
-			ralentit même pas, porté par le flux des employés et son <em>flow</em> à lui, ce bourdonnement
-			de consignes dont il abreuve sa secrétaire. Tandis qu'ils sont portés vers la sortie, d'autres
-			ascenseurs encore se déversent à l'identique. Dans la trépidation qui impulse les premières
-			minutes de
+			L'homme élégant en costume gris réplique à la salutation par un vague bon mot mais ne s'arrête
+			pas, ne ralentit même pas, porté par le flux des employés et son propre <em>flow</em>, ce
+			bourdonnement de consignes dont il abreuve sa secrétaire. Tandis qu'ils sont portés vers la
+			sortie, d'autres ascenseurs encore se déversent à l'identique. Dans la trépidation qui donne
+			son impulsion aux premières minutes de
 			<em>North by Northwest</em>, il faudrait peut-être suspendre ce bref instant où un nom,
-			«&nbsp;Thornhill&nbsp;», est prononcé. Celui qui nous est ainsi désigné, Cary Grant dans son
-			costume gris, n'hésiterait sans doute pas à dire, comme Don Quichotte&nbsp;: «&nbsp;Je sais
-			qui je suis&nbsp;», mais quel inconvénient y aurait-il à ce qu'un autre vous le
-			rappelle&nbsp;?
-		</p>
-		<p>
-			Cet instant anodin, c'est lui qui jette les dés du récit, peut-être même son véritable
-			MacGuffin, l'annonce encore indécelable des avanies qui attendent Thornhill et son nom.
+			«&nbsp;Thornhill&nbsp;», est prononcé. Celui qui nous est ainsi désigné, Cary Grant évidemment
+			impeccable dans son costume gris, n'hésiterait sans doute pas à dire, comme Don
+			Quichotte&nbsp;: «&nbsp;Je sais qui je suis&nbsp;», mais quel inconvénient y aurait-il à ce
+			qu'un autre vous le rappelle&nbsp;? On ne peut pas le savoir, mais cet instant est celui qui,
+			en faisant nommer son protagoniste, amorce véritablement le récit (ne serait-ce pas même son
+			véritable MacGuffin&nbsp;?), un récit qui va s'entêter à vouloir le dépouiller de son nom et
+			de son identité.
 		</p>
 	</article>
 </div>
