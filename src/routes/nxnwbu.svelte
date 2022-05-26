@@ -16,23 +16,28 @@
 				>North by Northwest</em
 			>. Nous sommes dans le hall d'un immeuble de Manhattan à l'heure de la sortie des bureaux.
 			Dans le quartier, on vient de voir, en une succession de plans d'ensemble, la foule
-			ininterrompue de cinq heures de l'après-midi se faire avaler sans discontinuer par une bouche
-			de métro, se laisser porter comme un banc de poissons dans l'escalier monumental de Grand
-			Central. Et ici, dans l'immeuble, les ascenseurs à leur tour dégorgent les employés. Parmi
-			eux, dans le mouvement général, un homme en costume gris moyen continue de dicter à sa
-			secrétaire quand un portier le voit passer à sa hauteur et l'interpelle, lui parmi
+			ininterrompue de la fin d'après-midi se faire avaler par une bouche de métro, se laisser
+			porter comme un banc de poissons dans l'escalier monumental de Grand Central. Et maintenant,
+			dans l'immeuble, un ascenseur délivre à son tour son chargement d'employés. Parmi ceux-ci,
+			pris dans le mouvement général, un homme en costume gris moyen continue, imperturbable, de
+			dicter à sa secrétaire quand un portier le voit passer à sa hauteur et l'interpelle, lui parmi
 			tous&nbsp;:&nbsp;«&nbsp;Mr. Thornhill&nbsp;!&nbsp;»
 		</p>
 		<p>
-			Le fringant <em>executive</em> réplique au salut par un vague bon mot mais ne ralentit pas,
-			porté par le flux des employés et son <em>flow</em> à lui, ce bourdonnement de consignes dont
-			il abreuve sa secrétaire. Tandis qu'ils sont portés vers la sortie, d'autres ascenseurs pleins
-			se déversent à l'identique. Dans la trépidation qui impulse les premières minutes de
-			<em>North by Northwest</em>, il faudrait peut-être suspendre ce bref instant où ce nom,
+			L'<em>executive</em> réplique à la salutation par un vague bon mot mais ne s'arrête pas, ne
+			ralentit même pas, porté par le flux des employés et son <em>flow</em> à lui, ce bourdonnement
+			de consignes dont il abreuve sa secrétaire. Tandis qu'ils sont portés vers la sortie, d'autres
+			ascenseurs encore se déversent à l'identique. Dans la trépidation qui impulse les premières
+			minutes de
+			<em>North by Northwest</em>, il faudrait peut-être suspendre ce bref instant où un nom,
 			«&nbsp;Thornhill&nbsp;», est prononcé. Celui qui nous est ainsi désigné, Cary Grant dans son
 			costume gris, n'hésiterait sans doute pas à dire, comme Don Quichotte&nbsp;: «&nbsp;Je sais
-			qui je suis&nbsp;», mais quel inconvénient y pourrait-il y a avoir à ce qu'un autre vous le
+			qui je suis&nbsp;», mais quel inconvénient y aurait-il à ce qu'un autre vous le
 			rappelle&nbsp;?
+		</p>
+		<p>
+			Cet instant anodin, c'est lui qui jette les dés du récit, peut-être même son véritable
+			MacGuffin, l'annonce encore indécelable des avanies qui attendent Thornhill et son nom.
 		</p>
 	</article>
 </div>
