@@ -15,7 +15,8 @@ body {
 	position: relative;
 	margin: 0;
 	min-height: 100vh;
-	color: #158;
+	color: #048;
+	/* color: #158; */
 	background-color: #696;
 	/* background: rgb(51, 91, 153); */
 	font-family: Inter, Helvetica, Arial, sans-serif;

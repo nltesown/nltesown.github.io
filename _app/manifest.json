@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-9860efcc.js",
+    "file": "start-7ed409f7.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -14,6 +14,7 @@
       "src/routes/cinematheque/calendrier.svelte",
       "src/routes/cinematheque/cal2.svelte",
       "src/routes/system-reset.svelte",
+      "src/routes/nxnwbu.svelte",
       "src/routes/sndv.svelte"
     ]
   },
@@ -40,7 +41,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-7fb37cc1.js",
+    "file": "pages/index.svelte-5110c4a3.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -52,7 +53,7 @@
     ]
   },
   "src/routes/choses-reputees-comestibles.svelte": {
-    "file": "pages/choses-reputees-comestibles.svelte-5b528ec3.js",
+    "file": "pages/choses-reputees-comestibles.svelte-71aacfc6.js",
     "src": "src/routes/choses-reputees-comestibles.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -60,7 +61,7 @@
       "_vendor-ff1b9e40.js"
     ],
     "css": [
-      "assets/pages/choses-reputees-comestibles.svelte-8b2b8647.css"
+      "assets/pages/choses-reputees-comestibles.svelte-7b0b8f1e.css"
     ]
   },
   "src/routes/cinematheque/calendrier.svelte": {
@@ -100,6 +101,18 @@
     ],
     "css": [
       "assets/pages/system-reset.svelte-9d4b329f.css"
+    ]
+  },
+  "src/routes/nxnwbu.svelte": {
+    "file": "pages/nxnwbu.svelte-fd1ef8be.js",
+    "src": "src/routes/nxnwbu.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-ff1b9e40.js"
+    ],
+    "css": [
+      "assets/pages/nxnwbu.svelte-7916437f.css"
     ]
   },
   "src/routes/sndv.svelte": {
