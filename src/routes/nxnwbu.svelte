@@ -38,6 +38,14 @@
 			véritable MacGuffin&nbsp;?), un récit qui va s'entêter à vouloir le dépouiller de son nom et
 			de son identité.
 		</p>
+		<p>
+			Peu après, Thornhill, ayant rejoint des relations d'affaires au bar de l'hôtel Plaza, fait
+			innocemment le geste qui referme sur lui un piège auquel il est étranger&nbsp;: il lève la
+			main pour appeler un serveur à l'instant même où celui-ci passe au milieu des clients en
+			appelant un nom. Pour les deux inconnus qui ont monté le stratagème et qui observent la scène,
+			Thornhill devient celui qu'ils cherchent, le nommé Kaplan. Et l'ayant ainsi identifié, le
+			kidnappent.
+		</p>
 	</article>
 </div>
 
