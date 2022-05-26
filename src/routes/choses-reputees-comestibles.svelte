@@ -102,21 +102,20 @@
 		</p>
 		<p>
 			C'était étrange. Mais peut-être pas impossible et, naturellement, je pourrai toujours me
-			demander plus tard ce qui se serait passé si Blanka avait alors eu l'intuition, juste après,
-			de m'embrasser comme elle venait de le faire avec Cruz. Il lui reste cinq secondes avant le
-			retour de Cruz, elle peut le faire, elle sait qu'elle peut le faire et ce serait une manière
-			intelligente d'appuyer son propos, et voilà qu'elle le fait, et que je suffoque –&nbsp; je
-			m'imagine suffoquer&nbsp;– sous son souffle un peu court et son haleine pleine. Qu'elle
-			prolonge son baiser au-delà des cinq secondes qui lui restent et Cruz sera de retour, Cruz
-			nous surprendra, et Blanka, qui sait, sera sauvée. J'avoue que j'y ai pensé. Mais Blanka se
-			tient bien droite et, ayant dit ce qu'elle avait à dire, elle attend simplement le retour de
-			Cruz pour continuer à faire comme si de rien n'était. Ce que j'aime chez eux deux, une chose
-			qu'ils ont commun, c'est un certain sens de la retenue, une imperceptible réticence dans le
-			maintien. Oublions la bouteille de modrý portugal, ce n'est pas une bonne idée.
+			demander plus tard ce qui se serait passé si Blanka avait alors eu l'intuition, juste après
+			cette confession, de m'embrasser comme elle venait de le faire avec Cruz. Il lui reste cinq
+			secondes avant le retour de Cruz, elle peut le faire, elle sait qu'elle peut le faire et ce
+			serait une manière intelligente d'appuyer son propos, et voilà qu'elle le fait, et que je
+			suffoque –&nbsp; je m'imagine suffoquer&nbsp;– sous son souffle un peu court et son haleine
+			pleine. Qu'elle prolonge son baiser au-delà des cinq secondes qui lui restent et Cruz sera de
+			retour, Cruz nous surprendra, et Blanka, qui sait, sera sauvée. J'avoue que j'y ai pensé. Mais
+			Blanka se tient bien droite et, ayant dit ce qu'elle avait à dire, elle attend simplement le
+			retour de Cruz pour continuer à faire comme si de rien n'était. Ce que j'aime chez eux deux,
+			une chose qu'ils ont commun, c'est un certain sens de la retenue, une imperceptible réticence
+			dans le maintien. Oublions la bouteille de modrý portugal, ce n'est pas une bonne idée.
 		</p>
 		<p>
-			Vous ne voulez pas qu'on y aille&nbsp;? Allez, <em>go</em>, <em>andiamo</em>,
-			<em>půjdem</em>&nbsp;! On pourrait aller boire quelques bières, et aller fouiller les
+			Allez, <em>půjdem</em>, <em>andiamo</em>&nbsp;! Allons boire quelques bières, et fouiller les
 			poubelles à Vinohrady.
 		</p>
 		<p>Non, je suis fatiguée, dit Blanka. Soit on reste ici, soit je rentre me coucher.</p>
@@ -131,7 +130,7 @@
 		min-height: 200vh;
 		/* font-family: 'Spectral', sans-serif; */
 		background-color: #fff;
-		color: #111;
+		/* color: #111; */
 	}
 
 	p {
