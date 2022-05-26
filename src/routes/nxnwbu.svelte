@@ -27,8 +27,10 @@
 			L'homme élégant en costume gris réplique à la salutation par un vague bon mot mais ne s'arrête
 			pas, ne ralentit même pas, porté par le flux des employés et son propre <em>flow</em>, ce
 			bourdonnement de consignes dont il abreuve sa secrétaire. Tandis qu'ils sont portés vers la
-			sortie, d'autres ascenseurs encore se déversent à l'identique. Dans la trépidation qui donne
-			son impulsion aux premières minutes de
+			sortie, d'autres ascenseurs encore se déversent à l'identique.
+		</p>
+		<p>
+			Dans la trépidation qui donne son impulsion aux premières minutes de
 			<em>North by Northwest</em>, il faudrait peut-être suspendre ce bref instant où un nom,
 			«&nbsp;Thornhill&nbsp;», est prononcé. Celui qui nous est ainsi désigné, Cary Grant évidemment
 			impeccable dans son costume gris, n'hésiterait sans doute pas à dire, comme Don
