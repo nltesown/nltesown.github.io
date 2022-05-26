@@ -45,10 +45,11 @@
 		<p>
 			Peu après, Thornhill, ayant rejoint des relations d'affaires au bar de l'hôtel Plaza, fait
 			innocemment le geste qui referme sur lui un piège auquel il est étranger&nbsp;: il lève la
-			main pour appeler un garçon à l'instant même où celui-ci passe au milieu des clients en
-			appelant un nom. Pour les deux inconnus qui ont monté le stratagème et qui observent la scène
-			à l'écart, Thornhill devient celui qu'ils cherchent, un nommé Kaplan. Et l'ayant ainsi
-			identifié, le kidnappent.
+			main pour tenter de faire venir un garçon à l'instant même où celui-ci passe au milieu des
+			clients à la recherche d'un nommé Kaplan. Par son geste, Thornhill répond une seconde fois en
+			peu de temps –&nbsp;cette fois-ci sans le savoir&nbsp;– à l'appel d'un nom et devient, pour
+			les deux inconnus qui ont monté le stratagème et observent la scène à l'écart, celui qu'ils
+			cherchent. Et l'ayant ainsi identifié, le kidnappent.
 		</p>
 	</article>
 </div>
