@@ -1,47 +1,52 @@
 <script>
 	let c = 0;
 
-	function count(el) {
+	function postprocess(el) {
 		el.querySelectorAll('p').forEach((d) => {
-			c = c + d.textContent.replace(/\\[nrt]/gi, '').length;
+			c = c + d.textContent.replace(/(\\[nrt]|(\[[^\]]+\]))/gi, '').length; // Ignore le texte entre crochets (+ sauts de lignes) dans le décompte.
+			// c = c + d.textContent.replace(/\\[nrt]/gi, '').length;
+			d.innerHTML = d.innerHTML.replace(/(\[[^\]]+\])/gi, "<span style='opacity: .5;'>$1</span>");
 		});
 	}
 </script>
 
 <div class="container">
-	<article use:count>
+	<article use:postprocess>
 		<div class="count">{c} caractères.</div>
 		<p>
-			C'est sur un nom proféré que s'ouvre –&nbsp;ou peut s'en faut&nbsp;– <em
+			C'est sur un nom prononcé que s'ouvre –&nbsp;ou peut s'en faut&nbsp;– <em
 				>North by Northwest</em
-			>. Nous sommes dans le hall d'un immeuble de Manhattan à l'heure de la sortie des bureaux.
-			Dans le quartier, on vient de voir, en une succession de plans d'ensemble, la foule
-			ininterrompue de la fin d'après-midi traverser une avenue, descendre dans une bouche de métro,
-			se laisser porter comme un banc de poissons dans l'escalier monumental de Grand Central. Ne
-			dirait-on l'incarnation idéale d'une foule affairée, démocratique, immanquablement américaine,
-			où conformité et «&nbsp;distinction&nbsp;» vont de pair, où l'anonymat consenti offre en même
-			temps la possibilité de l'affirmation individuelle&nbsp;? Et maintenant, dans l'immeuble, un
-			ascenseur délivre à son tour son chargement d'employés. Parmi ceux-ci, pris dans le mouvement
-			général, un homme continue, imperturbable, de dicter à sa secrétaire quand un portier le voit
-			passer à sa hauteur et l'interpelle avec enjouement, lui seul parmi
-			tous&nbsp;:&nbsp;«&nbsp;Mr. Thornhill&nbsp;!&nbsp;»
+			>
+			(<em>La Mort aux trousses</em>, Alfred Hitchcock, 1959). Nous sommes dans le hall d'un
+			immeuble de Manhattan à l'heure de la sortie des bureaux. Dans le quartier, on vient de voir,
+			en une succession de plans d'ensemble, la foule ininterrompue de la fin d'après-midi traverser
+			une avenue, descendre dans une bouche de métro, se laisser porter comme un banc de poissons
+			dans l'escalier monumental de Grand Central. [Ne dirait-on l'incarnation idéale d'une foule
+			affairée, démocratique, immanquablement américaine, où conformité et «&nbsp;distinction&nbsp;»
+			vont de pair, où l'anonymat consenti offre en même temps la possibilité de l'affirmation
+			individuelle&nbsp;?] Et maintenant, dans l'immeuble, un ascenseur délivre à son tour son
+			chargement d'employés. Parmi ceux-ci, pris dans le mouvement général, un homme continue,
+			imperturbable, de dicter à sa secrétaire quand un portier le voit passer à sa hauteur et
+			l'interpelle avec enjouement, lui seul parmi tous&nbsp;:&nbsp;«&nbsp;Mr.
+			Thornhill&nbsp;!&nbsp;»
 		</p>
 		<p>
-			L'homme en costume gris réplique à la salutation par un vague bon mot mais ne s'arrête pas, ne
-			ralentit même pas, porté par le flot des employés et son propre <em>flow</em>, ce
-			bourdonnement de consignes dont il abreuve sa secrétaire. Tandis qu'ils sont portés vers la
-			sortie, d'autres ascenseurs encore se déversent à l'identique.
+			Thornhill réplique au salut du portier par un bref mot d'esprit mais ne s'arrête pas, ne
+			ralentit même pas, porté par le flux des salariés qui l'entourent et son propre <em>flow</em>,
+			le bourdonnement du monologue dont il abreuve sa secrétaire. (Et tandis qu'ils vont vers la
+			sortie, deux autres ascenseurs apparaissent encore dans le champ pour se déverser à
+			l'identique.)
 		</p>
 		<p>
 			Dans le cours du mouvement qui donne son impulsion aux premières minutes de
-			<em>North by Northwest</em>, il faudrait suspendre ce bref instant où ce nom,
-			«&nbsp;Thornhill&nbsp;», est prononcé. Celui qui nous est ainsi désigné, Cary Grant impeccable
-			dans son costume gris, n'hésiterait sans doute pas à dire, comme Don Quichotte&nbsp;:
-			«&nbsp;Je sais qui je suis&nbsp;» (un publicitaire de Madison Ave., une double divorcé, un
-			fils à maman...), mais quel inconvénient y aurait-il à ce qu'un autre vous le rappelle&nbsp;?
-			On l'ignore encore, mais cet instant, en faisant nommer son protagoniste, amorce véritablement
-			le récit (ne serait-ce pas même son véritable MacGuffin&nbsp;?), un récit qui justement va
-			s'entêter à vouloir le dépouiller de son nom et, partant, de son identité.
+			<em>North by Northwest</em>, il faudrait suspendre cet instant où le nom de Thornhill est
+			prononcé. [Celui qui nous est ainsi désigné, Cary Grant impeccable dans son costume gris,
+			n'hésiterait sans doute pas à dire, comme Don Quichotte&nbsp;: «&nbsp;Je sais qui je
+			suis&nbsp;» (un publicitaire de Madison Ave., une double divorcé et le fils de sa maman...),
+			mais quel inconvénient y aurait-il à ce qu'un autre vous le rappelle&nbsp;?] On l'ignore
+			encore, mais cet instant, en faisant nommer son protagoniste, amorce véritablement le récit
+			(ne serait-ce pas même son véritable MacGuffin&nbsp;?), un récit qui justement va s'entêter à
+			vouloir le dépouiller de son nom et, partant, de son identité.
 		</p>
 		<p>
 			Peu après, Thornhill, ayant rejoint des relations d'affaires au bar de l'hôtel Plaza, fait
