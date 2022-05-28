@@ -138,7 +138,7 @@
 		max-width: 100%;
 		max-height: 100%;
 		margin: 0 auto;
-		border-radius: 0rem;
+		/* border-radius: 4px !important; */
 		background: #fff;
 	}
 
