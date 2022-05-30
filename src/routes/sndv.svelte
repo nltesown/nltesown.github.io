@@ -292,9 +292,9 @@
 </div>
 
 <div class="container">
-	<p><em>SNDV, générateur d'exotisme durassien</em>, 2014-2022. Talk Gallery.</p>
-
-	<ul>
+	<p><em>SNDV, générateur d'exotisme durassien</em><br />2014-2022. Talk Gallery</p>
+	<!--
+  <ul>
 		<li>
 			<strong>Is this for sale?</strong> Each instance of <em>SNDV</em>, uniquely identified by its
 			visa number, is.
@@ -304,8 +304,6 @@
 			<strong>Is this NFT?</strong> Technically, no. If you are interested in collecting NFT, you might
 			nonetheless consider this too.
 		</li>
-
-		<!-- <li><strong>Would Marcel Duchamp choke on this?</strong> No.</li> -->
 		<li>
 			<strong>What do I buy if I buy one?</strong> Full ownership of one <em>SNDV</em> instance and a
 			representation of it in forms both digital and physical, and more.
@@ -315,13 +313,13 @@
 		<li>
 			<strong>Is there a rebate on bulk purchase?</strong> This is not a Frequently Asked Question.
 		</li>
-		<!--<li>
+		<li>
 			<strong>Is there a lot a legalese and small print attached to the transaction?</strong> Likely
 			a minimal amount thereof.
-      <li><strong>Nudge nudge?</strong> :|</li>
-		</li>-->
+			<strong>Nudge nudge?</strong> :|
+		</li>
 	</ul>
-
+  -->
 	<!--<article>
 		<p>
 			<em>Son nom de Venise dans Calcutta désert</em>

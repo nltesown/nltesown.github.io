@@ -13,7 +13,6 @@
 	<a href="/" class="mini"><IconHome color="#eee" size={20} /></a>
 	<slot />
 {:else}
-	<!-- <div class="body-bg" /> -->
 	<header>
 		<div class="main-title"><a href="/">nltesown</a></div>
 	</header>
@@ -27,13 +26,6 @@
 		closeButton={false}
 		unstyled={true}
 	/>
-	<!-- <Modal
-		show={$modal}
-		classWindow="modal-window"
-		classContent="modal-content"
-		closeButton={false}
-		unstyled={true}
-	/> -->
 {/if}
 
 <style>
@@ -101,16 +93,6 @@
 	a:hover,
 	a:active {
 		color: tomato;
-		/* color: #adbd64; */
-		/* color: #affa3c; */
-	}
-
-	@media (max-width: 575px) {
-		/* nav {
-			height: 60px;
-			font-size: 1.5rem;
-			line-height: 1.5rem;
-		} */
 	}
 
 	:global(.modal-bg) {

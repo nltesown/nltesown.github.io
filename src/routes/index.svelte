@@ -15,7 +15,8 @@
 			<li><a href=".">À la recherche du tapis à damier</a></li>
 			<li><a href=".">Tourisme en tripoints</a></li>
 			<li><a href=".">Éthique du carnaval</a></li>
-			<li><a href="nxnwbu">NxNWBU</a></li>
+			<li><a href=".">NxNWBU</a></li>
+			<!-- <li><a href="nxnwbu">NxNWBU</a></li> -->
 			<li><a href="cinematheque/calendrier">Calendrier automatisé de la Cinémathèque</a></li>
 			<!-- <li><a href="." /></li> -->
 		</ul>
