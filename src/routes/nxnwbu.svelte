@@ -14,48 +14,28 @@
 	<article use:postprocess>
 		<div class="count">{c} caractères.</div>
 		<p>
-			C'est sur un nom prononcé que s'ouvre –&nbsp;ou peut s'en faut&nbsp;– <em
-				>North by Northwest</em
-			>
-			(<em>La Mort aux trousses</em>, Alfred Hitchcock, 1959). Nous sommes dans le hall d'un
-			immeuble de Manhattan à l'heure de la sortie des bureaux. Dans le quartier, on vient de voir,
-			en une succession de plans d'ensemble, la foule ininterrompue de la fin d'après-midi traverser
-			une avenue, descendre dans une bouche de métro, se laisser porter comme un banc de poissons
-			dans l'escalier monumental de Grand Central. [Ne dirait-on l'incarnation idéale d'une foule
-			affairée, démocratique, immanquablement américaine, où conformité et «&nbsp;distinction&nbsp;»
-			vont de pair, où l'anonymat consenti offre en même temps la possibilité de l'affirmation
-			individuelle&nbsp;?] Et maintenant, dans l'immeuble, un ascenseur délivre à son tour son
-			chargement d'employés. Parmi ceux-ci, pris dans le mouvement général, un homme continue,
-			imperturbable, de dicter à sa secrétaire quand un portier le voit passer à sa hauteur et
-			l'interpelle avec enjouement, lui seul parmi tous&nbsp;:&nbsp;«&nbsp;Mr.
-			Thornhill&nbsp;!&nbsp;»
+			<em>North by Northwest</em> s'ouvre&nbsp;–&nbsp;ou peut s'en faut&nbsp;–&nbsp;sur un nom. C'est
+			l'heure de la sortie des bureaux à Manhattan. En une succession de plans d'ensemble, une foule
+			ininterrompue, rapide, circule dans tous les sens, se déverse par les portes à tambour d'un building,
+			s'enfonce dans une bouche de métro, se laisse porter par le courant dans l'escalier monumental
+			de Grand Central. Puis, dans le hall d'un immeuble de bureaux où les ascenseurs à cette heure-là
+			délivrent en continu leurs chargements d'employés, un homme suit le mouvement sans cesser de dicter
+			un mémo à sa secrétaire, quand un groom l'aperçoit et l'interpelle à son passage avec enjouement.
+		</p>
+		<p>«&nbsp;Mr. Thornhill&nbsp;!&nbsp;»</p>
+		<p>
+			À l'inverse du nommé Thornhill, qui répond au salut du groom par un mot d'esprit express mais
+			ne s'arrête pas, ne ralentit même pas, nous devrions, nous, nous arrêter un instant à cette
+			première parole vraiment audible du film par laquelle le protagoniste est d'emblée désigné par
+			son nom. Avec ce pressentiment&nbsp;: le film entier pourra fera le récit des mésaventures de
+			ce nom et&nbsp;–&nbsp;derrière ce mince paravent du nom&nbsp;–&nbsp;de l'identité à nu de son
+			personnage.
 		</p>
 		<p>
-			Thornhill réplique au salut du portier par un bref mot d'esprit mais ne s'arrête pas, ne
-			ralentit même pas, porté par le flux des salariés qui l'entourent et son propre <em>flow</em>,
-			le bourdonnement du monologue dont il abreuve sa secrétaire. (Et tandis qu'ils vont vers la
-			sortie, deux autres ascenseurs apparaissent encore dans le champ pour se déverser à
-			l'identique.)
-		</p>
-		<p>
-			Dans le cours du mouvement qui donne son impulsion aux premières minutes de
-			<em>North by Northwest</em>, il faudrait suspendre cet instant où le nom de Thornhill est
-			prononcé. [Celui qui nous est ainsi désigné, Cary Grant impeccable dans son costume gris,
-			n'hésiterait sans doute pas à dire, comme Don Quichotte&nbsp;: «&nbsp;Je sais qui je
-			suis&nbsp;» (un publicitaire de Madison Ave., une double divorcé et le fils de sa maman...),
-			mais quel inconvénient y aurait-il à ce qu'un autre vous le rappelle&nbsp;?] On l'ignore
-			encore, mais cet instant, en faisant nommer son protagoniste, amorce véritablement le récit
-			(ne serait-ce pas même son véritable MacGuffin&nbsp;?), un récit qui justement va s'entêter à
-			vouloir le dépouiller de son nom et, partant, de son identité.
-		</p>
-		<p>
-			Peu après, Thornhill, ayant rejoint des relations d'affaires au bar de l'hôtel Plaza, fait
-			innocemment le geste qui referme sur lui un piège auquel il est étranger&nbsp;: il lève la
-			main pour tenter de faire venir un garçon à l'instant même où celui-ci passe au milieu des
-			clients à la recherche d'un nommé Kaplan. Par son geste, Thornhill répond une seconde fois en
-			peu de temps –&nbsp;cette fois-ci sans même le savoir&nbsp;– à l'appel d'un nom, et devient,
-			pour les deux inconnus qui ont monté le stratagème et observent la scène à l'écart, celui
-			qu'ils cherchent. Et l'ayant ainsi identifié, le kidnappent.
+			Et à cet instant sur lequel le film ne s'attarde pas, parfaitement anodin en apparence, répond
+			peu de temps après le geste qui met effectivement en marche le récit. Roger Thornhill (Cary
+			Grant) est un publicitaire à succès de Madison Avenue. Après sa sortie du bureau, il se rend à
+			un rendez-vous d'affaires au bar de l'hôtel Plaza.
 		</p>
 	</article>
 </div>
