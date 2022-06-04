@@ -18,8 +18,8 @@
 			l'heure de la sortie des bureaux à Manhattan. En une succession de plans d'ensemble, une foule
 			ininterrompue, rapide, circule dans tous les sens, se déverse par les portes à tambour d'un building,
 			s'enfonce dans une bouche de métro, se laisse porter par le courant dans l'escalier monumental
-			de Grand Central. Puis, dans le hall d'un immeuble de bureaux où les ascenseurs à cette heure-là
-			délivrent en continu leurs chargements d'employés, un homme suit le mouvement sans cesser de dicter
+			de Grand Central. Puis, dans le hall d'un immeuble de bureaux où les ascenseurs délivrent à cette
+			heure-là en continu leurs chargements d'employés, un homme suit le mouvement sans cesser de dicter
 			un mémo à sa secrétaire, quand un groom l'aperçoit et l'interpelle à son passage avec enjouement.
 		</p>
 		<p>«&nbsp;Mr. Thornhill&nbsp;!&nbsp;»</p>

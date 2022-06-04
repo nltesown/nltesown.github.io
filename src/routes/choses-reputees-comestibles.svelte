@@ -19,38 +19,38 @@
 			puis, inexplicablement, la bombe n'explose pas&nbsp;–&nbsp;pas encore, du moins&nbsp;–&nbsp;et
 			c'est le sauve-qui-peut général, bousculade, dispersion. Peu après&nbsp;: la police arrive,
 			les pompiers, l'équipe de déminage, la brigade cynophile, la brigade scientifique. On constate
-			que la mèche s'est éteinte. Tout ce que je sais, je l'ai appris par le journal, qui parlait
-			d'un règlement de compte mafieux, ou d'un acte d'intimidation.
+			que la mèche s'est éteinte. Tout ce que je sais, je l'ai appris par le journal.
 		</p>
 		<p>
-			Le fait divers m'est rappelé quelques mois plus tard par mes commensaux, alors que nous dînons
-			dans un restaurant italien. Mais oui, je m'en souviens&nbsp;! C'était ici, pas vrai&nbsp;? Ici
-			même&nbsp;!
+			Le fait divers&nbsp;–&nbsp;règlement de comptes mafieux&nbsp;? acte d'intimidation&nbsp;?
+			&nbsp;–&nbsp;m'est rappelé quelques mois plus tard par mes commensaux, Blanka et Cruz, alors
+			que nous sommes attablés dans un restaurant italien. Mais oui, je m'en souviens&nbsp;! C'était
+			ici, pas vrai&nbsp;? Ici même&nbsp;!
 		</p>
 		<p>
 			Je regarde autour de moi, et le rappel de cette affaire de la bombe qui roule à travers le
-			restaurant me permet enfin de mettre des mots sur une impression qui semble m'aiguillonner
-			depuis que je suis entré dans l'établissement&nbsp;: je n'ai jamais déjeuné ou dîné dans ce
-			restaurant italien, mais je connais l'endroit, j'en suis certain, la disposition des
-			lieux&nbsp;: la grande salle carrée, la mezzanine, le grand zinc à droite en entrant, les
+			restaurant me permet enfin de mettre des mots sur une impression qui me démange depuis que je
+			suis entré dans l'établissement&nbsp;: bien que je n'aie jamais déjeuné ou dîné dans ce
+			restaurant italien, je connais l'endroit, j'en suis certain, la disposition des lieux&nbsp;:
+			la grande salle carrée, la mezzanine, le grand comptoir de bar à droite en entrant, les
 			grandes baies vitrées sur deux rues perpendiculaires, l'entrée d'angle surélevée de quelques
 			marches depuis la rue. Et je visualise aussi la bombe faisant irruption, lancée depuis
 			l'expérieur par une main furtive aussitôt disparue, sa trajectoire hésitante, comme si elle
 			cherchait sa cible parmi les clients. Elle cogne un pied de chaise, s'immobilise, mais tout le
-			monde a déjà crié et tout le monde est déjà à terre. Exactement comme je l'avais imaginé en
-			lisant l'article de <em>Mladá fronta</em> six mois plus tôt.
+			monde a déjà crié et tout le monde est déjà à terre. Comme je l'avais imaginé en lisant
+			l'entrefilet de <em>Mladá fronta</em> six mois ou un an plus tôt.
 		</p>
 		<p>
-			Je ne savais pas la suite de l'histoire. Peu après la bombe, me dit Cruz, le restaurant a dû
-			fermer, et très peu de temps après un autre a rouvert à sa place. Un autre ou le même&nbsp;?
-			J'interroge Cruz et Blanka en plissant les yeux contre la fumée conjointe de leur cigarette.
-			J'avais oublié, leur dis-je, j'ai déjà dîné ici. Ça m'est revenu quand vous avez parlé de la
-			bombe. Je suis venu une fois dans le restaurant d'avant, quelques semaines avant la bombe, et
-			maintenant celui où nous nous trouvons ne me semble pas très différent.
+			L'histoire était restée sans suite, en tout cas pour moi. Peu après la bombe, me dit Cruz, le
+			restaurant a dû fermer, et peu de temps après un autre a rouvert à sa place. Un autre ou le
+			même&nbsp;? J'interroge Cruz et Blanka en plissant les yeux contre la fumée conjointe de leur
+			cigarette. J'avais oublié, leur dis-je&nbsp;: j'ai déjà dîné ici. Ça m'est revenu quand vous
+			avez parlé de la bombe. Je suis venu une fois dans le restaurant d'avant, peu de temps avant
+			la bombe, et maintenant celui où nous nous trouvons ne me semble pas très différent.
 		</p>
 		<p>
-			C'est vrai, concède Blanka, à ceci près que ce n'était pas un restaurant italien mais un
-			restaurant indien. Comment s'appelait-il, déjà&nbsp;? Tu y étais allé, toi&nbsp;?
+			C'est vrai, concède Blanka, mais ce n'était pas un restaurant italien comme maintenantmais un
+			restaurant indien. Comment s'appelait-il, déjà&nbsp;? Tu le connaissais bien, toi&nbsp;?
 			demande-t-elle à Cruz.
 		</p>
 		<p>
@@ -96,30 +96,34 @@
 			Dès que Cruz s'est absenté, Blanka s'empresse de me parler. Elle a peut-être dix, quinze
 			secondes pour le faire. On dirait même bien que Cruz, au loin, s'est retourné furtivement pour
 			nous voir comploter. Un souffle de paranoïa traverse la salle du restaurant. Il faut que tu
-			saches, souffle-t-elle, ça ne se passe pas bien. Pas bien. Alors si je le quitte, et c'est une
+			saches, souffle-t-elle, ça ne va pas. Pas bien du tout. Alors si je le quitte, et c'est une
 			question de jours, ça va mal se passer, et je ne veux pas que tu prennes son parti contre moi.
 			C'est tout.
 		</p>
 		<p>
 			C'était étrange. Mais peut-être pas impossible et, naturellement, je pourrai toujours me
 			demander plus tard ce qui se serait passé si Blanka avait alors eu l'intuition, juste après
-			cette confession, de m'embrasser comme elle venait de le faire avec Cruz. Il lui reste cinq
-			secondes avant le retour de Cruz, elle peut le faire, elle sait qu'elle peut le faire et ce
-			serait une manière intelligente d'appuyer son propos, et voilà qu'elle le fait, et que je
-			suffoque –&nbsp; je m'imagine suffoquer&nbsp;– sous son souffle un peu court et son haleine
-			pleine. Qu'elle prolonge son baiser au-delà des cinq secondes qui lui restent et Cruz sera de
-			retour, Cruz nous surprendra, et Blanka, qui sait, sera sauvée. J'avoue que j'y ai pensé. Mais
-			Blanka se tient bien droite et, ayant dit ce qu'elle avait à dire, elle attend simplement le
-			retour de Cruz pour continuer à faire comme si de rien n'était. Ce que j'aime chez eux deux,
-			une chose qu'ils ont commun, c'est un certain sens de la retenue, une imperceptible réticence
-			dans le maintien. Oublions la bouteille de modrý portugal, ce n'est pas une bonne idée.
+			cette confession, de m'embrasser comme elle venait de le faire avec Cruz. J'ai imaginé
+			ceci&nbsp;: il lui reste cinq secondes avant le retour de Cruz, elle peut le faire, elle sait
+			qu'elle peut le faire et ce serait une manière intelligente d'appuyer son propos si elle
+			compte rompre avec Cruz en me rangeant de son côté. Ses lèvres se replient soudain et
+			j'anticipe que je ne résisterais pas longtemps à l'attraction de ses dents lumineuses. Et
+			voilà qu'elle le fait, et que je suffoque –&nbsp; je m'imagine suffoquer&nbsp;– sous son
+			souffle un peu court et son haleine pleine. Qu'elle prolonge son baiser au-delà des cinq
+			secondes qui lui restent et Cruz sera de retour, Cruz nous surprendra, et Blanka, qui sait,
+			sera sauvée. J'avoue que j'y ai pensé. Mais Blanka se tient bien droite, bouche fermée, dents
+			rangées. Et, ayant dit ce qu'elle avait à dire, elle attend simplement le retour de Cruz pour
+			continuer à faire comme si de rien n'était. Une chose qu'ils ont commun, c'est ce sens un peu
+			archaïque de la retenue, une imperceptible réticence dans le maintien&nbsp;–&nbsp;exactement
+			Blanka à cet instant.
 		</p>
 		<p>
-			Allez, <em>půjdem</em>, <em>andiamo</em>&nbsp;! Allons boire quelques bières, et fouiller les
-			poubelles à Vinohrady.
+			Oublions la bouteille de modrý portugal, ce n'est pas une bonne idée, dit Cruz. <em
+				>Dětska, půjdem&nbsp;!</em
+			> Allons boire quelques bières et fouiller les poubelles à Vinohrady.
 		</p>
 		<p>Non, je suis fatiguée, dit Blanka. Soit on reste ici, soit je rentre me coucher.</p>
-
+		<p>Alors on reste. Des bières&nbsp;!</p>
 		<p>Donc, si je comprends bien, on n'a jamais eu le mot de la fin&nbsp;?</p>
 	</article>
 </div>

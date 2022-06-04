@@ -62,6 +62,11 @@
 		}
 	}
 
+	ul {
+		font-weight: 400;
+		font-size: 1rem;
+	}
+
 	li {
 		display: flex;
 		flex-direction: row;
@@ -90,8 +95,6 @@
 		padding: 12px;
 		text-decoration: none;
 		color: inherit;
-		font-weight: 400;
-		font-size: 1rem;
 		text-align: center;
 	}
 </style>
