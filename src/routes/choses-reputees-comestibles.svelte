@@ -24,8 +24,8 @@
 		<p>
 			Le fait divers&nbsp;–&nbsp;règlement de comptes mafieux&nbsp;? acte d'intimidation&nbsp;?
 			&nbsp;–&nbsp;m'est rappelé quelques mois plus tard par mes commensaux, Blanka et Cruz, alors
-			que nous sommes attablés dans un restaurant italien. Mais oui, je m'en souviens&nbsp;! C'était
-			ici, pas vrai&nbsp;? Ici même&nbsp;!
+			que nous sommes attablés dans ce restaurant italien, les Délices de Capri. Mais oui, je m'en
+			souviens&nbsp;! C'était ici, pas vrai&nbsp;? Ici même&nbsp;!
 		</p>
 		<p>
 			Je regarde autour de moi, et le rappel de cette affaire de la bombe qui roule à travers le
@@ -49,7 +49,7 @@
 			la bombe, et maintenant celui où nous nous trouvons ne me semble pas très différent.
 		</p>
 		<p>
-			C'est vrai, concède Blanka, mais ce n'était pas un restaurant italien comme maintenantmais un
+			C'est vrai, concède Blanka, mais ce n'était pas un restaurant italien comme maintenant mais un
 			restaurant indien. Comment s'appelait-il, déjà&nbsp;? Tu le connaissais bien, toi&nbsp;?
 			demande-t-elle à Cruz.
 		</p>
@@ -108,14 +108,14 @@
 			qu'elle peut le faire et ce serait une manière intelligente d'appuyer son propos si elle
 			compte rompre avec Cruz en me rangeant de son côté. Ses lèvres se replient soudain et
 			j'anticipe que je ne résisterais pas longtemps à l'attraction de ses dents lumineuses. Et
-			voilà qu'elle le fait, et que je suffoque –&nbsp; je m'imagine suffoquer&nbsp;– sous son
-			souffle un peu court et son haleine pleine. Qu'elle prolonge son baiser au-delà des cinq
-			secondes qui lui restent et Cruz sera de retour, Cruz nous surprendra, et Blanka, qui sait,
-			sera sauvée. J'avoue que j'y ai pensé. Mais Blanka se tient bien droite, bouche fermée, dents
-			rangées. Et, ayant dit ce qu'elle avait à dire, elle attend simplement le retour de Cruz pour
-			continuer à faire comme si de rien n'était. Une chose qu'ils ont commun, c'est ce sens un peu
-			archaïque de la retenue, une imperceptible réticence dans le maintien&nbsp;–&nbsp;exactement
-			Blanka à cet instant.
+			voilà qu'elle le fait, et que j'étouffe –&nbsp; je m'imagine étouffer&nbsp;– sous son souffle
+			un peu court et son haleine pleine. Qu'elle prolonge son baiser au-delà des cinq secondes qui
+			lui restent et Cruz sera de retour, Cruz nous surprendra, et Blanka, qui sait, sera sauvée.
+			J'avoue que j'y ai pensé. Mais Blanka se tient bien droite, bouche fermée, dents rangées. Et,
+			ayant dit ce qu'elle avait à dire, elle attend simplement le retour de Cruz pour continuer à
+			faire comme si de rien n'était. Une chose qu'ils ont commun, c'est ce sens un peu anachronique
+			de la retenue, une imperceptible réticence dans le maintien&nbsp;–&nbsp;exactement Blanka à
+			cet instant.
 		</p>
 		<p>
 			Oublions la bouteille de modrý portugal, ce n'est pas une bonne idée, dit Cruz. <em
@@ -130,11 +130,10 @@
 
 <style>
 	article {
-		padding: 24px;
+		padding: 12px 24px;
+		margin: 12px;
 		min-height: 200vh;
-		/* font-family: 'Spectral', sans-serif; */
 		background-color: #fff;
-		/* color: #111; */
 	}
 
 	p {

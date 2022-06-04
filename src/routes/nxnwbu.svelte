@@ -27,15 +27,13 @@
 			À l'inverse du nommé Thornhill, qui répond au salut du groom par un mot d'esprit express mais
 			ne s'arrête pas, ne ralentit même pas, nous devrions, nous, nous arrêter un instant à cette
 			première parole vraiment audible du film par laquelle le protagoniste est d'emblée désigné par
-			son nom. Avec ce pressentiment&nbsp;: le film entier pourra fera le récit des mésaventures de
-			ce nom et&nbsp;–&nbsp;derrière ce mince paravent du nom&nbsp;–&nbsp;de l'identité à nu de son
+			son nom. Avec ce pressentiment&nbsp;: le film entier sera le récit des mésaventures de ce nom
+			et&nbsp;–&nbsp;derrière ce mince paravent du nom&nbsp;–&nbsp;de l'identité à nu de son
 			personnage.
 		</p>
 		<p>
-			Et à cet instant sur lequel le film ne s'attarde pas, parfaitement anodin en apparence, répond
-			peu de temps après le geste qui met effectivement en marche le récit. Roger Thornhill (Cary
-			Grant) est un publicitaire à succès de Madison Avenue. Après sa sortie du bureau, il se rend à
-			un rendez-vous d'affaires au bar de l'hôtel Plaza.
+			Et à cet instant sur lequel le film ne s'attarde pas, anodin en apparence, répond peu de temps
+			après le geste qui met effectivement en marche le récit.
 		</p>
 	</article>
 </div>
