@@ -187,7 +187,8 @@
 	}
 
 	.day.today {
-		background-color: #eee;
+		background-color: #fffd;
+		/* background-color: #eee; */
 		/* background-color: #ef6; */
 	}
 
@@ -222,7 +223,7 @@
 	}
 
 	a.seance:hover {
-		background-color: #ffffffcc;
+		background-color: #fff;
 	}
 
 	.time {
@@ -261,7 +262,7 @@
 		}
 
 		.day.today {
-			background-color: #ffffff66;
+			/* background-color: #fff6; */
 			display: block;
 		}
 

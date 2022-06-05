@@ -53,7 +53,7 @@
 					{#if item.idFilm}
 						{#await get(`https://api.cnmtq.fr/film/${item.idFilm}`) then film}
 							{#if film.titrevo || film.titrenx}
-								<div class="item-titre">
+								<div class="item-titre sub">
 									{film.titrenx || artTitre(film.artvo, film.titrevo)}
 								</div>
 							{/if}
@@ -155,6 +155,10 @@
 
 	.item-titre.medium {
 		font-weight: 500;
+	}
+
+	.item-titre.sub {
+		font-size: 1.063rem;
 	}
 
 	.conf,

@@ -1,5 +1,6 @@
 <script>
-	export let color = '#158';
+	export let color = '#046';
+	// export let color = '#158';
 	export let size = 18;
 	export let fill = false;
 	export let strokeWidth = 10;

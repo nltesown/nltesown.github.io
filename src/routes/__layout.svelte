@@ -63,8 +63,10 @@
 		width: 100%;
 		justify-content: center;
 		align-items: center;
-		height: 90px;
-		background-color: #111;
+		height: 70px;
+		/* height: 90px; */
+		background-color: #035;
+		/* background-color: #111; */
 		color: #eee;
 		overflow: hidden;
 		line-height: 2rem;
@@ -102,7 +104,7 @@
 		left: 0;
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-start;
+		justify-content: center;
 		width: 100vw;
 		height: 100vh;
 		background: rgba(0, 0, 0, 0.66);
@@ -126,9 +128,18 @@
 
 	:global(.modal-content) {
 		position: relative;
-		/* height: 65vh; */
-		max-height: 65vh;
+		max-height: 85vh;
 		overflow-y: auto;
 		overflow-x: hidden;
+	}
+
+	@media (max-width: 785px) {
+		:global(.modal-bg) {
+			justify-content: flex-start;
+		}
+
+		:global(.modal-content) {
+			max-height: 65vh;
+		}
 	}
 </style>

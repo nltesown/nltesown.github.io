@@ -27,6 +27,7 @@
 		right: 0;
 		background-color: #ccc;
 		overflow: hidden;
+		z-index: 2;
 	}
 
 	section {
