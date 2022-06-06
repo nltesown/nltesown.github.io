@@ -6,15 +6,18 @@
 	import IconHome from '../components/lib/icons/IconHome.svelte';
 	import Modal, { bind } from 'svelte-simple-modal';
 	import { modal } from '../stores.js';
+	import { assets } from '$app/paths';
+
+	console.log(assets);
 </script>
 
 <svelte:head>
 	<!-- Je force ici le preload des fonts utilisées, au format prioritaire et le plus probable (woff2) -->
-	<link rel="preload" href="fonts/inter/Inter-Light.woff2" as="font" type="font/woff2" />
-	<link rel="preload" href="fonts/inter/Inter-Regular.woff2" as="font" type="font/woff2" />
-	<link rel="preload" href="fonts/inter/Inter-Italic.woff2" as="font" type="font/woff2" />
-	<link rel="preload" href="fonts/inter/Inter-Medium.woff2" as="font" type="font/woff2" />
-	<link rel="preload" href="fonts/inter/Inter-SemiBold.woff2" as="font" type="font/woff2" />
+	<link rel="preload" href="/fonts/inter/Inter-Light.woff2" as="font" type="font/woff2" />
+	<link rel="preload" href="/fonts/inter/Inter-Regular.woff2" as="font" type="font/woff2" />
+	<link rel="preload" href="/fonts/inter/Inter-Italic.woff2" as="font" type="font/woff2" />
+	<link rel="preload" href="/fonts/inter/Inter-Medium.woff2" as="font" type="font/woff2" />
+	<link rel="preload" href="/fonts/inter/Inter-SemiBold.woff2" as="font" type="font/woff2" />
 </svelte:head>
 
 {#if $page.url.pathname === '/sndv/'}
