@@ -63,10 +63,10 @@
 		width: 100%;
 		justify-content: center;
 		align-items: center;
-		height: 70px;
+		height: 65px;
 		/* height: 90px; */
-		background-color: #035;
-		/* background-color: #111; */
+		/* background-color: #035; */
+		background-color: #112;
 		color: #eee;
 		overflow: hidden;
 		line-height: 2rem;

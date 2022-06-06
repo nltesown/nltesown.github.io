@@ -188,8 +188,6 @@
 
 	.day.today {
 		background-color: #fffd;
-		/* background-color: #eee; */
-		/* background-color: #ef6; */
 	}
 
 	.date {
@@ -211,12 +209,13 @@
 		display: none;
 	}
 
-	a.seance {
+	.seance {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: flex-start;
-		padding: 6px 8px 8px 8px;
+		padding: 6px;
+		/* padding: 6px 8px 8px 8px; */
 		text-decoration: none;
 		color: inherit;
 		transition: 0s;
@@ -228,13 +227,13 @@
 
 	.time {
 		display: inline-block;
-		flex: 0 0 25%;
+		flex: 0 0 4em;
 		font-weight: 500;
 	}
 
 	.details {
 		display: inline-block;
-		flex: 0 0 75%;
+		flex: 1 1 auto;
 	}
 
 	.cycle {
@@ -250,7 +249,17 @@
 		color: #930;
 	}
 
-	@media (max-width: 575px) {
+	@media (min-width: 1024px) and (max-width: 1200px) {
+		a.seance {
+			flex-direction: column;
+		}
+
+		.time {
+			flex: 0 0 100%;
+		}
+	}
+
+	@media (max-width: 1024px) {
 		.calendar {
 			grid-template-columns: 1fr;
 			column-gap: 0;
@@ -262,7 +271,6 @@
 		}
 
 		.day.today {
-			/* background-color: #fff6; */
 			display: block;
 		}
 
