@@ -41,21 +41,6 @@
         </li>
       {/each}
     </ul>
-  </section>
-  <!--
-  <header>
-    <div class="left">{_.capitalize(dayjs(data.dateHeure).format("ddd D MMM"))}</div>
-    <div class="center">{dayjs(data.dateHeure).format("HH[h]mm")}</div>
-    <div class="right">Salle {data.salle}</div>
-  </header>
-  <section>
-    <ul class="cycles">
-      {#each formatCycles(data.cycle) as cycle}
-        <li>
-          {cycle}
-        </li>
-      {/each}
-    </ul>
     <ul class="items">
       {#each data.items as item, i}
         <li>
@@ -90,6 +75,7 @@
               {@html ba('<p style="margin: 0.5rem 0;">', "</p>", fromMd(film.adaptation))}
 
               {@html ba(`<p style="margin: 0.5rem 0;">`, "</p>", fromMd(film.synopsis))}
+              <!-- <pre><code>{JSON.stringify(film, null, 2)}</code></pre> -->
               {#if i < data.items.length - 1}<hr class="short" />{/if}
             {/await}
           {/if}
@@ -97,83 +83,23 @@
       {/each}
       {#if data.mention}<div class="mention">{data.mention}</div>{/if}
     </ul>
+
+    <!-- <pre><code>{JSON.stringify(data, null, 2)}</code></pre> -->
   </section>
   <footer />
--->
 </article>
 
+<!-- 
+<ul>
+	{#each data.items as item}
+		<li>{item.titre}</li>
+	{/each}
+</ul>
+ -->
 <style>
   article {
-    position: relative;
     color: #047;
   }
-
-  header {
-    position: sticky;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    background-color: #eee;
-    padding: 8px;
-    font-weight: 600;
-    overflow: hidden;
-  }
-
-  .left,
-  .center,
-  .right {
-    display: block;
-    padding: 0 0.2rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .left {
-    text-align: right;
-    flex: 1 1 45%;
-  }
-  .center {
-    text-align: center;
-    flex: 1 1 10%;
-  }
-  .right {
-    text-align: left;
-    flex: 1 1 45%;
-  }
-
-  section {
-    padding: 24px;
-    background-color: #fff;
-    min-height: 33.33vh;
-    /* height: 150vh; */
-  }
-
-  ul.cycles li {
-    font-weight: 600;
-    font-size: 1rem;
-  }
-
-  @media (max-width: 785px) {
-    .left,
-    .right {
-      flex: 1 1 40%;
-    }
-
-    .center {
-      flex: 1 1 20%;
-    }
-  }
-  /* footer {
-    position: sticky;
-    bottom: 0;
-    background-color: #eee;
-    height: 36px;
-  } */
-
-  /*
 
   header {
     position: sticky;
@@ -251,5 +177,4 @@
     margin: 18px 0;
     padding: 0;
   }
-  */
 </style>
