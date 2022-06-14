@@ -7,6 +7,7 @@
   import Modal, { bind } from "svelte-simple-modal";
   import { modal } from "../stores.js";
   import { assets } from "$app/paths";
+  import { fly } from "svelte/transition";
 
   console.log(assets);
 </script>
@@ -35,6 +36,9 @@
     classWindow="modal-window"
     classContent="modal-content"
     classCloseButton="modal-close-button"
+    transitionBgProps={{ duration: 0 }}
+    transitionWindow={fly}
+    transitionWindowProps={{ y: 250, duration: 500 }}
     closeButton={true}
     unstyled={true}
   />
@@ -144,6 +148,8 @@
     max-height: 85vh;
     overflow-y: auto;
     overflow-x: hidden;
+    scrollbar-color: #ccc transparent;
+    scrollbar-width: thin;
   }
 
   :global(.modal-close-button) {

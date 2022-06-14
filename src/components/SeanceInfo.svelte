@@ -129,26 +129,27 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    /* outline: solid 1px red; */
   }
 
   .left {
     text-align: right;
-    flex: 1 1 45%;
+    flex: 1 1 auto;
   }
   .center {
     text-align: center;
-    flex: 1 1 10%;
+    flex: 0 1 4rem;
   }
   .right {
     text-align: left;
-    flex: 1 1 45%;
+    flex: 1 1 auto;
   }
 
   section {
     padding: 24px;
     background-color: #fff;
     min-height: 33.33vh;
-    /* height: 150vh; */
+    height: 150vh;
   }
 
   ul.cycles li {
@@ -156,16 +157,6 @@
     font-size: 1rem;
   }
 
-  @media (max-width: 785px) {
-    .left,
-    .right {
-      flex: 1 1 40%;
-    }
-
-    .center {
-      flex: 1 1 20%;
-    }
-  }
   /* footer {
     position: sticky;
     bottom: 0;
