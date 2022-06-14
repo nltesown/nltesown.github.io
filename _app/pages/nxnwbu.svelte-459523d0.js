@@ -1,4 +1,4 @@
-import{S as R,i as z,s as B,e as l,t as p,k as x,c as o,a as u,h as m,d as a,m as k,b as h,g as F,I as e,a3 as K,j as O,J}from"../chunks/vendor-29155ccf.js";function Q(E){let n,t,s,v,q,i,c,y,C,M,T,f,P,N,b,$,w,g,A,I,S;return{c(){n=l("div"),t=l("article"),s=l("div"),v=p(E[0]),q=p(" caract\xE8res."),i=x(),c=l("p"),y=l("em"),C=p("North by Northwest"),M=p(` s'ouvre\xA0\u2013\xA0ou peut s'en faut\xA0\u2013\xA0sur un nom. C'est
+import{S as R,i as z,s as B,e as l,t as p,k as x,c as o,a as u,h as m,d as a,m as k,b as h,g as F,I as e,a4 as K,j as O,J}from"../chunks/vendor-abc2320b.js";function Q(E){let n,t,s,v,q,i,c,y,C,M,T,f,P,N,b,$,w,g,A,I,S;return{c(){n=l("div"),t=l("article"),s=l("div"),v=p(E[0]),q=p(" caract\xE8res."),i=x(),c=l("p"),y=l("em"),C=p("North by Northwest"),M=p(` s'ouvre\xA0\u2013\xA0ou peut s'en faut\xA0\u2013\xA0sur un nom. C'est
 			l'heure de la sortie des bureaux \xE0 Manhattan. En une succession de plans d'ensemble, une foule
 			ininterrompue, rapide, circule dans tous les sens, se d\xE9verse par les portes \xE0 tambour d'un building,
 			s'enfonce dans une bouche de m\xE9tro, se laisse porter par le courant dans l'escalier monumental
