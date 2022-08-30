@@ -29,9 +29,20 @@
 
 <article>
   <header>
-    <div class="left">{_.capitalize(dayjs(data.dateHeure).format("ddd D MMM"))}</div>
-    <div class="center">{dayjs(data.dateHeure).format("HH[h]mm")}</div>
-    <div class="right">Salle {data.salle}</div>
+    {_.capitalize(dayjs(data.dateHeure).format("ddd D MMM"))}<span class="bullet" />{dayjs(
+      data.dateHeure
+    ).format("HH[h]mm")}<span class="bullet" />Salle {data.salle}
+  </header>
+  <div class="scroll-container">
+    <section style="height: 800px;">Coco</section>
+  </div>
+</article>
+<!-- 
+<article>
+  <header>
+    {_.capitalize(dayjs(data.dateHeure).format("ddd D MMM"))}<span class="bullet" />{dayjs(
+      data.dateHeure
+    ).format("HH[h]mm")}<span class="bullet" />Salle {data.salle}
   </header>
   <section>
     <ul class="cycles">
@@ -41,8 +52,9 @@
         </li>
       {/each}
     </ul>
-  </section>
-  <!--
+  </section> -->
+
+<!--
   <header>
     <div class="left">{_.capitalize(dayjs(data.dateHeure).format("ddd D MMM"))}</div>
     <div class="center">{dayjs(data.dateHeure).format("HH[h]mm")}</div>
@@ -100,48 +112,37 @@
   </section>
   <footer />
 -->
-</article>
 
+<!-- </article> -->
 <style>
   article {
+    flex: 0 0 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
     color: #047;
+    overflow: hidden;
   }
 
   header {
     position: sticky;
     top: 0;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: center; */
+    text-align: center;
     background-color: #eee;
     padding: 8px;
     font-weight: 600;
     overflow: hidden;
+    flex: 0 0 auto;
   }
 
-  .left,
-  .center,
-  .right {
-    display: block;
-    padding: 0 0.2rem;
+  .scroll-container {
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    /* outline: solid 1px red; */
-  }
-
-  .left {
-    text-align: right;
-    flex: 1 1 auto;
-  }
-  .center {
-    text-align: center;
-    flex: 0 1 4rem;
-  }
-  .right {
-    text-align: left;
     flex: 1 1 auto;
   }
 
@@ -155,6 +156,13 @@
   ul.cycles li {
     font-weight: 600;
     font-size: 1rem;
+  }
+
+  .bullet:after {
+    display: inline-block;
+    padding: 0 4px;
+    content: "•";
+    color: #ccc;
   }
 
   /* footer {

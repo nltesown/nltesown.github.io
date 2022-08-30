@@ -1,6 +1,5 @@
 <script>
   import "$lib/dayjs_custom_locale_fr";
-  dayjs.locale("fr");
   import _ from "lodash";
   import dayjs from "dayjs";
   import { get } from "$lib/api.js";
@@ -30,10 +29,10 @@
       // ),
       get(
         "https://raw.githubusercontent.com/cinemathequefr/Publications_cycles/main/data/PROG119 Juin-juillet 2022/PROG119_GLOBAL/PROG119_SEANCES_DEF.json"
+      ),
+      get(
+        "https://raw.githubusercontent.com/cinemathequefr/Publications_cycles/main/data/PROG124%20Septembre-novembre%202022/PROG124_GLOBAL/PROG124_SEANCES.json"
       )
-      // get(
-      // 	'https://raw.githubusercontent.com/cinemathequefr/Publications_cycles/main/data/PROG124%20Septembre-novembre%202022/PROG124_GLOBAL/PROG124_SEANCES.json'
-      // )
     ])
       .then((data) => {
         data = _(data).filter().value(); // Supprime l'item `undefined` renvoyé par la promesse de délai.
@@ -93,14 +92,11 @@
       {/each}
     </div>
     <div class="calendar">
-      <div class="day header">Lundi</div>
-      <div class="day header">Mardi</div>
-      <div class="day header">Mercredi</div>
-      <div class="day header">Jeudi</div>
-      <div class="day header">Vendredi</div>
-      <div class="day header">Samedi</div>
-      <div class="day header">Dimanche</div>
-
+      {#each ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"] as weekday, i}
+        <div class="day header" class:today={i === dayjs().add(-1, "day").day()}>
+          {weekday}
+        </div>
+      {/each}
       {#each data.calendar as day}
         <div class="day" class:today={day.date.isSame(dayjs(), "day")} class:active={day.seances}>
           <div class="date">
@@ -178,7 +174,7 @@
 
   .day.header {
     margin-top: 12px;
-    padding: 2px;
+    padding: 4px 2px;
     background-color: #fff9;
     text-align: center;
     color: inherit;
@@ -193,6 +189,9 @@
 
   .day.today {
     background-color: #fffd;
+  }
+  .day.header.today {
+    background-color: #fff;
   }
 
   .date {

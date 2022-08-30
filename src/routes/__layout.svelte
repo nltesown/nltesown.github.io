@@ -144,10 +144,13 @@
   }
 
   :global(.modal-content) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
     position: relative;
     max-height: 85vh;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: hidden;
     scrollbar-color: #ccc transparent;
     scrollbar-width: thin;
   }
